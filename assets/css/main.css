@@ -962,15 +962,224 @@ section {
 /*--------------------------------------------------------------
 # Our Services Section
 --------------------------------------------------------------*/
-.services {
-  padding: 60px 0;
+
+/* .cont{
+  width: 100px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+
+}
+.column{
+  position: relative;
+  width: 100px;
+  padding-right: 15px;
+  padding-left: 15px;
+  flex:  0 0 100%;
+
+}
+.card{
+  position: relative;
+  margin-bottom: 30px;
+  overflow: hidden;
+
+}
+.effect{
+  font-size: 0;
+  overflow:hidden;
+}
+.card .effect img{
+  width: 100%;
+  height: auto;
+  transition: all .3s;
 }
 
-.services .service-item {
+.section-header{
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 45px 0 30px 0;
+}
+
+.effect-test{
+  position: absolute;
+  top: 15PX;
+  right: 15PX;
+  left: 15PX;
+  bottom: 15px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: rgb(0,0,0, .5);
+  overflow: hidden;
+  transition: all .3s ease-in;
+
+
+}
+.card .effect h1{
+  position: absolute;
+  padding: 15px;
+  z-index: 1;
+}
+
+.card .effect::before, 
+.card .effect::after{
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 0;
+  content: "";
+}
+
+.effect .effect-test::before{
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  left: -100%;
+  top:0;
+
+}
+.effect .effect-test::after{
+  border-top: 3px solid #fff;
+  border-left: 3px solid #fff;
+  left: 100%;
+  top:0;
+
+}
+
+.card:hover .effect-test{
+  opacity: 1;
+}
+
+
+@media(min-width:992px){
+  .cont{
+    max-width: 960px;
+
+  }
+  .column{
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+
+  }
+} */
+
+/* tet2 */
+
+
+/* .services {
+  padding: 60px 0;
+} */
+.contain .wrapper{
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+.card{
+  width:295px;
+  height: 360px;
+  padding: 2rem 1 rem;
+  margin: auto;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.06);
+  transition: 0.05% ease-in-out;
+}
+
+.card:hover{
+  transform: translate(20px);
+}
+.card:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(147, 245, 117, 0.89), rgba(43, 109, 63, 0.959));
+  z-index: 2;
+  transition: 00.5s all;
+  opacity: 0;
+
+}
+.card:hover:before{
+  opacity: 1;
+
+}
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top:0;
+  left:0;
+
+
+}
+ .card .info{
+  position:absolute;
+  text-align: center;
+  padding: 7px;
+  z-index: 2;
+  color: #fff;
+  opacity: 0;
+  transform: translate(30px);
+  transition: 00.5s all;
+ justify-content: center;
+ }
+
+ .card:hover .info{
+  opacity: 1;
+  transform: translate(0px)
+ }
+
+ .card .info h1{
+  margin: 0;
+  padding: auto;
+ }
+
+ text{
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+ }
+ .moretext{
+  display: none;
+}
+ .card .info .btn{
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color:#000;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4%  ease-in-out;
+ }
+ .text.show-more .moretext{
+  display: inline;
+ }
+
+
+ /* old */
+/* .services .service-item {
   padding: 40px;
   background: #fff;
   height: 100%;
   border-radius: 10px;
+}
+
+.card .info .btn:hover{
+  box-shadow: 0px 7px rgba(0,0,0,0.5);
 }
 
 .services .service-item .icon {
@@ -1032,7 +1241,7 @@ section {
 .services .service-item:hover h3 {
   border-color: var(--color-primary);
 }
-
+ */
 /*--------------------------------------------------------------
 # Testimonials Section
 --------------------------------------------------------------*/
