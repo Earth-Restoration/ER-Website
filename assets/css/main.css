@@ -2968,7 +2968,7 @@ section {
   left: 0;
   width: 50%;
   height: 100%;
-  background: linear-gradient(to top, transparent, rgba(0, 255, 249, 0.4));
+  background: linear-gradient(to top, transparent, #3ec1f1);
   background-size: 200px 360px;
   background-repeat: no-repeat;
   border-top-left-radius: 200px;
@@ -2978,12 +2978,12 @@ section {
 .planetEarth .loader:after {
   content: "";
   position: absolute;
-  top: 0;
+  top: -0.4;
   left: 50%;
   transform: translateX(-50%);
   width: 10px;
   height: 10px;
-  background: #00fff9;
+  background: #3ec1f1;
   border-radius: 50%;
   z-index: 10;
 }
