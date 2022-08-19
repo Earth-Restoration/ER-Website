@@ -2978,7 +2978,7 @@ section {
 .planetEarth .loader:after {
   content: "";
   position: absolute;
-  top: -0.4;
+  top: -0.4%;
   left: 50%;
   transform: translateX(-50%);
   width: 10px;
