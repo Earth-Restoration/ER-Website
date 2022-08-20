@@ -3097,7 +3097,7 @@ padding: 3px;
 .planetEarth .loader:after {
   content: "";
   position: absolute;
-  top: -0.4%;
+  top: -0.3%;
   left: 50%;
   transform: translateX(-50%);
   width: 10px;
