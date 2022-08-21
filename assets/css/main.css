@@ -721,6 +721,8 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", en
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 80px;
+  border-radius: 10px;
 }
 
 .features .nav-link i {
@@ -735,13 +737,40 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", en
 }
 
 .features .nav-link:hover {
-  color: #ef6603;
+  background: hsla(108, 100%, 22%, 1);
+
+  background: linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
+
+  background: -moz-linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
+
+  background: -webkit-linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", endColorstr="#00902D", GradientType=1 );
+
 }
 
 .features .nav-link.active {
-  background: #ef6603;
+  background: hsla(108, 100%, 22%, 1);
+
+  background: linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
+
+  background: -moz-linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
+
+  background: -webkit-linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", endColorstr="#00902D", GradientType=1 );
+
   color: #fff;
-  border-color: #ef6603;
+  background: hsla(108, 100%, 22%, 1);
+
+  background: linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
+
+  background: -moz-linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
+
+  background: -webkit-linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", endColorstr="#00902D", GradientType=1 );
+
 }
 
 @media (max-width: 768px) {
@@ -788,6 +817,10 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", en
 
 .features .tab-pane p:last-child {
   margin-bottom: 0;
+}
+
+.features img{
+  border-radius: 20px;
 }
 
 /*--------------------------------------------------------------
