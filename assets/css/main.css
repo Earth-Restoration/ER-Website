@@ -645,7 +645,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", en
   text-align: center;
 }
 
-.about .icon-box .title {
+/* .about .icon-box .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
@@ -680,6 +680,29 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", en
 .about .icon-box p{
   font-size: normal;
   color: #fff;
+} */
+
+.heading{
+  color: white;
+  width: 0ch;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 8s steps(15) infinite alternate;
+  border-right: 3px solid white;
+  font-size: 60px;
+}
+@keyframes text {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 15ch;
+  }
+}
+.para{
+  font-family: Cursive;
+  font-weight: 1000;
+  font-style: oblique;
 }
 
 /*--------------------------------------------------------------
