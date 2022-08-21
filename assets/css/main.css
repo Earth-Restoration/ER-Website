@@ -1891,6 +1891,11 @@ padding: 3px;
 /*--------------------------------------------------------------
 # Frequently Asked Questions Section
 --------------------------------------------------------------*/
+#faq{
+  background-image: url(../img/bg_faq.jpg);
+  width: 100%;
+}
+
 .faq .content h3 {
   font-weight: 400;
   font-size: 34px;
