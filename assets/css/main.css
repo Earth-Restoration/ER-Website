@@ -645,7 +645,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", en
   text-align: center;
 }
 
-/* .about .icon-box .title {
+.about .icon-box .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
@@ -680,7 +680,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", en
 .about .icon-box p{
   font-size: normal;
   color: #fff;
-} */
+}
 
 .heading{
   color: white;
