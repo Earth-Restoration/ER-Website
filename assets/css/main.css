@@ -2919,15 +2919,15 @@ padding: 3px;
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background: linear-gradient(to right, #085B21, #28EB0A);
+  /* background: linear-gradient(to right, #085B21, #28EB0A); */
   padding: 50px 0;
   color: white;
-  border-top-left-radius: 125px;
+  /* border-top-left-radius: 125px;
   font-size: 13px;
-  line-height: 20px;
+  line-height: 20px; */
 }
 
-.row{
+/* .row{
   width: 85%;
   margin: auto;
   display: flex;
@@ -3048,7 +3048,7 @@ padding: 3px;
   .col:nth-child(2), .col:nth-child(3){
       flex-basis: 100%;
   }
-}
+} */
 
 .footer .footer-info .logo {
   line-height: 0;
