@@ -98,7 +98,7 @@ section {
 .section-header p {
   margin-bottom: 0;
   color: #6f6f6f;
-  font-size: 20px;
+  font-size: normal;
 }
 
 /*--------------------------------------------------------------
@@ -318,7 +318,7 @@ section {
 
 .header .logo img {
   margin-top: 1px;
-  height: 80px;
+  height: 60px;
   margin-right: 6px;
 }
 
@@ -642,7 +642,7 @@ section {
 .about .icon-box .title {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 20px;
   color: black;
 
 }
@@ -680,7 +680,7 @@ section {
 .about .icon-box p{
   font-size: normal;
   color:black;
-  font-size: 20px;
+  font-size: normal;
   font-weight: 500;
 }
 /*.about .icon-box:hover p{
@@ -762,7 +762,7 @@ section {
 
 }
 .features .tab-content p{
-  font-size: 20px;
+  font-size: normal;
   color: black;
   font-weight: 500;
 }
@@ -1707,75 +1707,122 @@ padding: 3px;
 }
 
 /*--------------------------------------------------------------
-# Our Team Section
+# Team
 --------------------------------------------------------------*/
-.team .member {
-  text-align: center;
+.team {
   background: #fff;
-  border-radius: 10px;
-  padding: 15px;
+  padding: 60px 0;
+}
+
+.team .member {
+  margin-bottom: 20px;
   overflow: hidden;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
-}
-
-.team .member img {
   border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 29px 0 black;
+}
+
+.team .member:hover{
+  box-shadow: 0 0 29px 0 green;
+  background: hsla(214, 92%, 47%, 1);
+
+background: linear-gradient(75deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+
+background: -moz-linear-gradient(75deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+
+background: -webkit-linear-gradient(75deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0968E5", endColorstr="#091970", GradientType=1 );
+
+}
+
+.team .member .member-img {
+  position: relative;
   overflow: hidden;
-}
-
-.team .member .member-content {
-  padding: 0 20px 30px 20px;
-}
-
-.team .member h4 {
-  font-weight: 700;
-  margin-top: 16px;
-  margin-bottom: 2px;
-  font-size: 20px;
-}
-
-.team .member span {
-  font-style: italic;
-  display: block;
-  font-size: 14px;
-  color: #6c757d;
-}
-
-.team .member p {
-  padding-top: 10px;
-  font-size: 14px;
-  font-style: italic;
-  color: #6c757d;
 }
 
 .team .member .social {
-  margin-top: 15px;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  right: 0;
+  opacity: 0;
+  transition: ease-in-out 0.3s;
+  text-align: center;
 }
 
 .team .member .social a {
-  color: #a2a2a2;
-  transition: 0.3s;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
+  transition: color 0.3s;
+  color: #151515;
+  margin: 0 3px;
+  border-radius: 4px;
+  width: 36px;
+  height: 36px;
+  background:#ddd;
+  transition: ease-in-out 0.3s;
+  color: #484848;
+  display: inline-flex;
   justify-content: center;
-  border: 1px solid #bbbbbb;
+  align-items: center;
 }
 
 .team .member .social a:hover {
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: #151515;
+  background: hsla(214, 92%, 47%, 1);
+
+background: linear-gradient(75deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+
+background: -moz-linear-gradient(75deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+
+background: -webkit-linear-gradient(75deg, hsla(214, 92%, 47%, 1) 0%, hsla(231, 85%, 24%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0968E5", endColorstr="#091970", GradientType=1 );
+}
+
+.team .member .member-info:hover h4,
+.team .member .member-info:hover span{
+  color: white;
 }
 
 .team .member .social i {
   font-size: 18px;
-  margin: 0 2px;
+  line-height: 0;
+}
+
+.team .member .member-info {
+  padding: 25px 15px;
+}
+
+.team .member .member-info h4 {
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #151515;
+  text-align: center;
+}
+.team .member .member-info:hover h4,
+.team .member .member-info:hover span{
+  color: white;
+}
+
+.team .member .member-info span {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #151515;
+  text-align: center;
+}
+
+.team .member .member-info p {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 26px;
+  color: #777777;
+}
+
+.team .member:hover .social {
+  opacity: 1;
+  bottom: 15px;
 }
 
 /*--------------------------------------------------------------
