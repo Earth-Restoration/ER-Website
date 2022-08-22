@@ -619,6 +619,7 @@ section {
     right: 0;
     height: calc(50% + 20px);
     background-color: #fff;
+    border: 20px #151515;
   }
 }
 
@@ -626,18 +627,9 @@ section {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: hsla(108, 100%, 22%, 1);
-
-background: linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
-
-background: -moz-linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
-
-background: -webkit-linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
-
-filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", endColorstr="#00902D", GradientType=1 );
-
-  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+  background: white;
   transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 29px 0 black;
   border-radius: 8px;
   z-index: 1;
   height: 100%;
@@ -645,17 +637,25 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", en
   text-align: center;
 }
 
+
+
 .about .icon-box .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 24px;
-  color: #ddd;
+  color: black;
+
 }
 
+/*.about .icon-box:hover .title{
+  color: white;
+}*/
+
 .about .icon-box .title a {
-  color: #fff;
+  color: white;
   transition: 0.3s;
 }
+
 
 .about .icon-box .icon {
   margin-bottom: 20px;
@@ -664,23 +664,31 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", en
   transition: all 0.3s ease-in-out;
   font-size: 48px;
   line-height: 1;
-  color: rgba(255, 255, 255, 0.6);
+  color: black;
 }
 
 .about .icon-box:hover {
-  background: #129700;
+  box-shadow: 0 0 29px 0 #1b8b00;
 }
 
-.about .icon-box:hover .title a,
+/*.about .icon-box:hover .title a,
 .about .icon-box:hover .icon {
-  color: #fff;
-}
+  color: white;
+}*/
 
 
 .about .icon-box p{
   font-size: normal;
-  color: #fff;
+  color:black;
+  font-size: 20px;
+  font-weight: 500;
 }
+/*.about .icon-box:hover p{
+  font-size: normal;
+  color:white;
+  transition: 0.5s;
+}*/
+
 
 .heading{
   color: white;
@@ -709,14 +717,15 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", en
 # Features
 --------------------------------------------------------------*/
 .features .nav-tabs {
-  border: 0;
+  border: 5px black;
+  background-color: white;
 }
 
 .features .nav-link {
-  border: 1px solid #d4d6df;
+  box-shadow: 0 0 29px 0 green;
   padding: 15px;
   transition: 0.3s;
-  color: #2a2c39;
+  
   border-radius: 0;
   display: flex;
   align-items: center;
@@ -747,30 +756,19 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", en
 
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", endColorstr="#00902D", GradientType=1 );
 
+  border-color: #1b8b00;
+
+  color: white;
+
+}
+.features .tab-content p{
+  font-size: 20px;
+  color: black;
+  font-weight: 500;
 }
 
-.features .nav-link.active {
-  background: hsla(108, 100%, 22%, 1);
-
-  background: linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
-
-  background: -moz-linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
-
-  background: -webkit-linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", endColorstr="#00902D", GradientType=1 );
-
-  color: #fff;
-  background: hsla(108, 100%, 22%, 1);
-
-  background: linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
-
-  background: -moz-linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
-
-  background: -webkit-linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", endColorstr="#00902D", GradientType=1 );
-
+.features .nav-link::before {
+  background-color: black;
 }
 
 @media (max-width: 768px) {
@@ -817,6 +815,7 @@ filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", en
 
 .features .tab-pane p:last-child {
   margin-bottom: 0;
+  
 }
 
 .features img{
