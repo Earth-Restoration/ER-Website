@@ -3,8 +3,8 @@
 .titlemain {
   text-align:center;
   /* background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%); */
-  background-image: linear-gradient(to right top, #66c9c0, #3ad9b7, #22e69f, #45f179, #76f93f);
-  color:#e3e3f1;
+  /* background-image: linear-gradient(to right top, #66c9c0, #3ad9b7, #22e69f, #45f179, #76f93f); */
+  color: black;
   font-family:'Roboto';
   font-weight:bold;
   font-size:40px;
