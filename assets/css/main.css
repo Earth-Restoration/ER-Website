@@ -2919,12 +2919,12 @@ padding: 3px;
 --------------------------------------------------------------*/
 .footer {
   font-size: 14px;
-  background: linear-gradient(to right, #085B21, #28EB0A);
+  background: #071B04;
   padding: 50px 0;
   color: white;
-  border-top-left-radius: 125px;
+  /* border-top-left-radius: 125px;
   font-size: 13px;
-  line-height: 20px; 
+  line-height: 20px;  */
 }
 
 /* .row{
