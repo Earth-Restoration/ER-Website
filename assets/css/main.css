@@ -629,7 +629,7 @@ section {
   overflow: hidden;
   background: white;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 29px 0 green;
+  box-shadow: 0 0 29px 0 black;
   border-radius: 8px;
   z-index: 1;
   height: 100%;
@@ -647,9 +647,9 @@ section {
 
 }
 
-.about .icon-box:hover .title{
+/*.about .icon-box:hover .title{
   color: white;
-}
+}*/
 
 .about .icon-box .title a {
   color: white;
@@ -669,14 +669,12 @@ section {
 
 .about .icon-box:hover {
   box-shadow: 0 0 29px 0 #1b8b00;
-  background: #129700;
-  border: white;
 }
 
-.about .icon-box:hover .title a,
+/*.about .icon-box:hover .title a,
 .about .icon-box:hover .icon {
   color: white;
-}
+}*/
 
 
 .about .icon-box p{
@@ -685,11 +683,11 @@ section {
   font-size: 20px;
   font-weight: 500;
 }
-.about .icon-box:hover p{
+/*.about .icon-box:hover p{
   font-size: normal;
   color:white;
   transition: 0.5s;
-}
+}*/
 
 
 .heading{
