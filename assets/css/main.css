@@ -3209,7 +3209,7 @@ padding: 3px;
 }
 
 .footer .footer-info .logo img {
-  max-height: 40px;
+  max-height: 60px;
   margin-right: 6px;
 }
 
@@ -3264,7 +3264,7 @@ padding: 3px;
 
 .footer .footer-links ul i {
   padding-right: 2px;
-  color: rgba(0, 131, 116, 0.8);
+  color: rgb(0, 131, 116, 0.8);
   font-size: 12px;
   line-height: 0;
 }
@@ -3294,6 +3294,14 @@ padding: 3px;
   line-height: 26px;
 }
 
+.footer .footer-contact p a{
+  color: #fff;
+}
+
+.footer .footer-contact p a:hover{
+  color: #1b8b00;
+}
+
 .footer .copyright {
   text-align: center;
 }
@@ -3306,6 +3314,10 @@ padding: 3px;
 
 .footer .credits a {
   color: #fff;
+}
+
+.footer .credits a:hover {
+  color: #1b8b00;
 }
 
 .planet {
