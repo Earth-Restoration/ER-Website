@@ -1719,8 +1719,9 @@ padding: 3px;
 }
 
 .team .member img {
-  border-radius: 10px;
+  border-radius: 50% 20% / 10% 40%;
   overflow: hidden;
+  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.1);
 }
 
 .team .member .member-content {
@@ -1749,14 +1750,19 @@ padding: 3px;
 }
 
 .team .member .social {
-  margin-top: 15px;
-  margin-bottom: 10px;
+  position: sticky;
+ /* margin-top: 15px;
+  margin-bottom: 5px;*/
+
   display: flex;
   align-items: center;
   justify-content: space-around;
+  top: 400px;
+  bottom: 50px;
 }
 
 .team .member .social a {
+  
   color: #a2a2a2;
   transition: 0.3s;
   border-radius: 50%;
@@ -1765,7 +1771,8 @@ padding: 3px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #bbbbbb;
+  border: 2px solid #bbbbbb;
+  flex-direction: column;
 }
 
 .team .member .social a:hover {
