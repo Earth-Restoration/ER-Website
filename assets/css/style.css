@@ -1,17 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
-.line-5 {
-    height: 10px;
-    background: linear-gradient(
-      to bottom,
-      transparent 2px,
-      hsl(98 100% 62%) 4px,
-      hsl(204 100% 59%) 5px,
-      transparent 3px
-    );
-  }
-
-
 .forstryH2 {
     font-weight: bold;
     text-align: center;
