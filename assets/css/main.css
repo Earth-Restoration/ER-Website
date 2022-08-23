@@ -3300,6 +3300,12 @@ padding: 3px;
   color: #1b8b00;
 }
 
+/* @media (min-width: 1365px) {
+  .footer {
+    background-attachment: fixed;
+  }
+} */
+
 .planet {
   display: flex;
   flex-direction: column;
