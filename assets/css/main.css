@@ -624,13 +624,13 @@ section {
 }
 
 .about .container .icon-box {
-  padding: 60px 30px;
+  padding: 10px 10px;
   position: relative;
   overflow: hidden;
   background: white;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 0 29px 0 black;
-  border-radius: 8px;
+  
+  /*border-radius: 8px 8px 100px;*/
   z-index: 1;
   height: 100%;
   width: 100%;
@@ -668,7 +668,7 @@ section {
 }
 
 .about .icon-box:hover {
-  box-shadow: 0 0 29px 0 #1b8b00;
+  transform: scale(1.1)
 }
 
 /*.about .icon-box:hover .title a,
@@ -713,6 +713,88 @@ section {
   font-style: oblique;
 }
 
+/* Styling to make the demo look purrrty! */
+.container1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#wrapper {
+  cursor: pointer;
+  overflow: visible;
+}
+
+#wrapper svg {
+  margin-top: 10vh;
+  transform: scale(4.8);
+  margin-bottom: 18Vh;
+  
+}
+
+/* Styles for the actual interaction */
+#wrapper svg {
+  position: relative;
+  bottom: 8px;
+  overflow: visible;
+}
+
+#wrapper svg .leaf {
+  transform: scale(1);
+  transform-origin: center 90px;
+  animation: shrink 0.6s 0s 1 reverse forwards;
+}
+
+#wrapper:hover svg .leaf {
+  animation: grow 0.6s 0s 1 normal forwards;
+}
+
+@keyframes grow {
+  to {
+    transform: scale(1.08) rotate(-1deg);
+  }
+}
+  
+@keyframes shrink {
+  to {
+    transform: scale(1.08) rotate(-1deg);
+  }
+}
+
+.about #p1{
+  margin-bottom: 0;
+  color: #6f6f6f;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.about #p2{
+  
+  color: #6f6f6f;
+  font-size: 32px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 10px;
+}
+
+
+#d4{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+#im1{
+  align-items: center;
+  
+  height: 200px; 
+  width: 200px;
+  left: 200px;
+}
+
 
 
 
@@ -725,7 +807,7 @@ section {
 }
 
 .features .nav-link {
-  box-shadow: 0 0 29px 0 green;
+  
   padding: 15px;
   transition: 0.3s;
   
@@ -747,23 +829,15 @@ section {
   font-weight: 600;
   margin: 0;
 }
-
-.features .nav-link:hover {
-  background: hsla(108, 100%, 22%, 1);
-
-  background: linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
-
-  background: -moz-linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
-
-  background: -webkit-linear-gradient(75deg, hsla(108, 100%, 22%, 1) 0%, hsla(139, 100%, 28%, 1) 100%);
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#166E00", endColorstr="#00902D", GradientType=1 );
-
-  border-color: #1b8b00;
-
-  color: white;
-
+#d5{
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  padding-bottom: 0px;
+  position: relative;
 }
+
 .features .tab-content p{
   font-size: normal;
   color: black;
@@ -822,7 +896,25 @@ section {
 }
 
 .features img{
-  border-radius: 20px;
+  border-radius: 40px;
+}
+
+.features .button {
+  background-color: rgb(1, 93, 0);
+  border: none;
+  
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+.features .button a{
+  color: white;
 }
 
 /*--------------------------------------------------------------
@@ -1761,7 +1853,7 @@ padding: 3px;
   align-items: center;
   justify-content: space-around;
   top: 400px;
-  bottom: 50px;
+  bottom: 0px;
 }
 
 .team .member .social a {
