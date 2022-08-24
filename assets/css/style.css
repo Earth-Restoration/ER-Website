@@ -97,6 +97,10 @@
   transition: 0.5s;
 }
 
+.contentBox h6 {
+   color: white;
+}
+
 .container-02 .glassmorphic-card1 .contentBox:before {
   position: absolute;
   top: -50px;
@@ -113,7 +117,7 @@
 
 .container-02 .glassmorphic-card1 .contentBox p {
   font-size: 1em;
-  color:black;
+  color:white;
   font-weight: 300;
 }
 
