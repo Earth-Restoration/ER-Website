@@ -781,7 +781,8 @@ section {
   font-size: 32px;
   font-weight: 500;
   text-align: center;
-  margin-top: 10px;
+  padding-bottom: 0px;
+  padding-top: 20px;
 }
 
 
@@ -826,36 +827,21 @@ section {
   background-color: white;
 }
 
-.features .nav-link {
-  
-  padding: 15px;
-  transition: 0.3s;
-  
-  border-radius: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 80px;
-  border-radius: 10px;
+.features .container{
+  padding-top: opx;
 }
 
-.features .nav-link i {
-  padding-right: 15px;
-  font-size: 48px;
-}
-
-.features .nav-link h4 {
-  font-size: 18px;
-  font-weight: 600;
-  margin: 0;
-}
 #d5{
   font-size: 32px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  margin-top: 0px;
-  padding-bottom: 0px;
+  font-weight: 700;
+  color: #000;
+  padding-top: 0px;
   position: relative;
+  text-align: center;
+}
+
+#d5:hover{
+  transform: scale(1.1);
 }
 
 .features .tab-content p{
@@ -922,20 +908,33 @@ section {
 .features .button {
   background-color: rgb(1, 93, 0);
   border: none;
-  
+  position: absolute;
   padding: 15px 32px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  align-items: center;
   border-radius: 30px;
 }
 
+.features .button:hover{
+  transform: scale(1.1)
+}
 .features .button a{
   color: white;
 }
+
+.flex-parent {
+  display: flex;
+  padding-bottom: 30px;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.pra-gra{
+  padding-top: 10px;
+}
+
 
 /*--------------------------------------------------------------
 # Clients Section
