@@ -718,10 +718,6 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-left: 60px;
-  padding-right: 20px;
-  padding-bottom: 30px;
-  padding-top: 20px;
 }
 
 #wrapper {
@@ -732,9 +728,9 @@ section {
 #wrapper svg {
   margin-top: 10vh;
   transform: scale(4.8);
-  margin-bottom: 8Vh;
+  margin-bottom: 18Vh;
   
- }
+}
 
 /* Styles for the actual interaction */
 #wrapper svg {
@@ -766,54 +762,37 @@ section {
 }
 
 .about #p1{
-  color: #000;
-  font-size: normal;
+  margin-bottom: 0;
+  color: #6f6f6f;
+  font-size: 20px;
   font-weight: 500;
-  margin-bottom: 0px;
-  padding-left: 25px;
-  padding-bottom: 5px;
-  padding-top: 0px;
 }
 
 .about #p2{
   
-  color: #000;
+  color: #6f6f6f;
   font-size: 32px;
   font-weight: 500;
   text-align: center;
-  padding-bottom: 0px;
-  padding-top: 20px;
+  margin-top: 10px;
 }
 
 
 #d4{
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 0px;
-  margin-top: 20px;
-  padding-bottom: 0px;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 40px;
+  padding-bottom: 20px;
   position: relative;
-  padding-left: 25px;
-  padding-top: 15px;
 }
 
 #im1{
   align-items: center;
-  padding-right: 15px;
+  
   height: 200px; 
   width: 200px;
   left: 200px;
-  padding-top: 20px;
-  padding-bottom: 0px;
-}
-
-#im2{
-  align-items: center;
-  padding-right: 25px;
-  height: 200px; 
-  width: 200px;
-  left: 200px;
-  padding-top: 20px;
 }
 
 
@@ -827,21 +806,36 @@ section {
   background-color: white;
 }
 
-.features .container{
-  padding-top: opx;
+.features .nav-link {
+  
+  padding: 15px;
+  transition: 0.3s;
+  
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  border-radius: 10px;
 }
 
+.features .nav-link i {
+  padding-right: 15px;
+  font-size: 48px;
+}
+
+.features .nav-link h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
 #d5{
   font-size: 32px;
-  font-weight: 700;
-  color: #000;
-  padding-top: 0px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  padding-bottom: 0px;
   position: relative;
-  text-align: center;
-}
-
-#d5:hover{
-  transform: scale(1.1);
 }
 
 .features .tab-content p{
@@ -908,33 +902,20 @@ section {
 .features .button {
   background-color: rgb(1, 93, 0);
   border: none;
-  position: absolute;
+  
   padding: 15px 32px;
   text-align: center;
-  align-items: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
   border-radius: 30px;
 }
 
-.features .button:hover{
-  transform: scale(1.1)
-}
 .features .button a{
   color: white;
 }
-
-.flex-parent {
-  display: flex;
-  padding-bottom: 30px;
-}
-
-.jc-center {
-  justify-content: center;
-}
-
-.pra-gra{
-  padding-top: 10px;
-}
-
 
 /*--------------------------------------------------------------
 # Clients Section
@@ -3319,11 +3300,11 @@ padding: 3px;
   color: #1b8b00;
 }
 
-/* @media (min-width: 1365px) {
+@media (min-width: 1365px) {
   .footer {
     background-attachment: fixed;
   }
-} */
+}
 
 .planet {
   display: flex;
