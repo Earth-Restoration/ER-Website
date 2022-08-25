@@ -3222,7 +3222,7 @@ padding: 3px;
 
 .footer .social-links a:hover {
   color: #fff;
-  border-color: #fff;
+  border-color: #1b8b00;
 }
 
 .footer h4 {
@@ -3236,7 +3236,7 @@ padding: 3px;
   margin-bottom: 30px;
 }
 
-.footer .footer-links ul {
+/* .footer .footer-links ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -3264,10 +3264,22 @@ padding: 3px;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
+} */
+
+/* .footer .footer-links ul a:hover {
+  color: #fff;
+} */
+
+.footer .footer-links p {
+  line-height: 26px;
 }
 
-.footer .footer-links ul a:hover {
+.footer .footer-links p a{
   color: #fff;
+}
+
+.footer .footer-links p a:hover{
+  color: #1b8b00;
 }
 
 .footer .footer-contact p {
