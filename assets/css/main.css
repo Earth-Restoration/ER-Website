@@ -917,6 +917,8 @@ section {
   color: white;
 }
 
+
+
 /*--------------------------------------------------------------
 # Clients Section
 --------------------------------------------------------------*/
@@ -3186,6 +3188,7 @@ padding: 3px;
 .footer .footer-info .logo {
   line-height: 0;
   margin-bottom: 25px;
+  
 }
 
 .footer .footer-info .logo img {
@@ -3201,7 +3204,7 @@ padding: 3px;
   font-family: var(--font-primary);
 }
 
-.footer .footer-info p {
+.footer .footer-info .weare p {
   font-size: 14px;
   font-family: var(--font-primary);
 }
@@ -3230,51 +3233,59 @@ padding: 3px;
   font-weight: bold;
   position: relative;
   padding-bottom: 12px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .footer .footer-links {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
-/* .footer .footer-links ul {
+
+
+
+.footer .footer-links .tablist ul {
+
   list-style: none;
-  padding: 0;
+  padding-top: 17px;
   margin: 0;
 }
 
-.footer .footer-links ul i {
+.footer .footer-links .tablist ul i {
   padding-right: 2px;
   color: rgb(0, 131, 116, 0.8);
   font-size: 12px;
   line-height: 0;
 }
 
-.footer .footer-links ul li {
-  padding: 5px 0;
+.footer .footer-links .tablist ul li {
+  padding: 5px;
   display: flex;
   align-items: center;
 }
 
-.footer .footer-links ul li:first-child {
+.footer .footer-links .tablist ul li:first-child {
   padding-top: 0;
 }
 
-.footer .footer-links ul a {
+.footer .footer-links .tablist ul a {
   color: rgba(255, 255, 255, 0.7);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
-} */
+}
 
-/* .footer .footer-links ul a:hover {
+.footer .footer-links .tablist ul a:hover {
   color: #fff;
-} */
+} 
 
 .footer .footer-links p {
   line-height: 26px;
 }
 
+
 .footer .footer-links p a{
+
   color: #fff;
 }
 
@@ -3284,6 +3295,8 @@ padding: 3px;
 
 .footer .footer-contact p {
   line-height: 26px;
+  text-align: center;
+  padding-top: 17px;
 }
 
 .footer .footer-contact p a{
@@ -3293,6 +3306,8 @@ padding: 3px;
 .footer .footer-contact p a:hover{
   color: #1b8b00;
 }
+
+
 
 .footer .copyright {
   text-align: center;
