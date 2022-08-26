@@ -2,7 +2,24 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+.carousel-item {
+    height: 650px;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    /* background-size: cover; */
+  }
 
+  .caurosel {
+    margin: 0px;
+    padding-top: 10px;
+  }
+
+  .contend {
+    padding-top: 10px;
+  }
 
 .forstryH2 {
     font-weight: bold;
@@ -11,14 +28,10 @@
     margin-bottom: 30px;
 }
 
-
-.cardContainer {
-    justify-content: center;
-    align-items: center;
-    padding: 0%;
-    border-radius: 10px;
+.blogcard {
+    margin: 0px;
+    padding: opx;
 }
-
 
 .row {
     display: flex;
