@@ -3412,3 +3412,74 @@ padding: 3px;
     background-position: 162.5%;
   }
 }
+
+
+.sdg {
+  background-image: url(../img/bg_SDG.jpeg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.wrapper{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.wrapper .card{
+  position: relative;
+  max-width: 180px;
+  height: 165px;
+  background: rgba(255, 255, 255, 0.8);
+  margin: 20px 10px; 
+  padding: 10px 15px;
+  display: flex;
+  box-shadow: 0 6px 10p silver;
+  transition: .3s ease;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.wrapper .card:hover{
+  height: 470px;
+}
+
+.wrapper .card .image{
+  position: relative;
+  width: 90%;
+  top: 5px;
+  right: 5;
+  left: 5px;
+  z-index: 1;
+  margin-left: 3px;
+
+}
+.wrapper .card .image img{
+  max-width: 100%;
+  border-radius: 10px;
+}
+.wrapper .card p{
+  font-size: 11px;
+  margin-top: 20px;
+}
+.wrapper .card .content{
+  background-position: relative;
+  margin-top: 140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: #222;
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s ease;
+}
+.wrapper .card:hover .content{
+  visibility: visible;
+  opacity: 1;
+  margin-top: -18px;
+  transition-delay: .3s;
+}
