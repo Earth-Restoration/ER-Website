@@ -1,0 +1,16 @@
+.blog3{
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../assets/img/community/card/image3.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.bp{
+    font-size: medium;
+    color: #fff;
+}
