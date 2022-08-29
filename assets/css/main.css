@@ -853,7 +853,7 @@ section {
 #wrapper svg {
   margin-top: 10vh;
   transform: scale(4.8);
-  margin-bottom: 18Vh;
+  margin-bottom: 8vh;
   
 }
 
@@ -907,7 +907,7 @@ section {
   font-size: 32px;
   font-weight: 600;
   margin-bottom: 10px;
-  margin-top: 40px;
+  margin-top: 0px;
   padding-bottom: 20px;
   position: relative;
 }
@@ -2058,7 +2058,7 @@ padding: 3px;
 .footer {
   font-size: 14px;
   background: #071B04;
-  padding: 50px 0;
+  padding: 50px;
   color: white;
 }
 
@@ -2164,9 +2164,12 @@ padding: 3px;
   background-color:#071B04;
   border-style: solid;
   border-color: #fff;
-  min-width: 200px;
+  border-width: 1.5px;
+  min-width: 145px;
   border-radius: 10px;
-  padding: 12px 16px;
+  padding: 5px 5px;
+  padding-bottom: 0px;
+  padding-right: opx;
   z-index: 1;
 }
 
@@ -2175,7 +2178,8 @@ padding: 3px;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
-  padding-bottom: 8px;
+  padding-bottom: 5px;
+  padding-right: 0px;
 }
 .footer .footer-links .tablist .dropdown .dropdown-content li a:hover {
   color: #fff;
@@ -2262,16 +2266,18 @@ padding: 3px;
   }
 }
 
-hr.new4 {
+/*hr.new4 {
+  color: #fff;
   border: 2px solid #fff;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 
 hr.new4:hover{
   transform: scale(1.1);
   color: #1b8b00;
   transition-delay: 0.3s;
-}
+}*/
+
 
 .planet {
   display: flex;
