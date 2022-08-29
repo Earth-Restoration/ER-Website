@@ -37,6 +37,10 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/glacier_design.css" rel="stylesheet">
 
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+
+    <script src="./assets/js/Community.js"></script>
+
     <!-- =======================================================
   * Template Name: Impact - v1.0.0
   * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
@@ -65,81 +69,67 @@
         </div>
     </section><!-- End Top Bar -->
 
-    <header id="header" class="header d-flex align-items-center">
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <img src="assets/img/ER LOGO1.png" alt="logo" />
-                <p class="display-6 text-muted justify-content-center align-items-center mb-0"> Earth Restoration</p>
-            </a>
+    <header id="header" class="header d-flex align-items-center size">
+
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between mt-2 ">
+            <div>
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <!-- Uncomment the line below if you also wish to use an image logo -->
+                    <img src="assets/img/ER LOGO1.png" alt="logo" />
+                    <p class="display-6 text-muted justify-content-center align-items-center m-0"> Earth Restoration</p>
+                </a>
+            </div>
             <nav id="navbar" class="navbar">
                 <ul class="navStyle">
-                    <li><a href="Local_community.html">Local Community</a></li>
-
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./index.html#hero">Home</a></li>
+                    <li><a href="./index.html#about">Who we are </a></li>
+                    <li class="dropdown"><a href="#"><span>Blogs</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="Local_community.html">Local Community</a></li>
+                            <li><a href="global_community.html">global community</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./index.html#contact">Contact Us</a></li>
                 </ul>
             </nav><!-- .navbar -->
+
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
         </div>
     </header><!-- End Header -->
+    <!-- End Header -->
 
 
-    <section class="caurosel">
-
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active"
-                    style="background-image: url('./assets/img/community/card/card7.jpg')">
-                    <div class="carousel-caption">
-                        <h5>First slide label</h5>
-                        <p>Some representative placeholder content for the first slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background-image: url('./assets/img/community/card/card8.jpg')">
-                    <div class="carousel-caption">
-                        <h5>Second slide label</h5>
-                        <p>Some representative placeholder content for the second slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background-image: url('./assets/img/community/card/card9.jpg!d')">
-                    <div class="carousel-caption">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-                <div class="carousel-item" style="background-image: url('./assets/img/community/card/card10.jpg')">
-                    <div class="carousel-caption">
-                        <h5>Third slide label</h5>
-                        <p>Some representative placeholder content for the third slide.</p>
-                    </div>
-                </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+    <section class="image-slider">
+        <div class="centered1">
+            <h3>BioMass</h3>
+            <p>Biomass is plant-based material used as fuel to produce heat or electricity. Examples are wood and wood residues, energy crops, agricultural residues, and waste from industry, farms and households.</p>
         </div>
-    </section>
+        <div class="container1">           
+            <div class="slideimage slide1 active1">
+                
+            </div>
+            
+            <div class="slideimage slide2">
+                
+            </div>
+            
+            <div class="slideimage slide3">
+
+            </div>
+            
+            <div class="slideimage slide4">
+
+            </div>
+        
+          </div>  
+     </section>
+
     <section class="contend">
         <div class="forestrySection container" data-aos="fade-up">
-            <h2 class="forstryH2"> Photosynthetic Biomass </h2>
+            <h2 class="forstryH2"> Photosynthetic Biomass</h2>
             <div class="d-flex flex-wrap">
                 <div class="col d-flex align-items-center justify-content-center     text-justify">
                     <p class="container"> We back our wealth claims with living matter that is capable of generating
@@ -371,6 +361,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
     <script src="./assets/js/Community.js"></script>
 
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 
 </body>
 
