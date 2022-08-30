@@ -1047,6 +1047,8 @@ section {
   color: white;
 }
 
+
+
 /*--------------------------------------------------------------
 # Our Services Section
 --------------------------------------------------------------*/
@@ -2287,7 +2289,7 @@ hr.new4:hover{
   margin-bottom: 50px;
 }
 
-.planet .container {
+.planet .container{
   width: 100%;
   display: flex;
   justify-content: center;
