@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 .carousel-item {
-    height: 600px;
+    height: 650px;
     min-height: 350px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
@@ -12,20 +12,150 @@
     background-size: cover;
   }
 
+  .size {
+    height: 60px;
+  }
+
   .caurosel {
     margin: 0px;
-    padding-top: 10px;
+    padding: 10px 0;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .centered1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+  }
+
+  .centered h3{
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 4px 3px rgb(0, 0, 0);
+  }
+
+  .centered p {     
+    font-size: 20px;
+    color: white;
+
+    text-align: center;
+    text-shadow: 2px 4px 3px rgb(0, 0, 0);
+}
+
+  .centered1 p {
+        
+        font-size: 18px;
+        color: white;
+       
+        text-align: center;
+        text-shadow: 2px 4px 3px rgb(0, 0, 0);
+  }
+
+  .centered1 h3{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 4px 3px rgb(0, 0, 0);
+    font-weight: bold;
   }
 
   .contend {
-    padding-top: 10px;
+    padding: 10px 0;
   }
+
+
+  .image-slider {
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+
+.container1 {
+    width: 100%;
+    height: 600px;
+    padding-top: 10px;  
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    box-shadow: 0px 3px 15px
+}
+.slideimage {
+    min-width: 10px;
+    width: 50px;
+    height: 100%;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 3px 3px 5px black;
+    opacity: .5;
+}
+
+
+.active1 {
+    flex-grow: 1;
+    transition-duration: 1s;
+    opacity: 1;
+    padding: 0 10px;
+    border-radius: 25px;
+    padding-bottom: 10px
+}
+.nonActive{
+    flex-grow: 0;
+      opacity: .5
+}
+.slideimage:nth-of-type(1){
+    background-image: url('../img/community/card/card7.jpg')
+}
+.slideimage:nth-of-type(2){
+    background-image: url('../img/community/card/card8.jpg')
+}
+.slideimage:nth-of-type(3){
+    background-image: url('../img/community/card/card9.jpg!d')
+}
+.slideimage:nth-of-type(4){
+    background-image: url('../img/community/card/card10.jpg')
+}
+/* .slide:nth-of-type(5){
+    background-image: url('https://mcdn.wallpapersafari.com/medium/7/54/v7t0ST.jpg')
+}
+.slide:nth-of-type(6){
+    background-image: url('https://mcdn.wallpapersafari.com/medium/16/66/Iv6KfC.jpg')
+} */
+
+@media screen and (max-width: 700px) {
+    .slideimage{
+        width: 20px;
+    }
+    .active1{
+        border-radius: 25px
+    }
+    .centered1 {
+        display: none;
+    }
+}
+
 
 .forstryH2 {
     font-weight: bold;
     text-align: center;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .blogcard {
