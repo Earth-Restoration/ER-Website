@@ -14,3 +14,18 @@
     font-size: medium;
     color: #fff;
 }
+
+.blogContent {
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.paragraph {
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.paragraph p {
+    text-align: justify;
+}
+
