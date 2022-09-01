@@ -8,8 +8,16 @@
 #hero-ban{
   width: 100%;
   position: relative;
-  background: var(--color-primary);
-  padding-bottom: 30px;
+  background: hsla(116, 80%, 16%, 1);
+
+  background: linear-gradient(135deg, hsla(116, 80%, 16%, 1) 0%, hsla(112, 100%, 25%, 1) 42%, hsla(109, 97%, 57%, 1) 100%);
+  
+  background: -moz-linear-gradient(135deg, hsla(116, 80%, 16%, 1) 0%, hsla(112, 100%, 25%, 1) 42%, hsla(109, 97%, 57%, 1) 100%);
+  
+  background: -webkit-linear-gradient(135deg, hsla(116, 80%, 16%, 1) 0%, hsla(112, 100%, 25%, 1) 42%, hsla(109, 97%, 57%, 1) 100%);
+  
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0C4908", endColorstr="#117F00", GradientType=1 );
+	padding-bottom: 30px;
   padding-top: 30px;
 }
 
@@ -18,7 +26,7 @@
 	min-height: 400px;
 	position: relative;
   width: 100%;
-  background: var(--color-primary);
+ 
   padding-bottom: 30px;
   padding-top: 30px;
 }
@@ -198,3 +206,121 @@ padding-top: 20PX;
 /*-----End Section---*/
 
 
+
+/*-----Body------*/
+
+
+
+.body .icon-box {
+	padding-bottom: 0px;
+	padding-top: 0px;
+  }
+  
+  @media (min-width: 1200px) {
+	.about .icon-boxes:before {
+	  content: "";
+	  position: relative;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  height: calc(50% + 20px);
+	  background-color: #fff;
+	  border: 20px #151515;
+	}
+  }
+  
+  .body .container .icon-box {
+	
+	position: relative;
+	
+	background: white;
+	transition: all 0.3s ease-in-out;
+	
+	
+	
+  }
+  
+  .body .icon-box:hover img {
+	transform: scale(1.1)
+  }
+  
+  
+  .about .icon-box p{
+	font-size: normal;
+	color:black;
+	font-size: normal;
+	font-weight: 500;
+  }
+  
+  .heading{
+	color: white;
+	width: 0ch;
+	overflow: hidden;
+	white-space: nowrap;
+	animation: text 8s steps(15) infinite alternate;
+	border-right: 3px solid white;
+	font-size: 60px;
+  }
+  @keyframes text {
+	0% {
+	  width: 0ch;
+	}
+	50% {
+	  width: 15ch;
+	}
+  }
+  .para{
+	font-family: Cursive;
+	font-weight: 1000;
+	font-style: oblique;
+  }
+
+  
+  .about #p1{
+	margin-bottom: 0;
+	color: #6f6f6f;
+	font-size: 20px;
+	font-weight: 500;
+  }
+  
+  .about #p2{
+	
+	color: #6f6f6f;
+	font-size: 32px;
+	font-weight: 500;
+	text-align: center;
+	margin-top: 10px;
+  }
+  
+  
+  #d4{
+	font-size: 32px;
+	font-weight: 600;
+	margin-bottom: 10px;
+	margin-top: 0px;
+	padding-bottom: 20px;
+	position: relative;
+  }
+  
+  #img-01{
+	height: 550px; 
+	width: 500px;
+	padding-left: 20px;
+	padding-right: 20px;
+  }
+  
+  #img-02{
+	height: 500px; 
+	width: 550px;
+	padding-left: 20px;
+	padding-right: 20px;
+	
+  }
+  @media(max-width: 320px){
+	#img-01 {
+		width: 50px;
+		height: 50px;
+	}
+}
+
+  /*---End Section---*/
