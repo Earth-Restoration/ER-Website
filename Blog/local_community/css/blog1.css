@@ -8,15 +8,8 @@
 #hero-ban{
   width: 100%;
   position: relative;
-  background: hsla(116, 80%, 16%, 1);
-
-  background: linear-gradient(135deg, hsla(116, 80%, 16%, 1) 0%, hsla(112, 100%, 25%, 1) 42%, hsla(109, 97%, 57%, 1) 100%);
-  
-  background: -moz-linear-gradient(135deg, hsla(116, 80%, 16%, 1) 0%, hsla(112, 100%, 25%, 1) 42%, hsla(109, 97%, 57%, 1) 100%);
-  
-  background: -webkit-linear-gradient(135deg, hsla(116, 80%, 16%, 1) 0%, hsla(112, 100%, 25%, 1) 42%, hsla(109, 97%, 57%, 1) 100%);
-  
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0C4908", endColorstr="#117F00", GradientType=1 );
+  background: rgb(3,92,18);
+background: linear-gradient(144deg, rgba(3,92,18,1) 0%, rgba(14,87,23,1) 6%, rgba(11,107,19,1) 31%, rgba(7,126,14,1) 46%, rgba(22,161,16,1) 72%, rgba(60,201,27,1) 88%, rgba(73,219,9,1) 100%);
 	padding-bottom: 30px;
   padding-top: 30px;
 }
@@ -225,19 +218,14 @@ padding-top: 20PX;
 	  right: 0;
 	  height: calc(50% + 20px);
 	  background-color: #fff;
-	  border: 20px #151515;
+	  
 	}
   }
   
   .body .container .icon-box {
-	
 	position: relative;
-	
 	background: white;
 	transition: all 0.3s ease-in-out;
-	
-	
-	
   }
   
   .body .icon-box:hover img {
@@ -303,23 +291,30 @@ padding-top: 20PX;
   }
   
   #img-01{
-	height: 550px; 
-	width: 500px;
+	height: 600px; 
+	width: 600px;
 	padding-left: 20px;
 	padding-right: 20px;
   }
   
   #img-02{
-	height: 500px; 
-	width: 550px;
+	height: 600px; 
+	width: 650px;
 	padding-left: 20px;
 	padding-right: 20px;
 	
   }
-  @media(max-width: 320px){
+  @media(max-width: 550px){
 	#img-01 {
-		width: 50px;
-		height: 50px;
+		width: 400px;
+		height: 400px;
+	}
+}
+
+@media(max-width: 550px){
+	#img-02 {
+		width: 500px;
+		height: 400px;
 	}
 }
 
