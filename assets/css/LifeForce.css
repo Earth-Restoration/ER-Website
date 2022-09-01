@@ -130,11 +130,13 @@
   padding-top: 80px;
   font-size: 25px;
   font-weight: 1000;
+  text-align: center;
 }
 .con-right p{
   margin: 20px 0;
   font-weight: 1000;
   line-height: 25px;
+  text-align: justify;
 }
 @media only screen and (max-width: 768px){
   .about-container{
@@ -153,14 +155,19 @@
   }
 }
 .LF-container{
-  margin: 20px auto;
+  /* margin: 20px auto; */
   width: 75%;
   padding: 8px;
 }
 .LF-container img{
   float: right;
-  width: 350px;
-  height: 300px;   
+  width: 400px;
+  height: 350px;
+  margin-left: 50px;  
+  margin-bottom: 20px; 
+}
+.LF-container img:hover{
+  transform: scale(1.15); 
 }
 .LF-container .LF-text p{
   text-align: justify;
