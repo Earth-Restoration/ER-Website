@@ -84,7 +84,7 @@
 
 /* about section */
 .About-heading{
-  background: #dedede;
+  background: #fefefe;
   
 }
 .About-heading h1{
@@ -98,7 +98,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #dedede;
+  background-color: #fefefe;
   margin-top: -50px;
 }
 .about-container{
@@ -118,12 +118,11 @@
 .con-right{
   width: 50%;
   min-height: 400px;
-  background-color: rgba(255,255,255,0.5);
-  /* display: flex; */
+  background-color: rgba(0,0,0,0.2);
   align-items: center;
   justify-content: center;
   padding: 30px;
-  color: #2e2e2e;
+  color: #fff;
   margin-left: -150px;
   border-radius: 8px;
 }
@@ -134,7 +133,7 @@
 }
 .con-right p{
   margin: 20px 0;
-  font-weight: 500;
+  font-weight: 1000;
   line-height: 25px;
 }
 @media only screen and (max-width: 768px){
@@ -152,4 +151,18 @@
       margin-top: -150px;
       height: 300px;
   }
+}
+.LF-container{
+  margin: 20px auto;
+  width: 75%;
+  padding: 8px;
+}
+.LF-container img{
+  float: right;
+  width: 350px;
+  height: 300px;   
+}
+.LF-container .LF-text p{
+  text-align: justify;
+  padding-top: 20px;
 }
