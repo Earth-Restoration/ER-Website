@@ -1,0 +1,168 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* btn css */
+
+.btn_lf{
+  font-size: 18px;
+  width: 100px;
+  height: 40px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  background-color: white;
+  color: black;
+  border: 2px solid #228c22;
+}
+.btn_lf:hover{
+  background: rgba(34, 140, 34, 1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  cursor: pointer;
+}
+
+/* Banner CSS */
+.LF-banner{
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.LF-content{
+  text-align: center;
+}
+.LF-content h1{
+  font-size: 120px;
+  font-family: 'Futara';
+  color: #fff;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.LF-content h1:hover{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent; 
+}
+
+.LF-content p{
+  font-size: 25px;
+  font-family: 'Calisto MT';
+  color: #fff;
+  margin-top: 10px;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.video-LFbanner{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9){
+  .video-LFbanner{
+      width: 100%;
+      height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9){
+  .video-LFbanner{
+      width: auto;
+      height: 100%;
+  }
+}
+
+/* about section */
+.About-heading{
+  background: #fefefe;
+  
+}
+.About-heading h1{
+  padding-top: 50px;
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+.Lf-about{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fefefe;
+  margin-top: -50px;
+}
+.about-container{
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.con-left{
+  width: 55%;
+  height: 500px;
+  background: url(../img/LifeForce/about2.png) no-repeat center / cover;
+  border-radius: 8px;
+}
+.con-right{
+  width: 50%;
+  min-height: 400px;
+  background-color: rgba(0,0,0,0.2);
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  color: #fff;
+  margin-left: -150px;
+  border-radius: 8px;
+}
+.con-right h1{
+  padding-top: 80px;
+  font-size: 25px;
+  font-weight: 1000;
+}
+.con-right p{
+  margin: 20px 0;
+  font-weight: 1000;
+  line-height: 25px;
+}
+@media only screen and (max-width: 768px){
+  .about-container{
+      flex-direction: column;
+  }
+  .con-left{
+      width: 100%;
+      margin-top: 40px;
+      height: 300px;
+  }
+  .con-right{
+      width: 80%;
+      margin: 0;
+      margin-top: -150px;
+      height: 300px;
+  }
+}
+.LF-container{
+  margin: 20px auto;
+  width: 75%;
+  padding: 8px;
+}
+.LF-container img{
+  float: right;
+  width: 350px;
+  height: 300px;   
+}
+.LF-container .LF-text p{
+  text-align: justify;
+  padding-top: 20px;
+}
