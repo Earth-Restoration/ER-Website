@@ -1,5 +1,3 @@
-
-
 .blog3 {
   width: 100%;
   height: fit-content;
@@ -231,20 +229,49 @@
   padding: 10px 0;
 }
 
-.jumbotron.jumbotron-main { 
-height: 100%;
-width: 100%;
-font-family: 'Roboto', sans-serif;
-color: #fff;
-padding-top: 0;
-padding-bottom: 0;
-position: relative;
-margin:0;
-background-repeat: no-repeat;
-background-size: cover;
-background-position: 50% 50%;
+.jumbotron1.jumbotron-main1 {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url('../assets/img/community/blog/background3.avif');
+}
 
-background-image: url('../assets/img/community/blog/backgroundblog2.jpg');
+.jumbotron2.jumbotron-main2 {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url('../assets/img/community/blog/background6.webp');
+}
+.jumbotron.jumbotron-main {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  background-image: url('../assets/img/community/blog/backgroundblog2.jpg');
 
 }
 
@@ -253,10 +280,11 @@ background-image: url('../assets/img/community/blog/backgroundblog2.jpg');
 }
 
 #particles-js {
-/* position: absolute; */
-width: 100%;
-height: 100%;
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6819e8', endColorstr='#6980f2',GradientType=1 ); /* IE6-9 */
+  /* position: absolute; */
+  width: 100%;
+  height: 100%;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6819e8', endColorstr='#6980f2', GradientType=1);
+  /* IE6-9 */
 }
 
 .centeredBio {
