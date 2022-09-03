@@ -11,47 +11,71 @@
     margin: 0px;
     padding: 10px 0;
     height: 100%;
-  }
+}
 
 .carousel-item {
-    height: 709px;
+    height: 720px;
     min-height: 350px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+}
 
-  .size {
+@media screen and (min-width: 414px) {
+    .carousel-item {
+        height: 800px;
+        /* min-height: 350px; */
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+@media screen and (min-width: 393px) {
+    .carousel-item {
+        height: 810px;
+        /* min-height: 350px; */
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
+}
+
+.size {
     height: 60px;
-  }
+}
 
-  .centered {
+.centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-  }
+}
 
-  .centered1 {
+.centered1 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-   
-  }
 
-  .centered h3{
+}
+
+.centered h3 {
     font-size: 35px;
     color: white;
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 4px 3px rgb(0, 0, 0);
-  }
+}
 
-  .centered p {     
+.centered p {
     font-size: 20px;
     color: white;
 
@@ -59,30 +83,47 @@
     text-shadow: 2px 4px 3px rgb(0, 0, 0);
 }
 
-  .centered1 p {
-        
-        font-size: 18px;
-        color: white;
-       
-        text-align: center;
-        text-shadow: 2px 4px 3px rgb(0, 0, 0);
-  }
+.centered1 p {
 
-  .centered1 h3{
+    font-size: 18px;
+    color: white;
+
+    text-align: center;
+    text-shadow: 2px 4px 3px rgb(0, 0, 0);
+}
+
+.centered1 h3 {
     font-size: 25px;
     color: white;
     font-weight: bold;
     text-align: center;
     text-shadow: 2px 4px 3px rgb(0, 0, 0);
     font-weight: bold;
-  }
+}
 
-  .contend {
-    padding: 20px 0;
-  }
+.contend {
+    padding: 10px 0;
+}
 
+/* @media (min-width: 1400px) {
+    .container {
+        max-width: 885px;
+    }
+}   */
 
-  .image-slider {
+@media (max-width:1400px) {
+    .mobileResponse {
+        max-width: 867px;
+    }
+}   
+
+/* @media (max-width: 992px){
+    .container {
+        max-width: 893px;
+    }
+} */
+
+.image-slider {
     padding-top: 0%;
     padding-bottom: 0%;
 }
@@ -90,12 +131,13 @@
 .container1 {
     width: 100%;
     height: 710px;
-    padding-top: 10px;  
+    padding-top: 10px;
     display: flex;
     margin: auto;
     justify-content: center;
     box-shadow: 0px 3px 15px
 }
+
 .slideimage {
     min-width: 10px;
     width: 50px;
@@ -121,22 +163,28 @@
     border-radius: 25px;
     padding-bottom: 10px
 }
-.nonActive{
+
+.nonActive {
     flex-grow: 0;
-      opacity: .5
+    opacity: .5
 }
-.slideimage:nth-of-type(1){
+
+.slideimage:nth-of-type(1) {
     background-image: url('../img/community/card/card7.jpg')
 }
-.slideimage:nth-of-type(2){
+
+.slideimage:nth-of-type(2) {
     background-image: url('../img/community/card/card8.jpg')
 }
-.slideimage:nth-of-type(3){
+
+.slideimage:nth-of-type(3) {
     background-image: url('../img/community/card/card9.jpg!d')
 }
-.slideimage:nth-of-type(4){
+
+.slideimage:nth-of-type(4) {
     background-image: url('../img/community/card/card10.jpg')
 }
+
 /* .slide:nth-of-type(5){
     background-image: url('https://mcdn.wallpapersafari.com/medium/7/54/v7t0ST.jpg')
 }
@@ -145,12 +193,14 @@
 } */
 
 @media screen and (max-width: 700px) {
-    .slideimage{
+    .slideimage {
         width: 20px;
     }
-    .active1{
+
+    .active1 {
         border-radius: 25px
     }
+
     .centered1 {
         display: none;
     }
@@ -188,7 +238,7 @@
     height: 450px;
     margin: 1%;
     border-radius: 20px;
-    border-color:#1b8b00;
+    border-color: #1b8b00;
     text-align: center;
 }
 
@@ -263,11 +313,11 @@
     margin: 10px 30px;
     border-color: #1b8b00;
     border-radius: 20px;
-    text-decoration:dashed ;
+    text-decoration: dashed;
 }
 
 .card:hover {
-    background-color: #1b8b00(27,139,0);
+    background-color: #1b8b00(27, 139, 0);
     color: rgb(0, 0, 0);
     cursor: pointer;
     transform: scale(1.03);

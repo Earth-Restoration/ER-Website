@@ -58,19 +58,19 @@ VanillaTilt.init(document.querySelector(".card12"), {
   speed: 200,
 });
 
-i=0 ;
-    
-    $('.slideimage').click(function(){
-       $('.active1').addClass('nonActive').find('span').empty()
-        $(this).removeClass('nonActive').addClass('active1')
-        i= $(this).index()
-    })
-    
-    setItner = setInterval(go,4000);
-    
-    function go(){
-       $('.active1').addClass('nonActive').find('span').empty()
-        $($('.slideimage')[i%4]).removeClass('nonActive').addClass('active1')
-        i++;
-    }
-    
+i = 0;
+
+$('.slideimage').click(function () {
+  $('.active1').addClass('nonActive').find('span').empty()
+  $(this).removeClass('nonActive').addClass('active1')
+  i = $(this).index()
+})
+
+setItner = setInterval(go, 4000);
+
+function go() {
+  $('.active1').addClass('nonActive').find('span').empty()
+  $($('.slideimage')[i % 4]).removeClass('nonActive').addClass('active1')
+  i++;
+}
+
