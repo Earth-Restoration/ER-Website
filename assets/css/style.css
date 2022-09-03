@@ -2,198 +2,222 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-.blogcard {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  user-select: none;
+.titleFond {
+    font-size: 33px;
 }
 
-.blogcard {
-  padding: 0%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
+
+.caurosel {
+    margin: 0px;
+    padding: 10px 0;
+    height: 100%;
 }
 
-.container-02 {
-  position: relative;
-  display: flex;
-  justify-content:flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  background-image: url(../img/community/card/card_background.jpg);
-  
+.carousel-item {
+    height: 720px;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-.contain-card {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  height: 100%;
-  width: 100%;
-  background-image: url(../img/community/card/card_background.jpg);
-  background-size: cover;
-}
-
-.avatar {
-    width: 60%;
-    border-radius: 50%;
-    margin-bottom: 16px;
-    padding: 4px;
-    
-  }
-  @keyframes borderHighlight {
-    40% {
-      border-color: transparent;
+@media screen and (min-width: 414px) {
+    .carousel-item {
+        height: 800px;
+        /* min-height: 350px; */
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
-  }
-
-.container-02 .glassmorphic-card1 {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  z-index: 1;
-  width: 320px;
-  height: 500px;
-  padding: 40px 30px;
-  margin: 28px;
-  box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
-  border-radius: 15px;
-  border-top: 1px solid rgba(255, 255, 255, 0.5);
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
-  overflow: hidden;
-  border: 2px solid #04d361;
-    animation: borderHighlight 2s ease infinite;
 }
 
-/* .container-02 .glassmorphic-card1 .imgBox {
-  position: relative;
-  text-align: center;
+@media screen and (min-width: 393px) {
+    .carousel-item {
+        height: 810px;
+        /* min-height: 350px; */
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    }
 }
 
-.container-02 .glassmorphic-card1 .imgBox i {
-  font-size: max(80px);
-  color: rgba(255, 255, 255, 0.1);
+.size {
+    height: 60px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.centered h3 {
+    font-size: 35px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 4px 3px rgb(0, 0, 0);
+}
+
+.centered p {
+    font-size: 20px;
+    color: white;
+
+    text-align: center;
+    text-shadow: 2px 4px 3px rgb(0, 0, 0);
+}
+
+.centered1 p {
+
+    font-size: 18px;
+    color: white;
+
+    text-align: center;
+    text-shadow: 2px 4px 3px rgb(0, 0, 0);
+}
+
+.centered1 h3 {
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 4px 3px rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.contend {
+    padding: 10px 0;
+}
+
+/* @media (min-width: 1400px) {
+    .container {
+        max-width: 885px;
+    }
+}   */
+
+@media (max-width:1400px) {
+    .mobileResponse {
+        max-width: 867px;
+    }
+}   
+
+/* @media (max-width: 992px){
+    .container {
+        max-width: 893px;
+    }
 } */
 
-.container-02 .glassmorphic-card1 .contentBox {
-  position: relative;
-  margin-top: 20px;
-  text-align: center;
-  transition: 0.5s;
+.image-slider {
+    padding-top: 0%;
+    padding-bottom: 0%;
 }
 
-.contentBox h6 {
-   color: white;
-   padding-bottom: 20px;
-}
-
-.container-02 .glassmorphic-card1 .contentBox:before {
-  position: absolute;
-  top: -50px;
-  left: -125px;
-  width: 100%;
-  font-size: 4em;
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 2px;
-  transform: rotate(-90deg);
-  color: rgba(0, 0, 0, 0.2);
-}
-
-
-.container-02 .glassmorphic-card1 .contentBox p {
-  font-size: 1em;
-  color:white;
-  font-weight: 300;
-}
-
-.container-02 .glassmorphic-card1 .contentBox a {
-  position: relative;
-  display: inline-block;
-  padding: 8px 20px;
-  margin-top: 15px;
-  background: #fff;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-  color: #000;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: 500;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-.container-02 .glassmorphic-card1 .contentBox a:hover {
-  position: relative;
-  display: inline-block;
-  padding: 8px 20px;
-  margin-top: 15px;
-  background: #000;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
-  border-left: 1px solid rgba(255, 255, 255, 0.1);
-  color: #fff;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: 500;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (max-width: 767px) {
-  .contain-card {
-    position: relative;
+.container1 {
+    width: 100%;
+    height: 710px;
+    padding-top: 10px;
     display: flex;
+    margin: auto;
     justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    background-image: url(../img/community/card/card_background.jpg);
-    background-size: cover;
-  }
-
-
-  .container-02:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -100px;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/community/card/card_background.jpg);
-    background-size: cover;
-    clip-path: circle(20% at 20% 20%);
-  }
+    box-shadow: 0px 3px 15px
 }
+
+.slideimage {
+    min-width: 10px;
+    width: 50px;
+    height: 100%;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 10px;
+    border-radius: 50px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 3px 3px 5px black;
+    opacity: .5;
+}
+
+
+.active1 {
+    flex-grow: 1;
+    transition-duration: 1s;
+    opacity: 1;
+    padding: 0 10px;
+    border-radius: 25px;
+    padding-bottom: 10px
+}
+
+.nonActive {
+    flex-grow: 0;
+    opacity: .5
+}
+
+.slideimage:nth-of-type(1) {
+    background-image: url('../img/community/card/card7.jpg')
+}
+
+.slideimage:nth-of-type(2) {
+    background-image: url('../img/community/card/card8.jpg')
+}
+
+.slideimage:nth-of-type(3) {
+    background-image: url('../img/community/card/card9.jpg!d')
+}
+
+.slideimage:nth-of-type(4) {
+    background-image: url('../img/community/card/card10.jpg')
+}
+
+/* .slide:nth-of-type(5){
+    background-image: url('https://mcdn.wallpapersafari.com/medium/7/54/v7t0ST.jpg')
+}
+.slide:nth-of-type(6){
+    background-image: url('https://mcdn.wallpapersafari.com/medium/16/66/Iv6KfC.jpg')
+} */
+
+@media screen and (max-width: 700px) {
+    .slideimage {
+        width: 20px;
+    }
+
+    .active1 {
+        border-radius: 25px
+    }
+
+    .centered1 {
+        display: none;
+    }
+}
+
 
 .forstryH2 {
     font-weight: bold;
     text-align: center;
     font-size: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
-
-.cardContainer {
-    justify-content: center;
-    align-items: center;
-    padding: 0%;
-    border-radius: 10px;
+.blogcard {
+    margin: 0px;
+    padding: opx;
 }
-
 
 .row {
     display: flex;
@@ -214,7 +238,7 @@
     height: 450px;
     margin: 1%;
     border-radius: 20px;
-    border-color:#1b8b00;
+    border-color: #1b8b00;
     text-align: center;
 }
 
@@ -289,11 +313,11 @@
     margin: 10px 30px;
     border-color: #1b8b00;
     border-radius: 20px;
-    text-decoration:dashed ;
+    text-decoration: dashed;
 }
 
 .card:hover {
-    background-color: #1b8b00(27,139,0);
+    background-color: #1b8b00(27, 139, 0);
     color: rgb(0, 0, 0);
     cursor: pointer;
     transform: scale(1.03);

@@ -10,6 +10,14 @@
     <meta content="" name="description">
     <meta content="" name="keywords">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/3.6.0/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -35,6 +43,7 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/glacier_design.css" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: Impact - v1.0.0
@@ -64,124 +73,265 @@
         </div>
     </section><!-- End Top Bar -->
 
-    <header id="header" class="header d-flex align-items-center">
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-            <a href="index.html" class="logo d-flex align-items-center">
-                <!-- Uncomment the line below if you also wish to use an image logo -->
-                <img src="assets/img/ER LOGO1.png" alt="logo" />
-                <p class="display-6 text-muted justify-content-center align-items-center"> Earth Restoration</p>
-            </a>
+    <header id="header" class="header d-flex align-items-center size">
+
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between mt-2">
+            <div>
+                <a href="index.html" class="logo d-flex align-items-center">
+                    <!-- Uncomment the line below if you also wish to use an image logo -->
+                    <img src="assets/img/ER LOGO1.png" alt="logo" />
+                    <!-- <p class="display-6 text-muted justify-content-center align-items-center m-0 titleFond"> Earth Restoration</p> -->
+                </a>
+            </div>
             <nav id="navbar" class="navbar">
                 <ul class="navStyle">
-                    <li><a href="global_community.html">Global Community</a></li>
-
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="./index.html#hero">Home</a></li>
+                    <li><a href="./index.html#about">Who we are </a></li>
+                    <li class="dropdown"><a href="#"><span>Blogs</span> <i
+                                class="bi bi-chevron-down dropdown-indicator"></i></a>
+                        <ul>
+                            <li><a href="Local_community.html">Local Community</a></li>
+                            <li><a href="global_community.html">global community</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./index.html#contact">Contact Us</a></li>
                 </ul>
             </nav><!-- .navbar -->
+
             <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
             <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
         </div>
     </header><!-- End Header -->
-    <section>
-    <div class="forestrySection container" data-aos="fade-up">
-        <h2 class="forstryH2"> Photosynthetic Biomass </h2>
-        <div class="d-flex flex-wrap">
-            <div class="col d-flex align-items-center justify-content-center     text-justify">
-                <p class="container"> We back our wealth claims with living matter that is capable of generating free productivity on planet Earth. EarthRestoration Foundation has unique performance DATA of individual tree species studied in a manner unlike before. We now invite technical partnerships to quantify and assess the effect of photosynthesis within the biochemical interphases of the Earths surface and biosphere.
+    <!-- End Header -->
+    
+    <section class="caurosel">
 
-                    <br><br>EarthRestoration recognizes that :<br><br>
-                    
-                    The Photosynthetic component of biomass is the generator of life.
-                    
-                    By increasing the surface area available for photosynthesis on our planet we hope to build value chains and begin to incentivize citizens to trade a new wealth that is  positively correlated with the health of regional ecosystems as well as our atmosphere.
-                </p>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
             </div>
-            <div class="col d-flex align-items-center justify-content-center ">
-                <img src="./assets/img/community/biomass.png" alt="Analog Forestry">
+            <div class="carousel-inner">
+                <div class="carousel-item active"
+                    style="background-image: url('./assets/img/community/card/card61.jpg')">
+                    <div class="centered">
+                        <h3 >Analog Forestry</h3>
+                        <p>Analog Forestry is an approach to ecological restoration which uses natural forests as guides to create ecologically stable and socio-economically productive landscapes.</p>
+                    </div>
+                </div>
+                <div class="carousel-item"
+                    style="background-image: url('./assets/img/community/card/card_background.jpg')">
+                    <div class="centered">
+                        <h3>Analog Forestry</h3>
+                        <p>Planting forests that are similar in architectural structures and ecological functions to the original climax forest.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('./assets/img/community/card/card3.jpeg')">
+                    <div class=" centered">
+                        <h3>Analog Forestry Method</h3>
+                        <p>Design based on native forest structure, as described by a physical analysis.</p>
+                    </div>
+                </div>
+                <div class="carousel-item" style="background-image: url('./assets/img/community/card/card3.jpg')">
+                    <div class="centered">
+                        <h3>Analog Forestry Method</h3>
+                        <p>Species are chosen to fill structural niches and economic needs while bringing economic and other benefits.</p>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+    </section>
+
+    <section class="contend">
+        <div class="forestrySection container" >
+            <h2 class="forstryH2"> What is Analog Forestry </h2>
+            <div class="d-flex flex-wrap"  data-aos="fade-up">
+                <div class="col d-flex align-items-center justify-content-center text-justify">
+                    <p class="container"> Analog Forestry is an approach to ecological restoration which uses natural
+                        forests as guides to
+                        create
+                        ecologically stable and socio-economically productive landscapes. Analog Forestry is a complex
+                        and
+                        holistic form of silviculture, which minimizes external inputs, such as agrochemicals and fossil
+                        fuels,
+                        instead fostering ecological function for resilience and productivity. Analog Forestry values
+                        not
+                        only
+                        ecological sustainability, but recognizes local rural communities’ social and economic needs,
+                        which
+                        can
+                        be met through the production of a diversity of useful and marketable goods and services,
+                        ranging
+                        from
+                        food to pharmaceuticals and fuel to fodder.
+                    </p>
+                </div>
+                <div class="col d-flex align-items-center justify-content-center ">
+                    <img src="./assets/img/community/analog-forestry.png" alt="Analog Forestry">
+                </div>
             </div>
         </div>
-    </div>
     </section>
 
 
-    <section class='cardContainer' data-aos="fade-up">
+    <section class="blogcard">
 
-        <div class='row' data-aos="fade-up">
-            <div class='card'>
-                <div class='card-image-containor card-1'></div>
-                <h6 class="fond-bold">Why Small Farms will be the backbone of food security</h6>
-                <p>The ecological axiom that: ‘Energy flow through a system tends to organise and simplify that system’,
-                    is abundantly clear in agriculture. </p>
-                <a href="">Read More</a>
+        <div class="container-02">
+            <div class="contain-card">
+                <div class="glassmorphic-card1" data-aos="fade-right">
+                    <div class="contentBox">
+
+                        <h6 class="font-weight-bold">Why Small Farms will be the backbone of food security</h6>
+                        <p>
+                            the ecological axiom that: ‘Energy flow through a system tends to organise and simplify that
+                            system’, is abundantly clear in agriculture. As farms moved from small interdependent units,
+                        </p>
+                        <a href="Blog\local_community\Why_Small_Farms.html"><span>Read More</span></a>
+                    </div>
+                </div>
+
+                <div class="glassmorphic-card1 card2" data-aos="fade-right">
+                    <div class="contentBox">
+                        <h6 class="font-weight-bold">Right to Life –Right to toxin-free food </h6>
+                        <p>
+                            It is in this context that we should examine the right to life. Access to clean drinking
+                            water, clean breathable air and clean, non-toxic food, must be non-negotiable and
+                            fundamental.
+                            Once these
+                        </p>
+                        <a href="Blog\local_community\Right_to_Life.html"><span>Read More</span></a>
+                    </div>
+                </div>
+
+                <div class="glassmorphic-card1 card3" data-aos="fade-left">
+                    <div class="contentBox">
+                        <h6 class="font-weight-bold">Development or Survival? Why We Need Biomass</h6>
+                        <p>
+                            country statement to the 21st Conference of the Parties (known as COP21) to the 1992 United
+                            Nations Framework Convention on Climate Change held in Paris in 2015 stated,
+                        </p>
+                        <a href="Blog\local_community\Development_or_Survival.html"><span>Read More</span></a>
+                    </div>
+                </div>
+
+                <div class="glassmorphic-card1 card4" data-aos="fade-left">
+                    <div class="contentBox">
+                        <h6 class="font-weight-bold">what is future farming in Sri Lanka</h6>
+                        <p>
+                            Farming in a sustainable, productive manner has been a hallmark of every human tradition
+                            that has endured history. There are many traditional farms existent today that have been
+                            productive
+                        </p>
+                        <a href="Blog\local_community\what_is_future_farming.html"><span>Read More</span></a>
+                    </div>
+                </div>
+
+                <div class="glassmorphic-card1 card5" data-aos="fade-up">
+
+                    <div class="contentBox">
+                        <h6 class="font-weight-bold">Towards an Informed Water Vision</h6>
+                        <p>
+                            The three basic substances of our biosphere, Air, Water and Soil share the characteristic
+                            that they are all dynamic and vary in quality and quantity from place to
+                        </p>
+                        <a href="Blog\local_community\Towards_an_Informed.html"><span>Read More</span></a>
+                    </div>
+                </div>
+                <div class="glassmorphic-card1 card6" data-aos="fade-up">
+                    <div class="contentBox">
+                        <h6 class="font-weight-bold">The Development Trap</h6>
+                        <p>
+                            Today is the 90th birthday of Fidel Castro who “gave leadership to small country which has
+                            for almost fifty years refused to relinquish its national sovereignty to the greatest
+                            superpower on the planet” (Ramonet). Sri Lanka is the opposite,”
+                        </p>
+                        <a href="Blog\local_community\The_Development_Trap.html"><span>Read More</span></a>
+                    </div>
+                </div>
             </div>
-
-            <div class='card'>
-                <div class='card-image-containor card-2'></div>
-                <h6 class="fond-bold">Right to Life –Right to toxin-free food </h6>
-                <p>It is in this context that we should examine the right to life. Access to clean drinking water, clean
-                    breathable </p>
-                <a href="">Read More</a>
-            </div>
-
-            <div class='card'>
-                <div class='card-image-containor card-3'></div>
-                <h6 class="fond-bold">Development or Survival? Why We Need Biomass</h6>
-                <p>Sri Lanka’s country statement to the 21st Conference of the Parties (known as COP21) to the 1992
-                    United Nations</p>
-                <a href="">Read More</a>
-
-            </div>
-
-            <div class='card'>
-                <div class='card-image-containor card-4'></div>
-                <h6 class="fond-bold">Future of Farming in Sri Lanka</h6>
-                <p>Farming in a sustainable, productive manner has been a hallmark of every human tradition that has
-                    endured history. There are many traditional </p>
-                <a href="">Read More</a>
         </div>
 
-        <div class='card'>
-            <div class='card-image-containor card-5'></div>
-            <h6 class="fond-bold">Towards an Informed Water Vision</h6>
-            <p>The three basic substances of our biosphere, Air, Water and Soil share the characteristic that they
-                are all dynamic and</p>
-            <a href="">Read More</a>
-        </div>
     </section>
 
+    <!-- ======= Footer ======= -->
     <footer id="footer" class="footer">
 
         <div class="container">
-            <div class="row gy-4">
-                <div class="col-lg-5 col-md-12 footer-info">
-                    <a href="index.html" class="logo d-flex align-items-center">
-                        <img src="assets/img/ER LOGO1.png">
-                    </a>
-                    <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                        valies darta
-                        donna mare fermentum iaculis eu non diam phasellus.</p>
-                    <div class="social-links d-flex mt-4">
-                        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <div class="row">
+                <div class="col-lg-5 col-md-12 footer-info ">
+                    <div class="logo d-flex justify-content-center">
+                        <a href="index.html">
+                            <img src="assets/img/Logoicon.png">
+                        </a>
+                    </div>
+
+                    <div class="weare d-flex justify-content-center">
+                        <p>We are aware that every NEW DATA entry and transaction costs energy. EarthRestoration hopes
+                            to clean and renewable energy driven server space for transacting LifeForce.</p>
+                    </div>
+
+                    <div class="social-links d-flex mt-4 justify-content-center">
+                        <a href="https://www.youtube.com/channel/UCL5dFM7Kr1dMapzjSJExftg?view_as=subscriber"
+                            class="youtube"><i class="bi bi-youtube"></i></a>
+
+                        <a href="https://www.facebook.com/people/EarthRestoration/100045842366453/" class="facebook"><i
+                                class="bi bi-facebook"></i></a>
+                        <!-- <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
+                        <a href="https://www.linkedin.com/feed/" class="linkedin"><i class="bi bi-linkedin"></i></a>
                     </div>
                 </div>
 
 
-                <div class="col-lg-2 col-6 footer-links">
-                    <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="#">Web Design</a></li>
-                        <li><a href="#">Web Development</a></li>
-                        <li><a href="#">Product Management</a></li>
-                        <li><a href="#">Marketing</a></li>
-                        <li><a href="#">Graphic Design</a></li>
-                    </ul>
+                <div class="col-lg-2 col-md-12 footer-links ">
+                    <div class="d-flex justify-content-center">
+                        <h4>Useful Links</h4>
+                    </div>
+
+                    <div class="tablist d-flex justify-content-center">
+                        <ul>
+                            <li><a href="./index.html#hero">Home</a></li>
+                            <li><a href="./index.html#about">Who we are</a></li>
+
+                            <div class="dropdown">
+                                <li>Blog</li>
+                                <div class="dropdown-content">
+                                    <li><a href="Local_community.html">Local Community</a></li>
+                                    <li><a href="global_community.html">Global Community</a></li>
+                                </div>
+                            </div>
+
+                            <!--<li><a href="#">Blogs</a>
+              <li><a href="Local_community.html">Local Community</a></li>
+              <li><a href="global_community.html">Global Community</a></li>
+              </li>-->
+
+                            <li><a href="./index.html#faqlist">FAQ's</a></li>
+                            <li><a href="./index.html#contact">Contact Us</a></li>
+                        </ul>
+
+                    </div>
                 </div>
 
-                <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+                <div class="col-lg-5 col-md-12 footer-contact ">
+
                     <h4>Contact Us</h4>
+
                     <p>
                         A108 Adam Street <br>
                         New York, NY 535022<br>
@@ -190,27 +340,38 @@
                         <strong>Email:</strong><a href="mailto:contact@example.com">
                             erestoration.pvt.ltd@gmail.com</a><br>
                     </p>
+                </div>
 
+            </div>
+
+            <!--<div class="row justify-content-start">
+      <div class="col">
+        <div class="container">
+          <hr class="new4">
+        </div>
+      </div>
+    </div>-->
+
+
+            <div class="row">
+
+                <div class="mt-4 align-items-center justify-content-center">
+                    <div class="copyright">
+                        <!-- <h3><div class="underline"><span></span></div></h3> -->
+                        &copy; Copyright <strong><span>EarthRestoration PL</span></strong>.
+                    </div>
+                    <div class="credits">
+                        <!-- All the links in the footer should remain intact. -->
+                        <!-- You can delete the links only if you purchased the pro version. -->
+                        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
+                        All Rights Reserved Designed by <a href="https://agro.elzian.com/">Elzian Agro</a>
+                    </div>
                 </div>
 
             </div>
         </div>
-
-        <div class="container mt-4">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Impact</span></strong>. All Rights Reserved
-            </div>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/impact-bootstrap-business-website-template/ -->
-                Designed by <a href="https://bootstrapmade.com/">Elzian Agro</a>
-            </div>
-        </div>
-
     </footer><!-- End Footer -->
-    <!-- End Footer -->
 
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
@@ -246,6 +407,8 @@
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+    <script src="./assets/js/Community.js"></script>
 
 </body>
 
