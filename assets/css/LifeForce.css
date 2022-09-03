@@ -84,7 +84,7 @@
 
 /* about section */
 .About-heading{
-  background: #fefefe;
+  background: #d2d2cf;
   
 }
 .About-heading h1{
@@ -98,7 +98,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #fefefe;
+  background-color: #d2d2cf;
   margin-top: -50px;
 }
 .about-container{
@@ -119,6 +119,7 @@
   width: 50%;
   min-height: 400px;
   background-color: rgba(0,0,0,0.2);
+  /* background-color: rgba(255,255,255,0.2); */
   align-items: center;
   justify-content: center;
   padding: 30px;
@@ -153,17 +154,20 @@
       margin-top: -150px;
       height: 300px;
   }
+  .con-right h1{
+    padding-top: 50px;
+  }
 }
 .LF-container{
   /* margin: 20px auto; */
-  width: 75%;
+  width: 80%;
   padding: 8px;
 }
 .LF-container img{
   float: right;
   width: 400px;
   height: 350px;
-  margin-left: 50px;  
+  margin-left: 60px;  
   margin-bottom: 20px; 
 }
 .LF-container img:hover{
