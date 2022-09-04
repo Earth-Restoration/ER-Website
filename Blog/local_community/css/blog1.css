@@ -110,13 +110,13 @@ background: linear-gradient(144deg, rgba(3,92,18,1) 0%, rgba(14,87,23,1) 6%, rgb
     max-height: 500px;
 	}
 
-	footer {
+	/* footer {
 		text-align: center;
 	}
 
 	footer .justify-content-end {
 		justify-content: center!important;
-	}
+	} */
 }
 
 
@@ -363,3 +363,5 @@ padding-top: 20PX;
 	float: left;
 	line-height: 1;
   }
+
+ 

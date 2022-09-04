@@ -2117,7 +2117,7 @@ padding: 3px;
 }
 
 .footer .footer-links {
-  margin-bottom: 0px;
+  margin-bottom: 55px;
 }
 
 .footer .footer-links .tablist ul {
@@ -2268,13 +2268,13 @@ padding: 3px;
   }
 }
 
-/*hr.new4 {
+hr.new4 {
   color: #fff;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   border-radius: 5px;
 }
 
-hr.new4:hover{
+/*hr.new4:hover{
   transform: scale(1.1);
   color: #1b8b00;
   transition-delay: 0.3s;
