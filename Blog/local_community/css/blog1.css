@@ -18,10 +18,10 @@ background: linear-gradient(175deg, rgba(3,92,18,1) 0%, rgba(14,87,23,1) 6%, rgb
 	padding: 80px 0;
 	min-height: 95vh;
 	position: relative;
-  width: 100%;
+  	width: 100%;
 	height: auto;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  	padding-bottom: 30px;
+  	padding-top: 70px;
 }
 
 .date {
@@ -73,7 +73,7 @@ background: linear-gradient(175deg, rgba(3,92,18,1) 0%, rgba(14,87,23,1) 6%, rgb
 }
 
 .hero-title h1 {
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: bold;
 	line-height: 70px;
 	color: #fff;
@@ -371,14 +371,15 @@ padding-top: 20PX;
   #canvas_container_div {
 	position: absolute;
 	top: 56%;
-	left: 35%;
+	left: 50%;
 	transform: translate(-50%,-50%);
+	align-items: flex-end;
   }
 
   #canvas {
-	
+
 	height: 100%;
-	width: 1280px;
+	width: 100%;
 }
 @media(max-width: 375px){
 	#canvas {
@@ -407,3 +408,7 @@ padding-top: 20PX;
 		position: relative;
 	}
 }
+
+
+
+ 
