@@ -27,8 +27,8 @@
 
 #img-04{
     padding-top: 10px;
-	height: 300px; 
-	width: 1200px;
+	height: 280px; 
+	width: 1000px;
     align-items: center;
     padding-bottom: 20px;
 }
@@ -52,8 +52,8 @@
 }
 
 #img-05{
-	height: 450px; 
-	width: 630px;
+	height: 420px; 
+	width: 560px;
     align-items: center;
 }
 @media(max-width: 540px){
