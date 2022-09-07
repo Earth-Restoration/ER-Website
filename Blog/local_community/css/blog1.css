@@ -217,14 +217,14 @@ padding-top: 20PX;
 	  left: 0;
 	  right: 0;
 	  height: calc(50% + 20px);
-	  background-color: #fff;
+	  /* background-color: #fff; */
 	  
 	}
   }
   
   .body .container .icon-box {
 	position: relative;
-	background: white;
+	/* background: white; */
 	transition: all 0.3s ease-in-out;
   }
   
@@ -291,15 +291,15 @@ padding-top: 20PX;
   }
   
   #img-01{
-	height: 600px; 
-	width: 600px;
+	height: 580px; 
+	width: 530px;
 	padding-left: 20px;
 	padding-right: 20px;
   }
   
   #img-02{
-	height: 600px; 
-	width: 650px;
+	height: 550px; 
+	width: 580px;
 	padding-left: 20px;
 	padding-right: 20px;
 	
@@ -371,7 +371,7 @@ padding-top: 20PX;
   #canvas_container_div {
 	position: absolute;
 	top: 56%;
-	left: 50%;
+	left: 20%;
 	transform: translate(-50%,-50%);
 	align-items: flex-end;
   }
