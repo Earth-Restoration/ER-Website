@@ -78,3 +78,57 @@
         
 	}
 }
+
+#blog07img-04{
+	height: 350px; 
+	width: 500px;
+    align-items: center;
+}
+@media(max-width: 540px){
+	#blog07img-04 {
+		width: 450px;
+		height: 450px;
+        
+	}
+}
+@media(max-width: 414px){
+	#blog07img-04 {
+		width: 350px;
+		height: 350px;
+       
+	}
+}
+@media(max-width: 375px){
+	#blog07img-04 {
+		width: 330px;
+		height: 330px;
+        
+	}
+}
+
+#blog07img-05{
+	height: 500px; 
+	width: 500px;
+    align-items: center;
+}
+@media(max-width: 540px){
+	#blog07img-05 {
+		width: 450px;
+		height: 450px;
+        
+	}
+}
+@media(max-width: 414px){
+	#blog07img-05 {
+		width: 350px;
+		height: 350px;
+       
+	}
+}
+@media(max-width: 375px){
+	#blog07img-05 {
+		width: 330px;
+		height: 330px;
+        
+	}
+}
