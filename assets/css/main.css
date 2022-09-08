@@ -280,6 +280,20 @@ section {
   }
 }
 
+@media (max-width: 540px) {
+  .topbar .contact-info i a,
+  .topbar .contact-info i span {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 360px) {
+  .topbar .contact-info i a,
+  .topbar .contact-info i span {
+    font-size: 12px;
+  }
+}
+
 .topbar .contact-info i a {
   line-height: 0;
   transition: 0.3s;

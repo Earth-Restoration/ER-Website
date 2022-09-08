@@ -200,6 +200,11 @@
     text-align: center;
     font-size: 30px;
     margin-bottom: 20px;
+    
+}
+.forestrySection{
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .blogcard {
@@ -213,7 +218,8 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 0px;
+    padding-bottom: 0px;
 }
 
 .card {
@@ -315,4 +321,56 @@
 .footer-part {
     margin-top: 20px;
     margin-bottom: 0%;
+}
+
+#globalimg{
+    height: 350px;
+    width: 300px;
+}
+@media(max-width: 540px){
+	#globalimg {
+		width: 450px;
+		height: 500px;
+        
+	}
+}
+@media(max-width: 414px){
+	#globalimg {
+		width: 300px;
+		height: 350px;
+       
+	}
+}
+@media(max-width: 375px){
+	#globalimg {
+		width: 300px;
+		height: 350px;
+        
+	}
+}
+
+#globalimg01{
+    height: 350px;
+    width: 600px;
+}
+@media(max-width: 540px){
+	#globalimg01 {
+		width: 450px;
+		height: 300px;
+        
+	}
+}
+@media(max-width: 414px){
+	#globalimg01 {
+		width: 300px;
+		height: 200px;
+       
+	}
+}
+@media(max-width: 375px){
+	#globalimg01 {
+		width: 300px;
+		height: 200px;
+        
+	}
 }
