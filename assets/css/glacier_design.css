@@ -114,6 +114,9 @@
     font-weight: 300;
   }
   
+  .paddingS {
+    margin-top: 6px;
+  }   
   .container-02 .glassmorphic-card1 .contentBox a {
     position: relative;
     display: inline-block;

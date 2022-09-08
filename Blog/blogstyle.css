@@ -218,13 +218,15 @@ forstryH2{
 
 
 .contend_image img {
-  width: 700px;
+  margin: 20px;
+  width: 600px;
   height: 500px;
 }
 
 .contend_image1 img {
-  width: 700px;
-  height: 500px;
+  margin: 20px;
+  width: 600px;
+  height: 550px;
 }
 
 .bannerD {
@@ -343,4 +345,16 @@ color: rgba(255, 255, 255, 0.60);
 
 .parallax-window {
   background: transparent;
+}
+
+.first:first-letter{
+  color: white;
+  background-color: black;
+  border-radius: 2px;
+  box-shadow: 3px 3px 0 #1b8b00;;
+  font-size: 300%;
+  padding: 6px 6px;
+  margin-right: 6px;
+  float: left;
+  
 }
