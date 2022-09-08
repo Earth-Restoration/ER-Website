@@ -17,7 +17,7 @@
 .background_planet {
     height: 710px;
     min-height: 400px;
-    background: url(../img/carbon_Footprint/background.jpg) no-repeat center top;
+    background: url(../img/carbon_Footprint/background1.jpg) no-repeat center top;
     position: relative;
     background-size: cover;
     overflow: hidden;
@@ -72,6 +72,17 @@
 @media only screen and (max-width: 940px) {
 
     .background_planet {
+        background-image: url(../img/carbon_Footprint/greenPlanet.webp);
+        height: 800px;
+        /* min-height: 350px; */
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .background_planet {
+        background-image: url(../img/carbon_Footprint/greenPlanet.webp);
         height: 800px;
         /* min-height: 350px; */
     }
@@ -97,8 +108,8 @@
 
 #heading {
     text-transform: uppercase;
-    color: #673AB7;
-    font-weight: normal
+    color: #1b8b00;
+    font-weight: normal;
 }
 
 #msform {
@@ -126,6 +137,39 @@
     display: none
 }
 
+.button-37 {
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-37:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+    .button-37 {
+        padding: 10px 30px;
+    }
+}
+
 #msform input,
 #msform textarea {
     padding: 8px 15px 8px 15px;
@@ -147,13 +191,50 @@
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    border: 1px solid #673AB7;
+    border: 1px solid #1b8b00;;
     outline-width: 0
+}
+
+.effect-17~.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #4caf50;
+    transition: 0.4s;
+}
+
+.effect-17:focus~.focus-border,
+.has-content.effect-17~.focus-border {
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+.effect-17~label {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 9px;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+}
+
+.effect-17:focus~label,
+.has-content.effect-17~label {
+    top: -16px;
+    font-size: 12px;
+    color: #4caf50;
+    transition: 0.3s;
 }
 
 #msform .action-button {
     width: 100px;
-    background: #673AB7;
+    background: #1b8b00;
+    ;
     font-weight: bold;
     color: white;
     border: 0 none;
@@ -166,7 +247,7 @@
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-    background-color: #311B92
+    background-color: #1b8b00;
 }
 
 #msform .action-button-previous {
@@ -195,14 +276,16 @@
 
 .fs-title {
     font-size: 25px;
-    color: #673AB7;
+    color: #1b8b00;
+    ;
     margin-bottom: 15px;
     font-weight: normal;
     text-align: left
 }
 
 .purple-text {
-    color: #673AB7;
+    color: #1b8b00;
+    ;
     font-weight: normal
 }
 
@@ -226,7 +309,7 @@
 }
 
 #progressbar .active {
-    color: #673AB7
+    color: #1b8b00;
 }
 
 #progressbar li {
@@ -240,7 +323,7 @@
 
 #progressbar #account:before {
     font-family: FontAwesome;
-    content: "\f13e"
+    content: "\f0ac"
 }
 
 #progressbar #personal:before {
@@ -284,7 +367,7 @@
 
 #progressbar li.active:before,
 #progressbar li.active:after {
-    background: #673AB7
+    background: #1b8b00;
 }
 
 .progress {
@@ -292,7 +375,7 @@
 }
 
 .progress-bar {
-    background-color: #673AB7
+    background-color: #1b8b00;
 }
 
 .fit-image {
