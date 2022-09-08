@@ -344,13 +344,16 @@ color: rgba(255, 255, 255, 0.60);
 }
 
 .first:first-letter{
-  color: white;
-  background-color: black;
-  border-radius: 2px;
-  box-shadow: 3px 3px 0 #1b8b00;;
-  font-size: 300%;
-  padding: 6px 6px;
-  margin-right: 6px;
-  float: left;
+  color: black;
+	padding: 0 .3rem;
+	margin: 0 .3rem 0 0;
   
+	border-style: solid;
+  border-color: #32CD32;
+	border-radius: 8px;
+	font-family: "IBM Plex Mono", monospace;
+  
+	font-size: 4rem;
+	float: left;
+	line-height: 1;
 }

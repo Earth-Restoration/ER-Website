@@ -121,7 +121,7 @@
                     <div class="card px-0 pt-4 pb-0 mt-3 mb-3">
                         <h2 id="heading">Calculate your carbon footprint.</h2>
                         <p>Use our intuitive calculator to find out how much CO₂ you emit.</p>
-                        <form method="post" action="Carbon_Footprint.js" id="msform">
+                        <form id="msform">
                             <!-- progressbar -->
                             <ul id="progressbar">
                                 <li class="active" id="account"><strong>Personal</strong></li>
@@ -142,10 +142,13 @@
                                         <div class="col-5">
                                             <h2 class="steps">Step 1 - 4</h2>
                                         </div>
-                                    </div> <label class="fieldlabels">Contry: *</label> <input type="email" name="email"
-                                        placeholder="Contry Name" /> <label class="fieldlabels">ZipCode: *</label> <input
-                                        type="text" name="uname" placeholder="ZipCode" /> 
-                                </div> <input type="button" name="next" class="next action-button" value="Next" />
+                                    </div>
+                                    <label class="fieldlabels">Country: *</label>
+                                    <input type="text" name="country" placeholder="Country Name" required />
+                                    <label class="fieldlabels">ZipCode: *</label>
+                                    <input type="text" name="uname" placeholder="ZipCode" required />
+                                </div> 
+                                <input type="button" name="next" class="next action-button" value="Next" />
                             </fieldset>
                             <fieldset>
                                 <div class="form-card">
@@ -156,10 +159,10 @@
                                         <div class="col-5">
                                             <h2 class="steps">Step 2 - 4</h2>
                                         </div>
-                                    </div> <label class="fieldlabels">First Name: *</label> <input type="text"
-                                        name="fname" placeholder="First Name" /> <label class="fieldlabels">Last Name:
-                                        *</label> <input type="text" name="lname" placeholder="Last Name" /> <label
-                                        class="fieldlabels">Contact No.: *</label> <input type="text" name="phno"
+                                    </div> <label class="fieldlabels">Household: *</label>
+                                        <input type="button" name="Just Me" class="button-37" value="justMe"/>
+                                        <input type="button" name="Household" class="button-37" value="Household"/> <br>
+                                        <label class="fieldlabels">Contact No.: *</label> <input type="text" name="phno"
                                         placeholder="Contact No." /> <label class="fieldlabels">Alternate Contact No.:
                                         *</label> <input type="text" name="phno_2"
                                         placeholder="Alternate Contact No." />
