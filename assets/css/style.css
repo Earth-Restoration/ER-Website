@@ -105,23 +105,11 @@
     padding: 10px 0;
 }
 
-/* @media (min-width: 1400px) {
-    .container {
-        max-width: 885px;
-    }
-}   */
-
-@media (max-width:1400px) {
+@media (max-width: 768px) {
     .mobileResponse {
-        max-width: 867px;
+        max-width: 694px;
     }
-}   
-
-/* @media (max-width: 992px){
-    .container {
-        max-width: 893px;
-    }
-} */
+}
 
 .image-slider {
     padding-top: 0%;
