@@ -10,11 +10,11 @@ $(document).ready(function () {
     
     $(".next").click(function () {
 
-        // if (document.forms['msform'].country.value === "") {
-        //     alertbox.innerHTML = "Some file is selected";
-        //     return false;
-        // }
-        // else{
+        if (document.forms['msform'].country.value === "") {
+            alertbox.innerHTML = "Some file is selected";
+            return false;
+        }
+        else{
             current_fs = $(this).parent();
             next_fs = $(this).parent().next();
     
@@ -38,7 +38,7 @@ $(document).ready(function () {
                 duration: 500
             });
             setProgressBar(++current); 
-        // }
+        }
         
     });
 
