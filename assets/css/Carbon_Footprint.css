@@ -170,8 +170,8 @@
     }
 }
 
-#msform input,
-#msform textarea {
+/* #msform input
+ {
     padding: 8px 15px 8px 15px;
     border: 1px solid #ccc;
     border-radius: 0px;
@@ -184,16 +184,16 @@
     background-color: #ECEFF1;
     font-size: 16px;
     letter-spacing: 1px
-}
+} */
 
-#msform input:focus,
+/* #msform input:focus,
 #msform textarea:focus {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
     border: 1px solid #1b8b00;;
     outline-width: 0
-}
+} */
 
 .effect-17~.focus-border {
     position: absolute;
@@ -271,13 +271,13 @@
 .card {
     z-index: 0;
     border: none;
-    position: relative
+    position: relative;
+    width: 100%;
 }
 
 .fs-title {
     font-size: 25px;
     color: #1b8b00;
-    ;
     margin-bottom: 15px;
     font-weight: normal;
     text-align: left
@@ -315,7 +315,7 @@
 #progressbar li {
     list-style-type: none;
     font-size: 15px;
-    width: 25%;
+    width: 12%;
     float: left;
     position: relative;
     font-weight: 400
@@ -328,17 +328,37 @@
 
 #progressbar #personal:before {
     font-family: FontAwesome;
-    content: "\f007"
+    content: "\f0f2"
 }
 
 #progressbar #payment:before {
     font-family: FontAwesome;
-    content: "\f030"
+    content: "\f0f5"
 }
 
-#progressbar #confirm:before {
+#progressbar #home:before {
     font-family: FontAwesome;
-    content: "\f00c"
+    content: "\f015"
+}
+
+#progressbar #transport:before {
+    font-family: FontAwesome;
+    content: "\f207"
+}
+
+#progressbar #furniture:before {
+    font-family: FontAwesome;
+    content: "\f236"
+}
+
+#progressbar #expenses:before {
+    font-family: FontAwesome;
+    content: "\f236"
+}
+
+#progressbar #finish:before {
+    font-family: FontAwesome;
+    content: "\f236"
 }
 
 #progressbar li:before {
@@ -381,4 +401,7 @@
 .fit-image {
     width: 100%;
     object-fit: cover
+}
+.active {
+    color: #1b8b00;
 }
