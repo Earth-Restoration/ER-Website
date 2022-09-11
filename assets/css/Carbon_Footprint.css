@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+
+.greenPlanet {
+    width: 100%;
+    height: 720px;
+    padding: 5px 0;
+}
+
+
+.page {
+    max-width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.background_planet {
+    height: 710px;
+    min-height: 400px;
+    background: url(../img/carbon_Footprint/background1.jpg) no-repeat center top;
+    position: relative;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.hero_text {
+    display: flex;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    /** Y-axis align **/
+    padding-left: 11%;
+    color: white;
+}
+
+
+
+.typing-demo {
+    width: 16ch;
+    animation: typing 2s steps(17), blink .3s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    font-family: monospace;
+    font-size: 60px;
+    text-shadow: 6px 6px 0px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+
+.defin {
+    text-justify: auto;
+    text-align: left;
+    font-size: 30px;
+    width: 50%;
+    text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
+        0px 8px 13px rgba(0, 0, 0, 0.1),
+        0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 940px) {
+
+    .background_planet {
+        background-image: url(../img/carbon_Footprint/greenPlanet.webp);
+        height: 800px;
+        /* min-height: 350px; */
+    }
+
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .background_planet {
+        background-image: url(../img/carbon_Footprint/greenPlanet.webp);
+        height: 800px;
+        /* min-height: 350px; */
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+    .background_planet {
+        width: 100%;
+    }
+
+    .typing-demo {
+        font-size: 40px;
+    }
+
+    .defin {
+        font-size: 28px;
+    }
+
+}
+
+
+#heading {
+    text-transform: uppercase;
+    color: #1b8b00;
+    font-weight: normal;
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 20px
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
+    position: relative
+}
+
+.form-card {
+    text-align: left
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none
+}
+
+.button-37 {
+    background-color: #13aa52;
+    border: 1px solid #13aa52;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .1) 0 2px 4px 0;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: "Akzidenz Grotesk BQ Medium", -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    outline: none;
+    outline: 0;
+    padding: 10px 25px;
+    text-align: center;
+    transform: translateY(0);
+    transition: transform 150ms, box-shadow 150ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-37:hover {
+    box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+    transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+    .button-37 {
+        padding: 10px 30px;
+    }
+}
+
+/* #msform input
+ {
+    padding: 8px 15px 8px 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    background-color: #ECEFF1;
+    font-size: 16px;
+    letter-spacing: 1px
+} */
+
+/* #msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #1b8b00;;
+    outline-width: 0
+} */
+
+.effect-17~.focus-border {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #4caf50;
+    transition: 0.4s;
+}
+
+.effect-17:focus~.focus-border,
+.has-content.effect-17~.focus-border {
+    width: 100%;
+    transition: 0.4s;
+    left: 0;
+}
+
+.effect-17~label {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 9px;
+    color: #aaa;
+    transition: 0.3s;
+    z-index: -1;
+    letter-spacing: 0.5px;
+}
+
+.effect-17:focus~label,
+.has-content.effect-17~label {
+    top: -16px;
+    font-size: 12px;
+    color: #4caf50;
+    transition: 0.3s;
+}
+
+#msform .action-button {
+    width: 100px;
+    background: #1b8b00;
+    ;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 0px 10px 5px;
+    float: right
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    background-color: #1b8b00;
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #616161;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 0px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px 10px 0px;
+    float: right
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    background-color: #000000
+}
+
+.card {
+    z-index: 0;
+    border: none;
+    position: relative;
+    width: 100%;
+}
+
+.fs-title {
+    font-size: 25px;
+    color: #1b8b00;
+    margin-bottom: 15px;
+    font-weight: normal;
+    text-align: left
+}
+
+.purple-text {
+    color: #1b8b00;
+    ;
+    font-weight: normal
+}
+
+.steps {
+    font-size: 25px;
+    color: gray;
+    margin-bottom: 10px;
+    font-weight: normal;
+    text-align: right
+}
+
+.fieldlabels {
+    color: gray;
+    text-align: left
+}
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    color: lightgrey
+}
+
+#progressbar .active {
+    color: #1b8b00;
+}
+
+#progressbar li {
+    list-style-type: none;
+    font-size: 15px;
+    width: 12%;
+    float: left;
+    position: relative;
+    font-weight: 400
+}
+
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f0ac"
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f0f2"
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f0f5"
+}
+
+#progressbar #home:before {
+    font-family: FontAwesome;
+    content: "\f015"
+}
+
+#progressbar #transport:before {
+    font-family: FontAwesome;
+    content: "\f207"
+}
+
+#progressbar #furniture:before {
+    font-family: FontAwesome;
+    content: "\f236"
+}
+
+#progressbar #expenses:before {
+    font-family: FontAwesome;
+    content: "\f236"
+}
+
+#progressbar #finish:before {
+    font-family: FontAwesome;
+    content: "\f236"
+}
+
+#progressbar li:before {
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    display: block;
+    font-size: 20px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
+    margin: 0 auto 10px auto;
+    padding: 2px
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: lightgray;
+    position: absolute;
+    left: 0;
+    top: 25px;
+    z-index: -1
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #1b8b00;
+}
+
+.progress {
+    height: 20px
+}
+
+.progress-bar {
+    background-color: #1b8b00;
+}
+
+.fit-image {
+    width: 100%;
+    object-fit: cover
+}
+.active {
+    color: #1b8b00;
+}

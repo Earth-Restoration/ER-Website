@@ -4,8 +4,8 @@
 
 
 .blogcard {
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
@@ -114,6 +114,9 @@
     font-weight: 300;
   }
   
+  .paddingS {
+    margin-top: 6px;
+  }   
   .container-02 .glassmorphic-card1 .contentBox a {
     position: relative;
     display: inline-block;

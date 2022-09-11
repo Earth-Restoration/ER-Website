@@ -1,6 +1,6 @@
 #img-11{
-	height: 550px; 
-	width: 600px;
+	height: 500px; 
+	width: 520px;
     align-items: center;
 }
 @media(max-width: 540px){
@@ -26,7 +26,7 @@
 
 #img-12{
 	height: 500px; 
-	width: 500px;
+	width: 460px;
     align-items: center;
 }
 @media(max-width: 540px){
@@ -49,8 +49,8 @@
 }
 
 #img-13{
-	height: 400px; 
-	width: 450px;
+	height: 380px; 
+	width: 420px;
     align-items: center;
 }
 @media(max-width: 540px){

@@ -2,26 +2,26 @@
 /*------------Banner SECTION-------*/
 
 .container-fluid {
-	background-color: #FCFAFA;
+	background-color: #fff;
 }
 
 #hero-ban{
   width: 100%;
   position: relative;
   background: rgb(3,92,18);
-background: linear-gradient(144deg, rgba(3,92,18,1) 0%, rgba(14,87,23,1) 6%, rgba(11,107,19,1) 31%, rgba(7,126,14,1) 46%, rgba(22,161,16,1) 72%, rgba(60,201,27,1) 88%, rgba(73,219,9,1) 100%);
+background: linear-gradient(175deg, rgba(3,92,18,1) 0%, rgba(14,87,23,1) 6%, rgba(11,107,19,1) 31%, rgba(7,126,14,1) 46%, rgba(22,161,16,1) 72%, rgba(60,201,27,1) 88%, rgba(73,219,9,1) 100%);
 	padding-bottom: 30px;
   padding-top: 30px;
 }
 
 #hero {
 	padding: 80px 0;
-	min-height: 400px;
+	min-height: 95vh;
 	position: relative;
-  width: 100%;
+  	width: 100%;
 	height: auto;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  	padding-bottom: 30px;
+  	padding-top: 70px;
 }
 
 .date {
@@ -73,7 +73,7 @@ background: linear-gradient(144deg, rgba(3,92,18,1) 0%, rgba(14,87,23,1) 6%, rgb
 }
 
 .hero-title h1 {
-	font-size: 35px;
+	font-size: 30px;
 	font-weight: bold;
 	line-height: 70px;
 	color: #fff;
@@ -110,13 +110,13 @@ background: linear-gradient(144deg, rgba(3,92,18,1) 0%, rgba(14,87,23,1) 6%, rgb
     max-height: 500px;
 	}
 
-	footer {
+	/* footer {
 		text-align: center;
 	}
 
 	footer .justify-content-end {
 		justify-content: center!important;
-	}
+	} */
 }
 
 
@@ -217,14 +217,14 @@ padding-top: 20PX;
 	  left: 0;
 	  right: 0;
 	  height: calc(50% + 20px);
-	  background-color: #fff;
+	  /* background-color: #fff; */
 	  
 	}
   }
   
   .body .container .icon-box {
 	position: relative;
-	background: white;
+	/* background: white; */
 	transition: all 0.3s ease-in-out;
   }
   
@@ -291,15 +291,15 @@ padding-top: 20PX;
   }
   
   #img-01{
-	height: 600px; 
-	width: 600px;
+	height: 580px; 
+	width: 530px;
 	padding-left: 20px;
 	padding-right: 20px;
   }
   
   #img-02{
-	height: 600px; 
-	width: 650px;
+	height: 550px; 
+	width: 580px;
 	padding-left: 20px;
 	padding-right: 20px;
 	
@@ -363,3 +363,52 @@ padding-top: 20PX;
 	float: left;
 	line-height: 1;
   }
+
+  /*Banner Planet*/
+ 
+
+  
+  #canvas_container_div {
+	position: absolute;
+	top: 56%;
+	left: 20%;
+	transform: translate(-50%,-50%);
+	align-items: flex-end;
+  }
+
+  #canvas {
+
+	height: 100%;
+	width: 100%;
+}
+@media(max-width: 375px){
+	#canvas {
+		height: 180%;
+		width: 667px;
+	}
+	#canvas_container_div{
+		position: relative;
+	}
+}
+@media(max-width: 414px){
+	#canvas {
+		height: 180%;
+		width: 896px;
+	}
+	#canvas_container_div{
+		position: relative;
+	}
+}
+@media(max-width: 540px){
+	#canvas {
+		height: 180%;
+		width: 720px;
+	}
+	#canvas_container_div{
+		position: relative;
+	}
+}
+
+
+
+ 

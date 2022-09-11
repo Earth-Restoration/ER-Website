@@ -1,0 +1,80 @@
+#blog06img-01{
+	height: 600px; 
+	width: 530px;
+    align-items: center;
+}
+@media(max-width: 540px){
+	#blog06img-01 {
+		width: 450px;
+		height: 450px;
+        
+	}
+}
+@media(max-width: 414px){
+	#blog06img-01 {
+		width: 350px;
+		height: 350px;
+       
+	}
+}
+@media(max-width: 375px){
+	#blog06img-01 {
+		width: 330px;
+		height: 330px;
+        
+	}
+}
+
+#blog06img-02{
+	height: 400px; 
+	width: 530px;
+    align-items: center;
+}
+@media(max-width: 540px){
+	#blog06img-02 {
+		width: 450px;
+		height: 360px;
+        
+	}
+}
+@media(max-width: 414px){
+	#blog06img-02 {
+		width: 350px;
+		height: 270px;
+       
+	}
+}
+@media(max-width: 375px){
+	#blog06img-02 {
+		width: 330px;
+		height: 250px;
+        
+	}
+}
+
+#blog06img-03{
+	height: 400px; 
+	width: 530px;
+    align-items: center;
+}
+@media(max-width: 540px){
+	#blog06img-03 {
+		width: 450px;
+		height: 360px;
+        
+	}
+}
+@media(max-width: 414px){
+	#blog06img-03 {
+		width: 350px;
+		height: 270px;
+       
+	}
+}
+@media(max-width: 375px){
+	#blog06img-03 {
+		width: 330px;
+		height: 250px;
+        
+	}
+}

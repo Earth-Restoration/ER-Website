@@ -355,3 +355,4 @@ function classToggle() {
 }
 
 document.querySelector('#toggle-animation').addEventListener('click', classToggle);
+
