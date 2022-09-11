@@ -118,3 +118,12 @@ $('.input-group').on('click', '.button-minus', function(e) {
     decrementValue(e);
 });
 
+function household() {
+    document.getElementById('householdmembers').style.display = "block";
+ };
+
+ function householdDnone() {
+    document.getElementById('householdmembers').style.display = "none";
+ };
+
+ 
