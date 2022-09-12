@@ -848,9 +848,10 @@ section {
   }
 }
 .para{
-  font-family: Cursive;
+  /* font-family: Kalam; */
   font-weight: 1000;
   font-style: oblique;
+  text-align: justify;
 }
 
 /* Styling to make the demo look purrrty! */
@@ -2335,7 +2336,7 @@ hr.new4 {
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  animation: animate 20s linear infinite;
+  animation: animate 20s linear;
 }
 
 @keyframes animate {
@@ -2392,7 +2393,7 @@ hr.new4 {
   background-size: cover;
   box-shadow: inset 0 0 20px #03a9f4;
 
-  animation: animateEarth 30s linear infinite;
+  animation: animateEarth 30s linear;
 }
 
 @keyframes animateEarth {
