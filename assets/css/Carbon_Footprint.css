@@ -353,12 +353,12 @@
 
 #progressbar #expenses:before {
     font-family: FontAwesome;
-    content: "\f236"
+    content: "\f155"
 }
 
 #progressbar #finish:before {
     font-family: FontAwesome;
-    content: "\f236"
+    content: "\f11e"
 }
 
 #progressbar li:before {
