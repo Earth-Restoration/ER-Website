@@ -848,9 +848,10 @@ section {
   }
 }
 .para{
-  font-family: Cursive;
+  /* font-family: Kalam; */
   font-weight: 1000;
   font-style: oblique;
+  text-align: justify;
 }
 
 /* Styling to make the demo look purrrty! */

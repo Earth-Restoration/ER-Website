@@ -183,10 +183,10 @@
                                     <h4>Would you like to calculate your household footprint or just your individual
                                         footprint?</h4>
                                     <div class="d-grid gap-2 col-6 ms-2">
+                                        <button type="button" class="btn btn-success btn-md" onclick="justme()">Just
+                                            Me</button>
                                         <button type="button" class="btn btn-success btn-md"
-                                        onclick="householdDnone()">Just Me</button>
-                                        <button type="button" class="btn btn-success btn-md"
-                                         onclick="household()" >Household</button>
+                                            onclick="showHouseMembers()">Household</button>
                                     </div>
 
 
@@ -244,13 +244,17 @@
                                     <h4>How many cars does your household use?</h4>
 
                                     <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">None</button>
-                                        <button class="btn btn-success" type="button">1 Car</button>
-                                        <button class="btn btn-success" type="button">2 Car</button>
-                                        <button class="btn btn-success" type="button">3 Car</button>
+                                        <button class="btn btn-success" onclick="carDetailsNone()"
+                                            type="button">None</button>
+                                        <button class="btn btn-success" onclick="carDetails()" type="button">1
+                                            Car</button>
+                                        <button class="btn btn-success" onclick="carDetails()" type="button">2
+                                            Car</button>
+                                        <button class="btn btn-success" onclick="carDetails()" type="button">3
+                                            Car</button>
                                     </div>
 
-                                    <div style="display: none;">
+                                    <div id="showCar" style="display: none;">
                                         <div class="pt-3 pb-2">
                                             <h2>Car 1 details</h2>
                                             <h5>Fill out details about this car, such as fuel efficiency and distance
@@ -337,12 +341,15 @@
                                     <h4>What is your diet like?</h4>
 
                                     <div class="d-grid gap-2 col-4 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">Vegetarian</button>
-                                        <button class="btn btn-success" type="button">vegan</button>
-                                        <button class="btn btn-success" type="button">Neither</button>
+                                        <button class="btn btn-success" onclick="showdiary()"
+                                            type="button">Vegetarian</button>
+                                        <button class="btn btn-success" onclick="hidevegan()"
+                                            type="button">vegan</button>
+                                        <button class="btn btn-success" onclick="showRemMeadprotien()"
+                                            type="button">Neither</button>
                                     </div>
 
-                                    <div>
+                                    <div id="redMeat" style="display: none;">
                                         <label class="fieldlabels mt-2 pt-2">Red Meat: *</label>
                                         <h4>How often do you eat red meat?</h4>
 
@@ -354,7 +361,7 @@
                                         </div>
                                     </div>
 
-                                    <div>
+                                    <div id="protion" style="display: none;">
                                         <label class="fieldlabels mt-2 pt-2">Other protien: *</label>
                                         <h4>How often do you have chicken, pork, seafood, or eggs?</h4>
 
@@ -365,7 +372,7 @@
                                         </div>
                                     </div>
 
-                                    <div>
+                                    <div id="dairy">
                                         <label class="fieldlabels mt-2 pt-2">Dairy: *</label>
                                         <h4>How often do you have milk, cheese, or other dairy products?</h4>
                                         <div class="d-grid gap-2 col-6 ms-2 mt-3">
@@ -420,34 +427,42 @@
                                     <label class="fieldlabels pt-2">public Transport: *</label>
                                     <h4>How else do you get around?</h4>
                                     <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">Bus</button>
-                                        <button class="btn btn-success" type="button">Transit Rail</button>
-                                        <button class="btn btn-success" type="button">Inter City Rail</button>
+                                        <button class="btn btn-success" type="button" onclick="showbus()">Bus</button>
+                                        <button class="btn btn-success" type="button" onclick="showtransitrail()">Transit Rail</button>
+                                        <button class="btn btn-success" type="button" onclick="showintercity()">Inter City Rail</button>
                                         <button class="btn btn-success" type="button">Walk Or Bike</button>
                                     </div>
 
-                                    <label class="fieldlabels pt-2">bus Per week: *</label>
-                                    <h4>How much do you travel by bus each week?</h4>
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">Rarely</button>
-                                        <button class="btn btn-success" type="button">Daily commute</button>
-                                        <button class="btn btn-success" type="button">Always</button>
+                                    <div id="bus" style="display: none;">
+                                        <label class="fieldlabels pt-2">bus Per week: *</label>
+                                        <h4>How much do you travel by bus each week?</h4>
+                                        <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                            <button class="btn btn-success" type="button">Rarely</button>
+                                            <button class="btn btn-success" type="button">Daily commute</button>
+                                            <button class="btn btn-success" type="button">Always</button>
+                                        </div>
                                     </div>
 
-                                    <label class="fieldlabels pt-2">Transit rail: *</label>
-                                    <h4>How much do you travel by transit rail each week?</h4>
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">Rarely</button>
-                                        <button class="btn btn-success" type="button">Daily commute</button>
-                                        <button class="btn btn-success" type="button">Always</button>
+                                    <div id="rail" style="display: none;">
+                                        <label class="fieldlabels pt-2">Transit rail: *</label>
+                                        <h4>How much do you travel by transit rail each week?</h4>
+                                        <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                            <button class="btn btn-success" type="button">Rarely</button>
+                                            <button class="btn btn-success" type="button">Daily commute</button>
+                                            <button class="btn btn-success" type="button">Always</button>
+                                        </div>
                                     </div>
 
-                                    <label class="fieldlabels pt-2">Inter city: *</label>
-                                    <h4>How much do you travel by inter city rail each year?</h4>
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">A few short trips a year</button>
-                                        <button class="btn btn-success" type="button">Between cities often</button>
-                                        <button class="btn btn-success" type="button">Many long trips a year</button>
+                                    <div id="intercity" style="display: none;">
+                                        <label class="fieldlabels pt-2">Inter city: *</label>
+                                        <h4>How much do you travel by inter city rail each year?</h4>
+                                        <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                            <button class="btn btn-success" type="button">A few short trips a
+                                                year</button>
+                                            <button class="btn btn-success" type="button">Between cities often</button>
+                                            <button class="btn btn-success" type="button">Many long trips a
+                                                year</button>
+                                        </div>
                                     </div>
                                 </div>
 
@@ -503,7 +518,7 @@
                                     <div class="col-7">
                                         <h2 class="fs-title">Service Information:</h2>
                                     </div>
-                                    
+
                                     <label class="fieldlabels pt-2">Services: *</label>
                                     <h4>How much do you spend on services per month??</h4>
                                     <div class="d-grid gap-2 col-6 ms-2 mt-3">
@@ -567,7 +582,8 @@
 
                                     <label class="fieldlabels">Email: *</label>
                                     <div class="input-group mb-3">
-                                        <input type="text" name="Email" class="btn-outline-success" aria-label="Default" placeholder="Email address">
+                                        <input type="text" name="Email" class="btn-outline-success" aria-label="Default"
+                                            placeholder="Email address">
                                     </div>
 
                                     <div class="d-grid gap-2 col-3 mt-3">

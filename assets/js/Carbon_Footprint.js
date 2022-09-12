@@ -15,29 +15,29 @@ $(document).ready(function () {
         //     return false;
         // }
         // else {
-            current_fs = $(this).parent();
-            next_fs = $(this).parent().next();
+        current_fs = $(this).parent();
+        next_fs = $(this).parent().next();
 
-            //Add Class Active
-            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+        //Add Class Active
+        $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
 
-            //show the next fieldset
-            next_fs.show();
-            //hide the current fieldset with style
-            current_fs.animate({ opacity: 0 }, {
-                step: function (now) {
-                    // for making fielset appear animation
-                    opacity = 1 - now;
+        //show the next fieldset
+        next_fs.show();
+        //hide the current fieldset with style
+        current_fs.animate({ opacity: 0 }, {
+            step: function (now) {
+                // for making fielset appear animation
+                opacity = 1 - now;
 
-                    current_fs.css({
-                        'display': 'none',
-                        'position': 'relative'
-                    });
-                    next_fs.css({ 'opacity': opacity });
-                },
-                duration: 500
-            });
-            setProgressBar(++current);
+                current_fs.css({
+                    'display': 'none',
+                    'position': 'relative'
+                });
+                next_fs.css({ 'opacity': opacity });
+            },
+            duration: 500
+        });
+        setProgressBar(++current);
         // }
     });
 
@@ -110,20 +110,71 @@ function decrementValue(e) {
     }
 }
 
-$('.input-group').on('click', '.button-plus', function(e) {
+$('.input-group').on('click', '.button-plus', function (e) {
     incrementValue(e);
 });
 
-$('.input-group').on('click', '.button-minus', function(e) {
+$('.input-group').on('click', '.button-minus', function (e) {
     decrementValue(e);
 });
 
-function household() {
+function showHouseMembers() {
     document.getElementById('householdmembers').style.display = "block";
- };
+};
 
- function householdDnone() {
+function justme() {
     document.getElementById('householdmembers').style.display = "none";
- };
+}
 
- 
+function carDetails() {
+    document.getElementById('showCar').style.display = "block";
+};
+
+function carDetailsNone() {
+    document.getElementById('showCar').style.display = "none";
+};
+
+function hidevegan() {
+    document.getElementById('dairy').style.display = "none";
+    document.getElementById('redMeat').style.display = "none";
+    document.getElementById('protion').style.display = "none";
+};
+
+function showdiary() {
+    document.getElementById('dairy').style.display = "block";
+    document.getElementById('redMeat').style.display = "none";
+    document.getElementById('protion').style.display = "none";
+};
+
+function showRemMeadprotien() {
+    document.getElementById('redMeat').style.display = "block";
+    document.getElementById('protion').style.display = "block";
+    document.getElementById('dairy').style.display = "block";
+};
+
+function showbus() {
+    var x = document.getElementById("bus");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+};
+
+function showtransitrail() {
+    var x = document.getElementById("rail");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+};
+
+function showintercity() {
+    var x = document.getElementById("intercity");
+    if (x.style.display === "none") {
+        x.style.display = "block";
+    } else {
+        x.style.display = "none";
+    }
+};
