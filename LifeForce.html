@@ -29,9 +29,15 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css'>
+
   <!-- Template Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/LifeForce.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"></script>
 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
@@ -61,11 +67,13 @@
         <i class="bi bi-phone d-flex align-items-center ms-4"><span>+94 76 719 1428</span></i>
       </div>
       <div class="social-links d-none d-md-flex align-items-center">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
+        <a href="https://www.youtube.com/channel/UCL5dFM7Kr1dMapzjSJExftg?view_as=subscriber" 
+        class="youtube"><i class="bi bi-youtube"></i></a>
         <a href="https://www.facebook.com/profile.php?id=100045842366453" class="facebook"><i
             class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <!-- <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
+        <a href="https://www.linkedin.com/in/ranil-senanayake-7a097313/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
       </div>
     </div>
   </section><!-- End Top Bar -->
@@ -85,7 +93,7 @@
           <li class="dropdown"><a href="#"><span>Blogs</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
               <li><a href="Local_community.html">Local Community</a></li>
-              <li><a href="global_community.html">global community</a></li>
+              <li><a href="global_community.html">Global community</a></li>
             </ul>
 
           </li>
@@ -121,41 +129,85 @@
   </section>
 
   <main>
-    <div class="About-heading">
-      <h1 style="text-align:center">Bio currency</h1>
-    </div>
     <!-- ======= About Us Section ======= -->
     <section class="Lf-about">
-      <div class="about-container">
-        <div class="con-left"></div>
-        <div class="con-right">
-          <h1>The Magic of Photosynthesis</h1>
-          <p>The quality of air we breathe, the waters that flow, the health of oceans, old growth forests and
-            topsoil
-            are borne of Photosynthesis. The actions of Photosynthesis termed Primary Ecosystem Services
-            [PES] can be
-            verified for the first time using LifeForce wealth ledgers.</p>
+      <div class="about-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="about-img-LF">
+                <img src="assets/img/LifeForce/LifeForce.png" alt="">
+              </div>
+            </div>
+            <div class="col-lg-6 col-lg-offset-2">
+              <div class="about-text-LF">
+                <h2>ABOUT LIFE FORCE</h2>
+                <p>
+                  The quality of air we breathe, the waters that flow, the health of oceans, old growth forests and topsoil are borne of 
+                  Photosynthesis. The actions of Photosynthesis termed Primary Ecosystem Services [PES] can be verified for the first time using 
+                  LifeForce wealth ledgers.<br><br>
+                  Solutions such as LifeForce ™ ledger lays the foundations for your contractual contributions of Primary Ecosystem Services to 
+                  be traded at the Global Commons Exchange. 
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <section class="Lf-about">
-      <div class="LF-container">
-        <img src="assets/img/LifeForce/LifeForce.png" alt="LifeForce image">
-        <div class="LF-text">
-          <p>Solutions such as LifeForce ™ ledger lays the foundations for your contractual contributions of
-            Primary Ecosystem
-            Services to be traded at the Global Commons Exchange.<br><br>
-            The LifeForce project recognizes the annual primary production value of
-            Photosynthetic Biomass that are produced by Tree UNITS which
-            tended to through the contractual duration of the Project (4 years).
-            <br><br>
-            We pay the most for tree-care in the world : making this a very potent
-            solution by which to positively affect humanistic, biodiversity,
-            as well as sustainability goals.
-          </p>
-        </div>
+  
+    <section class="Lf-CF">
+      <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="assets/img/LifeForce/Carbon foot print.jpg" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <div class="blog-slider__title">Carbon Footprint</div>
+              <div class="blog-slider__text">"Working with Carbon Footprint was like having extra team members working 
+                directly for us. They are dedicated, professional and deliver on time with a practical approach that is 
+                first rate."</div>
+                <a href="Carbon_Footprint.html" class="blog-slider__button">MORE INFO</a>
+            </div>
+          </div>
+  
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="assets/img/LifeForce/LF-CF(2).PNG" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <div class="blog-slider__title">Carbon Footprint</div>
+              <div class="blog-slider__text">A carbon footprint is the total amount of greenhouse gas emissions that 
+                come from the production, use and end-of-life of a product or service.</div>
+                <a href="Carbon_Footprint.html" class="blog-slider__button">MORE INFO</a>
+            </div>
+          </div>
+          <div class="blog-slider__item swiper-slide">
+            <div class="blog-slider__img">
+              <img src="assets/img/LifeForce/CarbonFootprint.jpg" alt="">
+            </div>
+            <div class="blog-slider__content">
+              <div class="blog-slider__title">Carbon Footprint</div>
+              <div class="blog-slider__text">Lorem ipsum, dolor sit amet consectetur 
+                adipisicing elit. Eos esse vero cumque pariatur.</div>
+                <a href="Carbon_Footprint.html" class="blog-slider__button">MORE INFO</a>
+            </div>
+          </div>
+        </div> 
+        <div class="blog-slider__pagination"></div>
       </div>
     </section>
+  
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/js/swiper.min.js'></script>
+    <script src="assets/js/LifeForce.js"></script>
+
+    <section class="Lf-map">
+      <div id="map"></div>
+    </section>
+    <script src="assets/js/Map.js"></script>
+
 </main>
 
     <!-- ======= Footer ======= -->
