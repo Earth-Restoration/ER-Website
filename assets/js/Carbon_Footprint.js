@@ -11,7 +11,7 @@ $(document).ready(function () {
 
         // if (document.forms['msform'].country.value === "") {
         //     document.getElementById('errormsg').style.display = "block";
-        //     alertbox.innerHTML = "this Country feild is required";
+        //     alertbox.innerHTML = "This Country field is required";
         //     return false;
         // }
         // else {
@@ -178,3 +178,52 @@ function showintercity() {
         x.style.display = "none";
     }
 };
+
+var alertbox2 = document.getElementById('alert2');
+
+
+function succsess() {
+
+     if (document.forms['msform'].ResultsEmail.value === "") {
+
+        
+        document.getElementById('errormsg2').style.display = "block";
+            alertbox2.innerHTML = "This field can't be blank";
+        
+        const validateEmail = (email) => {
+            return email.match(
+              /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+            );
+          };
+          
+          const validate = () => {
+            const $result = $('#resultEmail');
+            const email = $('#ResultsEmail1').val();
+            $result.text('');
+          
+            if (validateEmail(email)) {
+              $result.text(email + ' is valid Email:)');
+              $result.css('color', 'green');
+              $result.css("fontSize", "15px");
+            } else {
+              $result.text(email + '  is not valid Email:(');
+              $result.css('color', 'red');
+              $result.css("fontSize", "15px");
+            }
+            return false;
+          }
+          
+          $('#ResultsEmail1').on('input', validate);
+
+            
+           
+            return false;
+        }
+        else {
+            document.getElementById('errormsg2').style.display = "none";
+            document.getElementById('successDiv').style.display = "block";
+        }
+
+    
+};
+
