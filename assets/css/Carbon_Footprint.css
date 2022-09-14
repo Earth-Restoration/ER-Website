@@ -326,7 +326,7 @@
     content: "\f0ac"
 }
 
-#progressbar #personal:before {
+#progressbar #travaling:before {
     font-family: FontAwesome;
     content: "\f0f2"
 }
@@ -382,7 +382,7 @@
     position: absolute;
     left: 0;
     top: 25px;
-    z-index: -1
+    z-index: -1;
 }
 
 #progressbar li.active:before,
@@ -402,6 +402,55 @@
     width: 100%;
     object-fit: cover
 }
+
 .active {
     color: #1b8b00;
 }
+
+@media (max-width: 840px) {
+    
+    #personol {
+        display: none;
+    }
+    #travaling1 {
+        display: none;
+    }
+    /* #payment {
+        display: none;
+    }
+    #home {
+        display: none;
+    }
+    #transport {
+        display: none;
+    }
+    #furniture {
+        display: none;
+    }
+    #expenses {
+        display: none;
+    }
+    #finish {
+        display: none;
+    } */
+    
+    #progressbar li {
+        list-style-type:circle;
+        font-size: 15px;
+        width: 95%;
+        float:none;
+        position: relative;
+        font-weight: 400;
+        
+    }
+
+    .progressItem {
+        padding-left: 0px;
+        
+    }
+    #progressbar {
+        overflow: visible ;
+       
+    }
+}
+
