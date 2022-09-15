@@ -189,9 +189,9 @@
         border-radius: 25px
     }
 
-    .centered1 {
+    /* .centered1 {
         display: none;
-    }
+    } */
 }
 
 
@@ -204,7 +204,7 @@
 }
 
 .forestrySection {
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 30px;
 }
 
