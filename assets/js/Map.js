@@ -20,11 +20,17 @@ var LeafletIcon = L.Icon.extend({
 })
 
 var greenIcon = new LeafletIcon({iconUrl:"assets/img/Map-lifeforce/Green-Tree.png"})
-    silverIcon = new LeafletIcon({iconUrl:"Green-Tree.png"}),
-    goldIcon = new LeafletIcon({iconUrl:"Green-Tree.png"})
+    silverIcon = new LeafletIcon({iconUrl:"assets/img/Map-lifeforce/Silver-Tree.png"}),
+    goldIcon = new LeafletIcon({iconUrl:"assets/img/Map-lifeforce/Gold-Tree.png"})
 
 var marker = L.marker([7.6165, 80.6147], {icon: greenIcon}).addTo(map);
 var marker = L.marker([7.6165, 80.6500], {icon: greenIcon}).addTo(map);
+var marker = L.marker([6.8222, 81.0133], {icon: greenIcon}).addTo(map);
+var marker = L.marker([6.8250, 81.0180], {icon: greenIcon}).addTo(map);
+var marker = L.marker([6.8248, 81.0220], {icon: silverIcon}).addTo(map);
+var marker = L.marker([7.2840, 80.2124], {icon: silverIcon}).addTo(map);
+var marker = L.marker([7.3045, 80.2350], {icon: goldIcon}).addTo(map);
+var marker = L.marker([7.8524, 80.8500], {icon: greenIcon}).addTo(map);
 // var marker = L.marker([7.6165, 80.6151], {icon: greenIcon}).addTo(map);
 // var marker = L.marker([7.291418, 80.636696]).addTo(map);
 

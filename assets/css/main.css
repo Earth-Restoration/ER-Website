@@ -2440,6 +2440,20 @@ hr.new4 {
   border-radius: 10px;
   cursor: pointer;
 }
+@media screen and (max-width: 420px) {
+  .wrapper .card {
+    height: 120px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .wrapper .card .image img {
+    /* max-width: 95%;
+    top: 15px; */
+    padding-top: 10px;
+    border-radius: 12px;
+    padding-right: 6px;
+  }
+}
 .wrapper .card .image{
   position: relative;
   width: 90%;
@@ -2478,6 +2492,12 @@ hr.new4 {
   margin-left: -15px;
   margin-right: 10px;
 }
+/* @media screen and (max-width: 420px) {
+  .wrapper .card .content {
+    top: -150px;
+  }
+} */
+
 .wrapper .card .content-up{
   width: 280px;
   height: 200px;
