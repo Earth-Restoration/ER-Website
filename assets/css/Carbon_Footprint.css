@@ -17,7 +17,7 @@
 .background_planet {
     height: 710px;
     min-height: 400px;
-    background: url(../img/carbon_Footprint/background1.jpg) no-repeat center top;
+    background: url(../img/carbon_Footprint/backgroundNew1.jpg) no-repeat center top;
     position: relative;
     background-size: cover;
     overflow: hidden;
@@ -72,7 +72,7 @@
 @media only screen and (max-width: 940px) {
 
     .background_planet {
-        background-image: url(../img/carbon_Footprint/greenPlanet.webp);
+        background-image: url(../img/carbon_Footprint/backgroundNew4.jpg);
         height: 800px;
         /* min-height: 350px; */
     }
@@ -82,7 +82,7 @@
 @media only screen and (max-width: 1200px) {
 
     .background_planet {
-        background-image: url(../img/carbon_Footprint/greenPlanet.webp);
+        background-image: url(../img/carbon_Footprint/backgroundNew3.jpg);
         height: 800px;
         /* min-height: 350px; */
     }

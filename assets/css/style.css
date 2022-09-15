@@ -189,9 +189,9 @@
         border-radius: 25px
     }
 
-    .centered1 {
+    /* .centered1 {
         display: none;
-    }
+    } */
 }
 
 
@@ -204,8 +204,13 @@
 }
 
 .forestrySection {
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 30px;
+}
+
+.forestrySection2 {
+    padding-top: 15px;
+    padding-bottom: 10px;
 }
 
 .blogcard {

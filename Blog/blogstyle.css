@@ -361,3 +361,12 @@ color: rgba(255, 255, 255, 0.60);
 	float: left;
 	line-height: 1;
 }
+
+@media (max-width: 488px) {
+
+  .presentation-title {
+    font-size: 4em;
+  }
+
+ 
+}
