@@ -84,6 +84,7 @@
   
   .container-02 .glassmorphic-card1 .contentBox {
     position: relative;
+    height: 400px;
     margin-top: 20px;
     text-align: center;
     transition: 0.5s;
@@ -92,6 +93,7 @@
   .contentBox h6 {
      color: white;
      padding-bottom: 20px;
+    
   }
   
   .container-02 .glassmorphic-card1 .contentBox:before {
@@ -122,6 +124,7 @@
     display: inline-block;
     padding: 8px 20px;
     margin-top: 15px;
+    margin-bottom: 15px;
     background: #fff;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-left: 1px solid rgba(255, 255, 255, 0.1);
@@ -145,6 +148,10 @@
     text-decoration: none;
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .cardDetails {
+    height: 250px;
   }
   
   @media screen and (max-width: 767px) {

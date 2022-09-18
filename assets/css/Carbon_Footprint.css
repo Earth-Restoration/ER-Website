@@ -17,7 +17,7 @@
 .background_planet {
     height: 710px;
     min-height: 400px;
-    background: url(../img/carbon_Footprint/background1.jpg) no-repeat center top;
+    background: url(../img/carbon_Footprint/backgroundNew1.jpg) no-repeat center top;
     position: relative;
     background-size: cover;
     overflow: hidden;
@@ -72,7 +72,7 @@
 @media only screen and (max-width: 940px) {
 
     .background_planet {
-        background-image: url(../img/carbon_Footprint/greenPlanet.webp);
+        background-image: url(../img/carbon_Footprint/backgroundNew4.jpg);
         height: 800px;
         /* min-height: 350px; */
     }
@@ -82,7 +82,7 @@
 @media only screen and (max-width: 1200px) {
 
     .background_planet {
-        background-image: url(../img/carbon_Footprint/greenPlanet.webp);
+        background-image: url(../img/carbon_Footprint/backgroundNew3.jpg);
         height: 800px;
         /* min-height: 350px; */
     }
@@ -326,7 +326,7 @@
     content: "\f0ac"
 }
 
-#progressbar #personal:before {
+#progressbar #travaling:before {
     font-family: FontAwesome;
     content: "\f0f2"
 }
@@ -353,12 +353,12 @@
 
 #progressbar #expenses:before {
     font-family: FontAwesome;
-    content: "\f236"
+    content: "\f155"
 }
 
 #progressbar #finish:before {
     font-family: FontAwesome;
-    content: "\f236"
+    content: "\f11e"
 }
 
 #progressbar li:before {
@@ -382,7 +382,7 @@
     position: absolute;
     left: 0;
     top: 25px;
-    z-index: -1
+    z-index: -1;
 }
 
 #progressbar li.active:before,
@@ -402,6 +402,55 @@
     width: 100%;
     object-fit: cover
 }
+
 .active {
     color: #1b8b00;
 }
+
+@media (max-width: 840px) {
+    
+    #personol {
+        display: none;
+    }
+    #travaling1 {
+        display: none;
+    }
+    /* #payment {
+        display: none;
+    }
+    #home {
+        display: none;
+    }
+    #transport {
+        display: none;
+    }
+    #furniture {
+        display: none;
+    }
+    #expenses {
+        display: none;
+    }
+    #finish {
+        display: none;
+    } */
+    
+    #progressbar li {
+        list-style-type:circle;
+        font-size: 15px;
+        width: 95%;
+        float:none;
+        position: relative;
+        font-weight: 400;
+        
+    }
+
+    .progressItem {
+        padding-left: 0px;
+        
+    }
+    #progressbar {
+        overflow: visible ;
+       
+    }
+}
+
