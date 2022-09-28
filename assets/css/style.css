@@ -397,3 +397,16 @@ icon-shape {
     height: 2rem;
     
 }
+
+
+.containerbody{
+    padding-bottom: 5px;
+    padding-top: 5px;
+}
+
+.containerbodyimg{
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
