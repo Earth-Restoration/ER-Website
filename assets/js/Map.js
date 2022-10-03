@@ -92,5 +92,5 @@ var marker = L.marker([6.8727, 80.9331], {icon: greenIcon}).addTo(map);
  
 // ]).addTo(map);
 
-// marker.bindPopup("For more details please login <br>to the LifeForce application<br><br><button>SignIn</button> <button>SignUp</button> <button>Cancle</button>").openPopup();
+marker.bindPopup("For more details please login <br>to the LifeForce application<br><br><button>SignIn</button> <button>SignUp</button> <button>Cancle</button>").openPopup();
 // marker.bindPopup("<button>Signin</button>").openPopup();
