@@ -26,6 +26,18 @@
     }
 }
 
+@media (max-width: 640px) {
+    .heading {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 400px) {
+    .heading {
+        font-size: 28px;
+    }
+}
+
 #animation {
     width: 100%;
     height: 100%;
