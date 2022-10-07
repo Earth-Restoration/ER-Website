@@ -295,6 +295,59 @@ forstryH2{
 
 }
 
+.jumbotron5.jumbotron-main5 {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  background-image: url('../assets/img/community/blog/new blogs/backgroundblog_6.jpg');
+
+}
+
+.jumbotron6.jumbotron-main6 {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  background-image: url('../assets/img/community/blog/new blogs/backgroundblog_8.jpg');
+
+}
+
+.jumbotron7.jumbotron-main7 {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  background-image: url('../assets/img/community/blog/new blogs/backgroundblog_12.jpg');
+
+}
+
+
+
 .Hboi {
   font-size: 40px;
 }
