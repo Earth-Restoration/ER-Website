@@ -412,15 +412,78 @@ icon-shape {
 }
 
 
-.play-btn {
+
+  
+
+
+  /*--------------------------------------------------------------
+# Lifeforce
+--------------------------------------------------------------*/
+
+  .lifeforce #d5{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0px;
+    
+    padding-bottom: 0px;
+    position: relative;
+    padding-top: 30px;
+  }
+  
+  @media (max-width: 768px) {
+    .features .nav-link i {
+      padding: 0;
+      line-height: 1;
+      font-size: 36px;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .features .nav-link {
+      padding: 15px;
+    }
+  
+    .features .nav-link i {
+      font-size: 24px;
+    }
+  }
+  
+  .lifeforce .button {
+    background-color: transparent;
+    border: 2px solid #1b8b00;
+    
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  .lifeforce .button a{
+    color: #1b8b00;
+    font-weight: 500;
+  }
+  
+  .lifeforce .button:hover{
+    background-color: #1b8b00;
+  }
+  .lifeforce .button:hover a{
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .play-btn {
     width: 94px;
     height: 94px;
     background: radial-gradient(var(--color-primary) 50%, rgba(0, 131, 116, 0.4) 52%);
     border-radius: 50%;
     display: block;
     position: absolute;
-    left: calc(50% - 47px);
-    top: calc(50% - 47px);
+    left: calc(51% - 47px);
+    top: calc(42% - 47px);
     overflow: hidden;
   }
   
@@ -507,4 +570,9 @@ icon-shape {
       transform: scale(1, 1);
       opacity: 0;
     }
+  }
+
+  #local_img1{
+    width: 400px;
+    height: 350px;
   }
