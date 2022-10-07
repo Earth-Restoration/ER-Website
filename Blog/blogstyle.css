@@ -262,6 +262,22 @@ forstryH2{
   background-position: 50% 50%;
   background-image: url('../assets/img/community/blog/background6.webp');
 }
+
+.jumbotron3.jumbotron-main3 {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url('../assets/img/community/blog/backgroundblog_2.jpg');
+}
+
 .jumbotron.jumbotron-main {
   height: 100%;
   width: 100%;
