@@ -278,6 +278,21 @@ forstryH2{
   background-image: url('../assets/img/community/blog/backgroundblog_2.jpg');
 }
 
+.jumbotron4.jumbotron-main4 {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url('../assets/img/community/blog/new blogs/backgroundblog_3.jpg');
+}
+
 .jumbotron.jumbotron-main {
   height: 100%;
   width: 100%;
