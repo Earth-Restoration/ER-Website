@@ -482,8 +482,8 @@ icon-shape {
     border-radius: 50%;
     display: block;
     position: absolute;
-    left: calc(51% - 47px);
-    top: calc(42% - 47px);
+    left: calc(50% - 47px);
+    top: calc(50% - 47px);
     overflow: hidden;
   }
   
@@ -576,6 +576,31 @@ icon-shape {
     width: 400px;
     height: 350px;
   }
+  @media(max-width: 540px){
+	#local_img1 {
+		width: 350px;
+		height: 300px;
+        
+	}
+}
+@media(max-width: 414px){
+	#local_img1 {
+		width: 350px;
+		height: 310px;
+	}
+}
+@media(max-width: 375px){
+	#local_img1 {
+		height: 290px;
+	}
+    
+}
+
+  .lifeforce  .play-btn {
+    left: calc(51% - 47px);
+    top: calc(42% - 47px);
+    
+  }
 
 
   /*---------------Analog Forestry-------------*/
@@ -624,3 +649,30 @@ icon-shape {
    line-height: 20px;
    font-size: normal;
 }
+
+#analog .button {
+    background-color: transparent;
+    border: 2px solid #1b8b00;
+    
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+  
+  #analog .button a{
+    color: #1b8b00;
+    font-weight: 500;
+  }
+  
+  #analog .button:hover{
+    background-color: #1b8b00;
+  }
+  #analog .button:hover a{
+    color: #fff;
+    font-weight: 500;
+  }
