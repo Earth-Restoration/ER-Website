@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300');
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
-
 .blogcard {
     margin-top: 0px;
     margin-bottom: 0px;
@@ -114,9 +111,9 @@
     color:white;
     font-weight: 300;
   }
-  
+
   .paddingS {
-    margin-top: 6px;
+    margin-top: 5px;
   }   
   .container-02 .glassmorphic-card1 .contentBox a {
     position: relative;
@@ -148,7 +145,6 @@
     font-weight: 500;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   }
-
   .cardDetails {
     height: 250px;
   }

@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Carbon Footprint</title>
+    <title>EarthRestoration</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -52,15 +52,17 @@
         <div class="container d-flex justify-content-center justify-content-md-between">
             <div class="contact-info d-flex align-items-center">
                 <i class="bi bi-envelope d-flex align-items-center"><a
-                        href="mailto:contact@example.com">erestoration.pvt.ltd@gmail.com</a></i>
+                        href="mailto:erestoration.pvt.ltd@gmail.com">erestoration.pvt.ltd@gmail.com</a></i>
                 <i class="bi bi-phone d-flex align-items-center ms-4"><span>+94 76 719 1428</span></i>
             </div>
             <div class="social-links d-none d-md-flex align-items-center">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                <!-- <a href="#" class="twitter"><i class="bi bi-twitter"></i></a> -->
+                <a href="https://www.youtube.com/channel/UCL5dFM7Kr1dMapzjSJExftg?view_as=subscriber" 
+                    class="youtube"><i class="bi bi-youtube"></i></a>
                 <a href="https://www.facebook.com/profile.php?id=100045842366453" class="facebook"><i
                         class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+                <!-- <a href="#" class="instagram"><i class="bi bi-instagram"></i></a> -->
+                <a href="https://www.linkedin.com/in/ranil-senanayake-7a097313/" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
             </div>
         </div>
     </section><!-- End Top Bar -->
@@ -83,9 +85,10 @@
                                 class="bi bi-chevron-down dropdown-indicator"></i></a>
                         <ul>
                             <li><a href="Local_community.html">Local Community</a></li>
-                            <li><a href="global_community.html">global community</a></li>
+                            <li><a href="global_community.html">Global Community</a></li>
                         </ul>
                     </li>
+                    <li><a href="./LifeForce.html">LifeForce</a></li>
                     <li><a href="./index.html#contact">Contact Us</a></li>
                 </ul>
             </nav><!-- .navbar -->
@@ -114,518 +117,507 @@
         </div>
     </section>
 
-    <section>
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-10 col-sm-14 col-md-10 col-lg-8 col-xl-7 text-center p-0 mt-3 mb-2">
-                    <div class="  card px-0 pt-4 pb-0 mt-3 mb-3 ">
-                        <h2 id="heading">Calculate your carbon footprint.</h2>
-                        <p>Use our intuitive calculator to determine how much CO₂ you emit and how much
-                            O<sub>2</sub> you should produce.</p>
-                        <form id="msform">
-                            <!-- progressbar -->
-                            <div class=" progressItem progressList">
-                                <ul id="progressbar" class="d-flex justify-content-center progressItem">
-                                    <li class="active" id="account"><strong id="personol">Personal</strong></li>
-                                    <li id="travaling"><strong id="travaling1">Travaling</strong></li>
-                                    <li id="payment"><strong id="travaling1">Food</strong></li>
-                                    <li id="home"><strong id="travaling1">Home</strong></li>
-                                    <li id="transport"><strong id="travaling1">Transport</strong></li>
-                                    <li id="furniture"><strong id="travaling1">Appliances</strong></li>
-                                    <li id="expenses"><strong id="travaling1">Expenses</strong></li>
-                                    <li id="finish"><strong id="travaling1">Finish</strong></li>
-                                </ul>
+    <section class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-10 col-sm-14 col-md-10 col-lg-8 col-xl-7 text-center p-0 mt-3 mb-2">
+                <div class="  card px-0 pt-4 pb-0 mt-3 mb-3 ">
+                    <h2 id="heading">Calculate your carbon footprint.</h2>
+                    <p>Use our intuitive calculator to determine how much CO₂ you emit and how much
+                        O<sub>2</sub> you should produce.</p>
+                    <form id="msform">
+                        <!-- progressbar -->
+                        <div class=" progressItem progressList">
+                            <ul id="progressbar" class="d-flex justify-content-center progressItem">
+                                <li class="active" id="account"><strong id="personol">Personal</strong></li>
+                                <li id="travaling"><strong id="travaling1">Travaling</strong></li>
+                                <li id="payment"><strong id="travaling1">Food</strong></li>
+                                <li id="home"><strong id="travaling1">Home</strong></li>
+                                <li id="transport"><strong id="travaling1">Transport</strong></li>
+                                <li id="furniture"><strong id="travaling1">Appliances</strong></li>
+                                <li id="expenses"><strong id="travaling1">Expenses</strong></li>
+                                <li id="finish"><strong id="travaling1">Finish</strong></li>
+                            </ul>
+                        </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div> <br>
+
+                        <!-- fieldsets -->
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-7">
+                                        <h2 class="fs-title">Personal Information:</h2>
+                                    </div>
+                                </div>
+
+                                <label class="fieldlabels">Country: *</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" name="country" class="form-control" aria-label="Default"
+                                        placeholder="Country Name">
+                                </div>
+
+                                <div style="display:none;" id="errormsg">
+                                    <div
+                                        class="alert alert-success alert-dismissible d-flex align-items-center fade show">
+                                        <i class="bi bi-exclamation-lg"></i>
+                                        <strong class="mx-2"></strong> <span id="alert"></span>
+                                    </div>
+                                </div>
+
+                                <label class="fieldlabels">ZipCode: *</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" class="form-control" aria-label="Default"
+                                        aria-describedby="inputGroup-sizing-default">
+                                </div>
+
                             </div>
-                            <div class="progress">
-                                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                                    aria-valuemin="0" aria-valuemax="100"></div>
-                            </div> <br>
+                            <input type="button" name="next" class="next action-button" value="Next"
+                                onclick="taravalingview()" />
 
-                            <!-- fieldsets -->
-                            <fieldset>
-                                <div class="form-card">
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="row">
+                                    <div class="col-8">
+                                        <h2 class="fs-title">Travelling Information:</h2>
+                                    </div>
+
+                                </div> <label class="fieldlabels">Household: *</label><br>
+                                <h4>Would you like to calculate your household footprint or just your individual
+                                    footprint?</h4>
+                                <div class="d-grid gap-2 col-6 ms-2">
+                                    <button type="button" class="btn btn-success btn-md" onclick="justme()">Just
+                                        Me</button>
+                                    <button type="button" class="btn btn-success btn-md"
+                                        onclick="showHouseMembers()">Household</button>
+                                </div>
+
+
+                                <div class="mt-3" id="householdmembers" style="display: none;">
+
+
                                     <div class="row">
-                                        <div class="col-7">
-                                            <h2 class="fs-title">Personal Information:</h2>
-                                        </div>
-                                    </div>
-
-                                    <label class="fieldlabels">Country: *</label>
-                                    <div class="input-group mb-3">
-                                        <input type="text" name="country" class="form-control" aria-label="Default"
-                                            placeholder="Country Name">
-                                    </div>
-
-                                    <div style="display:none;" id="errormsg">
-                                        <div
-                                            class="alert alert-success alert-dismissible d-flex align-items-center fade show">
-                                            <i class="bi bi-exclamation-lg"></i>
-                                            <strong class="mx-2"></strong> <span id="alert"></span>
-                                        </div>
-                                    </div>
-
-                                    <label class="fieldlabels">ZipCode: *</label>
-                                    <div class="input-group mb-3">
-                                        <input type="text" class="form-control" aria-label="Default"
-                                            aria-describedby="inputGroup-sizing-default">
-                                    </div>
-
-                                </div>
-                                <input type="button" name="next" class="next action-button" value="Next"
-                                    onclick="taravalingview()" />
-
-                            </fieldset>
-
-                            <fieldset>
-                                <div class="form-card">
-                                    <div class="row">
-                                        <div class="col-7">
-                                            <h2 class="fs-title">Travelling Information:</h2>
-                                        </div>
-
-                                    </div> <label class="fieldlabels">Household: *</label><br>
-                                    <h4>Would you like to calculate your household footprint or just your individual
-                                        footprint?</h4>
-                                    <div class="d-grid gap-2 col-6 ms-2">
-                                        <button type="button" class="btn btn-success btn-md" onclick="justme()">Just
-                                            Me</button>
-                                        <button type="button" class="btn btn-success btn-md"
-                                            onclick="showHouseMembers()">Household</button>
-                                    </div>
-
-
-                                    <div class="mt-3" id="householdmembers" style="display: none;">
-                                        <div class="container">
-                                            <div class="row mb-8 justify-content-start">
-                                                <div class="col-md-6 col-12">
-                                                    <div class="row">
-                                                        <div class="col-12">
-                                                            <div class="d-flex justify-content-between">
-                                                                <div>
-                                                                    <p class="text-dark">How many adults?</p>
-                                                                </div>
-                                                                <div
-                                                                    class="input-group w-auto justify-content-end align-items-center">
-                                                                    <input type="button" value="-"
-                                                                        class="button-minus border rounded-circle  icon-shape icon-sm mx-1 "
-                                                                        data-field="quantity">
-                                                                    <input type="number" step="1" max="10" value="1"
-                                                                        name="quantity"
-                                                                        class="quantity-field border-0 text-center w-25">
-                                                                    <input type="button" value="+"
-                                                                        class="button-plus border rounded-circle icon-shape icon-sm "
-                                                                        data-field="quantity">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12">
-                                                            <div class="d-flex justify-content-between">
-                                                                <div>
-                                                                    <p class="text-dark">How many children?</p>
-                                                                </div>
-                                                                <div
-                                                                    class="input-group w-auto justify-content-end align-items-center">
-                                                                    <input type="button" value="-"
-                                                                        class="button-minus border rounded-circle  icon-shape icon-sm mx-1 "
-                                                                        data-field="quantity">
-                                                                    <input type="number" step="1" max="10" value="1"
-                                                                        name="quantity"
-                                                                        class="quantity-field border-0 text-center w-25">
-                                                                    <input type="button" value="+"
-                                                                        class="button-plus border rounded-circle icon-shape icon-sm lh-0"
-                                                                        data-field="quantity">
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <p class="text-dark">How many adults?</p>
+                                                </div>
+                                                <div class="input-group w-auto justify-content-end align-items-center">
+                                                    <input type="button" value="-"
+                                                        class="button-minus border rounded-circle  icon-shape icon-sm mx-1 "
+                                                        data-field="quantity">
+                                                    <input type="number" step="1" max="10" value="1" name="quantity"
+                                                        class="quantity-field border-0 text-center w-25">
+                                                    <input type="button" value="+"
+                                                        class="button-plus border rounded-circle icon-shape icon-sm "
+                                                        data-field="quantity">
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <br>
-
-                                    <label class="fieldlabels">Local taravaling: *</label>
-                                    <h4>How many cars does your household use?</h4>
-
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" onclick="carDetailsNone()"
-                                            type="button">None</button>
-                                        <button class="btn btn-success" onclick="carDetails()" type="button">1
-                                            Car</button>
-                                        <button class="btn btn-success" onclick="carDetails()" type="button">2
-                                            Car</button>
-                                        <button class="btn btn-success" onclick="carDetails()" type="button">3
-                                            Car</button>
-                                    </div>
-
-                                    <div id="showCar" style="display: none;">
-                                        <div class="pt-3 pb-2">
-                                            <h2>Car 1 details</h2>
-                                            <h5>Fill out details about this car, such as fuel efficiency and distance
-                                                driven
-                                                per week.</h5>
-                                            <div class="container ms-2">
-                                                <div class="row row-cols-auto">
-                                                    <button type="button"
-                                                        class="btn btn-outline-success ms-2 col col-lg-2">Gasoline</button>
-                                                    <button type="button"
-                                                        class="btn btn-outline-success ms-2 col col-lg-2">Hybrid</button>
-                                                    <button type="button"
-                                                        class="btn btn-outline-success ms-2 col col-lg-2">Electric</button>
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-between">
+                                                <div>
+                                                    <p class="text-dark">How many children?</p>
                                                 </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="pt-3 pb-2">
-                                            <h5>How many miles per gallon does Car 1 get?.</h5>
-                                            <div class="container ms-2">
-                                                <div class="row row-cols-auto">
-                                                    <button type="button"
-                                                        class="btn btn-outline-success ms-2 col col-lg-2">Guzzler</button>
-                                                    <button type="button"
-                                                        class="btn btn-outline-success ms-2 col col-lg-2">Average</button>
-                                                    <input type="number"
-                                                        class="btn btn-outline-success ms-2 col col-lg-2"
-                                                        placeholder="Custom">
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="pt-3 pb-2">
-                                            <h5>How many miles do you drive each week in Car 1?</h5>
-                                            <div class="container ms-2">
-                                                <div class="row row-cols-auto">
-                                                    <button type="button"
-                                                        class="btn btn-outline-success ms-2 col col-lg-2">Rarely</button>
-                                                    <button type="button"
-                                                        class="btn btn-outline-success ms-2 col col-lg-2">Average</button>
-                                                    <input type="number"
-                                                        class="btn btn-outline-success ms-2 col col-lg-2"
-                                                        placeholder="Custom">
+                                                <div class="input-group w-auto justify-content-end align-items-center">
+                                                    <input type="button" value="-"
+                                                        class="button-minus border rounded-circle  icon-shape icon-sm mx-1 "
+                                                        data-field="quantity">
+                                                    <input type="number" step="1" max="10" value="1" name="quantity"
+                                                        class="quantity-field border-0 text-center w-25">
+                                                    <input type="button" value="+"
+                                                        class="button-plus border rounded-circle icon-shape icon-sm lh-0"
+                                                        data-field="quantity">
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <label class="fieldlabels mt-2 pt-2">Short flights: *</label>
-                                    <h4>How many short flights do you take each year?</h4>
 
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">None</button>
-                                        <button class="btn btn-success" type="button">Two roundtrips</button>
-                                        <button class="btn btn-success" type="button">Four roundtrips</button>
-                                        <button class="btn btn-success" type="button">Six roundtrips</button>
-                                    </div>
-
-                                    <label class="fieldlabels mt-2 pt-2">Long flights: *</label>
-                                    <h4>How many long flights do you take each year?</h4>
-
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">None</button>
-                                        <button class="btn btn-success" type="button">Two roundtrips</button>
-                                        <button class="btn btn-success" type="button">Four roundtrips</button>
-                                        <button class="btn btn-success" type="button">Six roundtrips</button>
-                                    </div>
                                 </div>
-                                <input type="button" name="next" class="next action-button" value="Next" />
+                                <br>
 
-                                <input type="button" name="previous" class="previous action-button-previous"
-                                    value="Previous" />
+                                <label class="fieldlabels">Local taravaling: *</label>
+                                <h4>How many cars does your household use?</h4>
 
-                            </fieldset>
-
-                            <fieldset>
-                                <div class="form-card">
-
-                                    <div class="col-7">
-                                        <h2 class="fs-title">Diet Information:</h2>
-                                    </div>
-
-                                    <label class="fieldlabels mt-2 pt-2">Diet: *</label>
-                                    <h4>What is your diet like?</h4>
-
-                                    <div class="d-grid gap-2 col-4 ms-2 mt-3">
-                                        <button class="btn btn-success" onclick="showdiary()"
-                                            type="button">Vegetarian</button>
-                                        <button class="btn btn-success" onclick="hidevegan()"
-                                            type="button">Vegan</button>
-                                        <button class="btn btn-success" onclick="showRemMeadprotien()"
-                                            type="button">Neither</button>
-                                    </div>
-
-                                    <div id="redMeat" style="display: none;">
-                                        <label class="fieldlabels mt-2 pt-2">Red Meat: *</label>
-                                        <h4>How often do you eat red meat?</h4>
-
-                                        <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                            <button class="btn btn-success" type="button">Never</button>
-                                            <button class="btn btn-success" type="button">Couple times a week</button>
-                                            <button class="btn btn-success" type="button">Every day</button>
-                                            <button class="btn btn-success" type="button">Couple times a months</button>
-                                        </div>
-                                    </div>
-
-                                    <div id="protion" style="display: none;">
-                                        <label class="fieldlabels mt-2 pt-2">Other protien: *</label>
-                                        <h4>How often do you have chicken, pork, seafood, or eggs?</h4>
-
-                                        <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                            <button class="btn btn-success" type="button">Couple times a week</button>
-                                            <button class="btn btn-success" type="button">Once a day</button>
-                                            <button class="btn btn-success" type="button">Many times a day</button>
-                                        </div>
-                                    </div>
-
-                                    <div id="dairy">
-                                        <label class="fieldlabels mt-2 pt-2">Dairy: *</label>
-                                        <h4>How often do you have milk, cheese, or other dairy products?</h4>
-                                        <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                            <button class="btn btn-success" type="button">Couple times a week</button>
-                                            <button class="btn btn-success" type="button">Once a day</button>
-                                            <button class="btn btn-success" type="button">Many times a day</button>
-                                        </div>
-                                    </div>
+                                <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                    <button class="btn btn-success" onclick="carDetailsNone()"
+                                        type="button">None</button>
+                                    <button class="btn btn-success" onclick="carDetails()" type="button">1
+                                        Car</button>
+                                    <button class="btn btn-success" onclick="carDetails()" type="button">2
+                                        Car</button>
+                                    <button class="btn btn-success" onclick="carDetails()" type="button">3
+                                        Car</button>
                                 </div>
 
-                                <input type="button" name="next" class="next action-button" value="Next" />
-
-                                <input type="button" name="previous" class="previous action-button-previous"
-                                    value="Previous" />
-                            </fieldset>
-
-                            <fieldset>
-                                <div class="form-card">
-                                    <div class="col-7">
-                                        <h2 class="fs-title">Home Information:</h2>
-                                    </div>
-
-                                    <label class="fieldlabels pt-2">Home Size: *</label>
-                                    <h4>How big is your living space?</h4>
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">Small apartment</button>
-                                        <button class="btn btn-success" type="button">Average home</button>
-                                        <button class="btn btn-success" type="button">Larger home</button>
-                                    </div>
-
-                                    <label class="fieldlabels pt-3">Pets: *</label>
-                                    <h4>Do you have any pets?</h4>
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">Yes</button>
-                                        <button class="btn btn-success" type="button">No</button>
-                                    </div>
-                                </div>
-
-                                <input type="button" name="next" class="next action-button" value="Next" />
-
-                                <input type="button" name="previous" class="previous action-button-previous"
-                                    value="Previous" />
-
-                            </fieldset>
-
-                            <fieldset>
-                                <div class="form-card">
-                                    <div class="col-7">
-                                        <h2 class="fs-title">Transport Information:</h2>
-                                    </div>
-
-                                    <label class="fieldlabels pt-2">public Transport: *</label>
-                                    <h4>How else do you get around?</h4>
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button" onclick="showbus()">Bus</button>
-                                        <button class="btn btn-success" type="button"
-                                            onclick="showtransitrail()">Transit Rail</button>
-                                        <button class="btn btn-success" type="button" onclick="showintercity()">Inter
-                                            City Rail</button>
-                                        <button class="btn btn-success" type="button">Walk Or Bike</button>
-                                    </div>
-
-                                    <div id="bus" style="display: none;">
-                                        <label class="fieldlabels pt-2">Bus Per week: *</label>
-                                        <h4>How much do you travel by bus each week?</h4>
-                                        <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                            <button class="btn btn-success" type="button">Rarely</button>
-                                            <button class="btn btn-success" type="button">Daily commute</button>
-                                            <button class="btn btn-success" type="button">Always</button>
+                                <div id="showCar" style="display: none;">
+                                    <div class="pt-3 pb-2">
+                                        <h2>Car 1 details</h2>
+                                        <h5>Fill out details about this car, such as fuel efficiency and distance
+                                            driven
+                                            per week.</h5>
+                                        <div class="container ms-2">
+                                            <div class="row row-cols-auto">
+                                                <button type="button"
+                                                    class="btn btn-outline-success ms-2 mt-2 col col-lg-2">Gasoline</button>
+                                                <button type="button"
+                                                    class="btn btn-outline-success ms-2 mt-2 col col-lg-2">Hybrid </button>
+                                                <button type="button"
+                                                    class="btn btn-outline-success ms-2 mt-2 col col-lg-2">Electric</button>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div id="rail" style="display: none;">
-                                        <label class="fieldlabels pt-2">Transit rail: *</label>
-                                        <h4>How much do you travel by transit rail each week?</h4>
-                                        <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                            <button class="btn btn-success" type="button">Rarely</button>
-                                            <button class="btn btn-success" type="button">Daily commute</button>
-                                            <button class="btn btn-success" type="button">Always</button>
+                                    <div class="pt-3 pb-2">
+                                        <h5>How many miles per gallon does Car 1 get?.</h5>
+                                        <div class="container ms-2">
+                                            <div class="row row-cols-auto">
+                                                <button type="button"
+                                                    class="btn btn-outline-success ms-2 mt-2 col col-lg-2">Guzzler  (15 mpg)</button>
+                                                <button type="button"
+                                                    class="btn btn-outline-success ms-2 mt-2 col col-lg-2">Average (22 mpg)</button>
+                                                <input type="number" class="btn btn-outline-success ms-2 mt-2 col col-lg-2"
+                                                    placeholder="Custom (mpg)">
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <div id="intercity" style="display: none;">
-                                        <label class="fieldlabels pt-2">Inter city: *</label>
-                                        <h4>How much do you travel by inter city rail each year?</h4>
-                                        <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                            <button class="btn btn-success" type="button">A few short trips a
-                                                year</button>
-                                            <button class="btn btn-success" type="button">Between cities often</button>
-                                            <button class="btn btn-success" type="button">Many long trips a
-                                                year</button>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <input type="button" name="next" class="next action-button" value="Next" />
-
-                                <input type="button" name="previous" class="previous action-button-previous"
-                                    value="Previous" />
-
-                            </fieldset>
-
-                            <fieldset>
-                                <div class="form-card">
-                                    <div class="col-7">
-                                        <h2 class="fs-title">Appliances Information:</h2>
-                                    </div>
-
-                                    <label class="fieldlabels pt-2">Furnishings: *</label>
-                                    <h4>How much do you spend on furniture and appliances per month?</h4>
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">A little</button>
-                                        <button class="btn btn-success" type="button">Average</button>
-                                        <button class="btn btn-success" type="button">A lot</button>
-
-                                    </div>
-
-                                    <label class="fieldlabels pt-2">Cloths: *</label>
-                                    <h4>How much do you spend on clothes each month?</h4>
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">A little</button>
-                                        <button class="btn btn-success" type="button">Average</button>
-                                        <button class="btn btn-success" type="button">A lot</button>
-
-                                    </div>
-
-                                    <label class="fieldlabels pt-2">Supplies: *</label>
-                                    <h4>How much do you spend on all other "stuff" every month?</h4>
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">A little</button>
-                                        <button class="btn btn-success" type="button">Average</button>
-                                        <button class="btn btn-success" type="button">A lot</button>
-                                    </div>
-                                </div>
-
-                                <input type="button" name="next" class="next action-button" value="Next" />
-
-                                <input type="button" name="previous" class="previous action-button-previous"
-                                    value="Previous" />
-
-                            </fieldset>
-
-                            <fieldset>
-                                <div class="form-card">
-                                    <div class="col-7">
-                                        <h2 class="fs-title">Service Information:</h2>
-                                    </div>
-
-                                    <label class="fieldlabels pt-2">Services: *</label>
-                                    <h4>How much do you spend on services per month?</h4>
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">A little</button>
-                                        <button class="btn btn-success" type="button">Average</button>
-                                        <button class="btn btn-success" type="button">A lot</button>
-
-                                    </div>
-
-                                    <label class="fieldlabels pt-2">Electricity: *</label>
-                                    <h4>How much electricity do you use?</h4>
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">A little</button>
-                                        <button class="btn btn-success" type="button">Average</button>
-                                        <button class="btn btn-success" type="button">A lot</button>
-
-                                    </div>
-
-                                    <label class="fieldlabels pt-2">Renewables: *</label>
-                                    <h4>How much renewable energy do you purchase or produce?</h4>
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">None</button>
-                                        <button class="btn btn-success" type="button">Half</button>
-                                        <button class="btn btn-success" type="button">All</button>
-                                    </div>
-
-                                    <label class="fieldlabels pt-2">Natural gas: *</label>
-                                    <h4>How much natural gas do you use?</h4>
-                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
-                                        <button class="btn btn-success" type="button">None</button>
-                                        <button class="btn btn-success" type="button">Average</button>
-                                        <button class="btn btn-success" type="button">A lot</button>
-
-                                    </div>
-
-                                    <div class="input-group col-6 pt-3 ms-2">
-                                        <label class="input-group-text btn btn-success" for="inputGroupSelect01">Per
-                                            Month</label>
-                                        <select class="form-select" id="inputGroupSelect01" aria-placeholder="">
-                                            <option selected>Therm </option>
-                                            <option value="1">MMbtu</option>
-                                            <option value="2">Ccf</option>
-                                            <option value="3">Mcf</option>
-                                            <option value="3">M<sub>3</sub></option>
-                                        </select>
-                                    </div>
-                                </div>
-
-                                <input type="button" name="next" class="next action-button" value="Next" />
-
-                                <input type="button" name="previous" class="previous action-button-previous"
-                                    value="Previous" />
-
-                            </fieldset>
-
-                            <fieldset>
-                                <div class="form-card">
-                                    <div class="col-7">
-                                        <h2 class="fs-title">Final Part:</h2>
-                                    </div>
-
-                                    <label class="fieldlabels">Email: *</label>
-                                    <div class="input-group mb-3">
-                                        <input type="text" name="ResultsEmail" id="ResultsEmail1"
-                                            class="btn-outline-success" aria-label="Default"
-                                            placeholder="Email address"><br>
-
-                                    </div>
-                                    <h2 id="resultEmail"></h2>
-                                    <div style="display:none;" id="errormsg2">
-                                        <div
-                                            class="alert alert-success alert-dismissible d-flex align-items-center fade show">
-                                            <i class="bi bi-exclamation-lg"></i>
-                                            <strong class="mx-2"></strong> <span id="alert2"></span>
-                                        </div>
-                                    </div>
-
-                                    <div class="d-grid gap-2 col-3 mt-3">
-                                        <button class="btn btn-success" onclick="succsess()"
-                                            type="button">Submit</button>
-                                    </div>
-
-                                    <div id="successDiv" style="display: none;">
-                                        <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
-                                        <div class="row justify-content-center">
-                                            <div class="col-3"> <img src="http://cure.delivery/img/GwStPmg.png"
-                                                    class="fit-image"> </div>
-                                        </div> <br><br>
-                                        <div class="row justify-content-center">
-                                            <div class="col-7 text-center">
-                                                <h5 class="purple-text text-center">Quiz complete!</h5>
+                                    <div class="pt-3 pb-2">
+                                        <h5>How many miles do you drive each week in Car 1?</h5>
+                                        <div class="container ms-2">
+                                            <div class="row row-cols-auto">
+                                                <button type="button"
+                                                    class="btn btn-outline-success ms-2 mt-2 col col-lg-2">Rarely (50 mi)</button>
+                                                <button type="button"
+                                                    class="btn btn-outline-success ms-2 mt-2 col col-lg-2">Average (200 mi)</button>
+                                                <input type="number" class="btn btn-outline-success ms-2 mt-2 col col-lg-2"
+                                                    placeholder="Custom (mi)">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </fieldset>
-                        </form>
-                    </div>
+
+                                <label class="fieldlabels mt-2 pt-2">Short flights: *</label>
+                                <h4>How many short flights do you take each year?</h4>
+
+                                <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                    <button class="btn btn-success" type="button">None</button>
+                                    <button class="btn btn-success" type="button">Two roundtrips</button>
+                                    <button class="btn btn-success" type="button">Four roundtrips</button>
+                                    <button class="btn btn-success" type="button">Six roundtrips</button>
+                                </div>
+
+                                <label class="fieldlabels mt-2 pt-2">Long flights: *</label>
+                                <h4>How many long flights do you take each year?</h4>
+
+                                <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                    <button class="btn btn-success" type="button">None</button>
+                                    <button class="btn btn-success" type="button">Two roundtrips</button>
+                                    <button class="btn btn-success" type="button">Four roundtrips</button>
+                                    <button class="btn btn-success" type="button">Six roundtrips</button>
+                                </div>
+                            </div>
+                            <input type="button" name="next" class="next action-button" value="Next" />
+
+                            <input type="button" name="previous" class="previous action-button-previous"
+                                value="Previous" />
+
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-card">
+
+                                <div class="col-10">
+                                    <h2 class="fs-title">Diet Information:</h2>
+                                </div>
+
+                                <label class="fieldlabels mt-2 pt-2">Diet: *</label>
+                                <h4>What is your diet like?</h4>
+
+                                <div class="d-grid gap-2 col-4 ms-2 mt-3">
+                                    <button class="btn btn-success" onclick="showdiary()"
+                                        type="button">Vegetarian</button>
+                                    <button class="btn btn-success" onclick="hidevegan()" type="button">Vegan</button>
+                                    <button class="btn btn-success" onclick="showRemMeadprotien()"
+                                        type="button">Neither</button>
+                                </div>
+
+                                <div id="redMeat" style="display: none;">
+                                    <label class="fieldlabels mt-2 pt-2">Red Meat: *</label>
+                                    <h4>How often do you eat red meat?</h4>
+
+                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                        <button class="btn btn-success" type="button">Never</button>
+                                        <button class="btn btn-success" type="button">Couple times a week</button>
+                                        <button class="btn btn-success" type="button">Every day</button>
+                                        <button class="btn btn-success" type="button">Couple times a months</button>
+                                    </div>
+                                </div>
+
+                                <div id="protion" style="display: none;">
+                                    <label class="fieldlabels mt-2 pt-2">Other protien: *</label>
+                                    <h4>How often do you have chicken, pork, seafood, or eggs?</h4>
+
+                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                        <button class="btn btn-success" type="button">Couple times a week</button>
+                                        <button class="btn btn-success" type="button">Once a day</button>
+                                        <button class="btn btn-success" type="button">Many times a day</button>
+                                    </div>
+                                </div>
+
+                                <div id="dairy">
+                                    <label class="fieldlabels mt-2 pt-2">Dairy: *</label>
+                                    <h4>How often do you have milk, cheese, or other dairy products?</h4>
+                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                        <button class="btn btn-success" type="button">Couple times a week</button>
+                                        <button class="btn btn-success" type="button">Once a day</button>
+                                        <button class="btn btn-success" type="button">Many times a day</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="button" name="next" class="next action-button" value="Next" />
+
+                            <input type="button" name="previous" class="previous action-button-previous"
+                                value="Previous" />
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="col-7">
+                                    <h2 class="fs-title">Home Information:</h2>
+                                </div>
+
+                                <label class="fieldlabels pt-2">Home Size: *</label>
+                                <h4>How big is your living space?</h4>
+                                <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                    <button class="btn btn-success" type="button">Small apartment</button>
+                                    <button class="btn btn-success" type="button">Average home</button>
+                                    <button class="btn btn-success" type="button">Larger home</button>
+                                </div>
+
+                                <label class="fieldlabels pt-3">Pets: *</label>
+                                <h4>Do you have any pets?</h4>
+                                <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                    <button class="btn btn-success" type="button">Yes</button>
+                                    <button class="btn btn-success" type="button">No</button>
+                                </div>
+                            </div>
+
+                            <input type="button" name="next" class="next action-button" value="Next" />
+
+                            <input type="button" name="previous" class="previous action-button-previous"
+                                value="Previous" />
+
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="col-7">
+                                    <h2 class="fs-title">Transport Information:</h2>
+                                </div>
+
+                                <label class="fieldlabels pt-2">public Transport: *</label>
+                                <h4>How else do you get around?</h4>
+                                <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                    <button class="btn btn-success" type="button" onclick="showbus()">Bus</button>
+                                    <button class="btn btn-success" type="button" onclick="showtransitrail()">Transit
+                                        Rail</button>
+                                    <button class="btn btn-success" type="button" onclick="showintercity()">Inter
+                                        City Rail</button>
+                                    <button class="btn btn-success" type="button">Walk Or Bike</button>
+                                </div>
+
+                                <div id="bus" style="display: none;">
+                                    <label class="fieldlabels pt-2">Bus Per week: *</label>
+                                    <h4>How much do you travel by bus each week?</h4>
+                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                        <button class="btn btn-success" type="button">Rarely</button>
+                                        <button class="btn btn-success" type="button">Daily commute</button>
+                                        <button class="btn btn-success" type="button">Always</button>
+                                    </div>
+                                </div>
+
+                                <div id="rail" style="display: none;">
+                                    <label class="fieldlabels pt-2">Transit rail: *</label>
+                                    <h4>How much do you travel by transit rail each week?</h4>
+                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                        <button class="btn btn-success" type="button">Rarely</button>
+                                        <button class="btn btn-success" type="button">Daily commute</button>
+                                        <button class="btn btn-success" type="button">Always</button>
+                                    </div>
+                                </div>
+
+                                <div id="intercity" style="display: none;">
+                                    <label class="fieldlabels pt-2">Inter city: *</label>
+                                    <h4>How much do you travel by inter city rail each year?</h4>
+                                    <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                        <button class="btn btn-success" type="button">A few short trips a
+                                            year</button>
+                                        <button class="btn btn-success" type="button">Between cities often</button>
+                                        <button class="btn btn-success" type="button">Many long trips a
+                                            year</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <input type="button" name="next" class="next action-button" value="Next" />
+
+                            <input type="button" name="previous" class="previous action-button-previous"
+                                value="Previous" />
+
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="col-7">
+                                    <h2 class="fs-title">Appliances Information:</h2>
+                                </div>
+
+                                <label class="fieldlabels pt-2">Furnishings: *</label>
+                                <h4>How much do you spend on furniture and appliances per month?</h4>
+                                <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                    <button class="btn btn-success" type="button">A little</button>
+                                    <button class="btn btn-success" type="button">Average</button>
+                                    <button class="btn btn-success" type="button">A lot</button>
+
+                                </div>
+
+                                <label class="fieldlabels pt-2">Cloths: *</label>
+                                <h4>How much do you spend on clothes each month?</h4>
+                                <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                    <button class="btn btn-success" type="button">A little</button>
+                                    <button class="btn btn-success" type="button">Average</button>
+                                    <button class="btn btn-success" type="button">A lot</button>
+
+                                </div>
+
+                                <label class="fieldlabels pt-2">Supplies: *</label>
+                                <h4>How much do you spend on all other "stuff" every month?</h4>
+                                <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                    <button class="btn btn-success" type="button">A little</button>
+                                    <button class="btn btn-success" type="button">Average</button>
+                                    <button class="btn btn-success" type="button">A lot</button>
+                                </div>
+                            </div>
+
+                            <input type="button" name="next" class="next action-button" value="Next" />
+
+                            <input type="button" name="previous" class="previous action-button-previous"
+                                value="Previous" />
+
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="col-7">
+                                    <h2 class="fs-title">Service Information:</h2>
+                                </div>
+
+                                <label class="fieldlabels pt-2">Services: *</label>
+                                <h4>How much do you spend on services per month?</h4>
+                                <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                    <button class="btn btn-success" type="button">A little</button>
+                                    <button class="btn btn-success" type="button">Average</button>
+                                    <button class="btn btn-success" type="button">A lot</button>
+
+                                </div>
+
+                                <label class="fieldlabels pt-2">Electricity: *</label>
+                                <h4>How much electricity do you use?</h4>
+                                <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                    <button class="btn btn-success" type="button">A little</button>
+                                    <button class="btn btn-success" type="button">Average</button>
+                                    <button class="btn btn-success" type="button">A lot</button>
+
+                                </div>
+
+                                <label class="fieldlabels pt-2">Renewables: *</label>
+                                <h4>How much renewable energy do you purchase or produce?</h4>
+                                <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                    <button class="btn btn-success" type="button">None</button>
+                                    <button class="btn btn-success" type="button">Half</button>
+                                    <button class="btn btn-success" type="button">All</button>
+                                </div>
+
+                                <label class="fieldlabels pt-2">Natural gas: *</label>
+                                <h4>How much natural gas do you use?</h4>
+                                <div class="d-grid gap-2 col-6 ms-2 mt-3">
+                                    <button class="btn btn-success" type="button">None</button>
+                                    <button class="btn btn-success" type="button">Average</button>
+                                    <button class="btn btn-success" type="button">A lot</button>
+
+                                </div>
+
+                                <div class="input-group col-6 pt-3 ms-2">
+                                    <label class="input-group-text btn btn-success" for="inputGroupSelect01">Per
+                                        Month</label>
+                                    <select class="form-select" id="inputGroupSelect01" aria-placeholder="">
+                                        <option selected>Therm </option>
+                                        <option value="1">MMbtu</option>
+                                        <option value="2">Ccf</option>
+                                        <option value="3">Mcf</option>
+                                        <option value="3">M<sub>3</sub></option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <input type="button" name="next" class="next action-button" value="Next" />
+
+                            <input type="button" name="previous" class="previous action-button-previous"
+                                value="Previous" />
+
+                        </fieldset>
+
+                        <fieldset>
+                            <div class="form-card">
+                                <div class="col-7">
+                                    <h2 class="fs-title">Final Part:</h2>
+                                </div>
+
+                                <label class="fieldlabels">Email: *</label>
+                                <div class="input-group mb-3">
+                                    <input type="text" name="ResultsEmail" id="ResultsEmail1"
+                                        class="btn-outline-success" aria-label="Default"
+                                        placeholder="Email address"><br>
+
+                                </div>
+                                <h2 id="resultEmail"></h2>
+                                <div style="display:none;" id="errormsg2">
+                                    <div
+                                        class="alert alert-success alert-dismissible d-flex align-items-center fade show">
+                                        <i class="bi bi-exclamation-lg"></i>
+                                        <strong class="mx-2"></strong> <span id="alert2"></span>
+                                    </div>
+                                </div>
+
+                                <div class="d-grid gap-2 col-3 mt-3">
+                                    <button class="btn btn-success" onclick="succsess()" type="button">Submit</button>
+                                </div>
+
+                                <div id="successDiv" style="display: none;">
+                                    <h2 class="purple-text text-center"><strong>SUCCESS !</strong></h2> <br>
+                                    <div class="row justify-content-center">
+                                        <div class="col-3"> <img src="http://cure.delivery/img/GwStPmg.png"
+                                                class="fit-image"> </div>
+                                    </div> <br><br>
+                                    <div class="row justify-content-center">
+                                        <div class="col-7 text-center">
+                                            <h5 class="purple-text text-center">Quiz complete!</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
+
     </section>
 
     <!-- ======= Footer ======= -->
@@ -636,7 +628,7 @@
                 <div class="col-lg-5 col-md-12 footer-info ">
                     <div class="logo d-flex justify-content-center">
                         <a href="index.html">
-                            <img src="assets/img/Logoicon.png">
+                            <img src="assets/img/Logoicon.png" alt="Earth Restoration Logo">
                         </a>
                     </div>
 
@@ -665,24 +657,28 @@
                     <div class="tablist d-flex justify-content-center">
                         <ul>
                             <li><a href="./index.html#hero">Home</a></li>
-                            <li><a href="./index.html#about">Who we are</a></li>
+                            <li><a href="./index.html#team">Our Team</a></li>
+              <!-- <li><a href="#about">Who We Are</a></li> -->
 
-                            <div class="dropdown">
-                                <li>Blog</li>
-                                <div class="dropdown-content">
-                                    <li><a href="Local_community.html">Local Community</a></li>
-                                    <li><a href="global_community.html">Global Community</a></li>
-                                </div>
-                            </div>
-
-                            <!--<li><a href="#">Blogs</a>
+              <div class="dropdown">
+                <li>Blog</li><i class="bi bi-chevron-down dropdown-indicator"></i>
+                <div class="dropdown-content">
+                  <li><a href="./Local_community.html">Local Community</a></li>
+                  <li><a href="./global_community.html">Global Community</a></li>
+                </div>
+              </div>
+              
+              <!--<li><a href="#">Blogs</a>
               <li><a href="Local_community.html">Local Community</a></li>
               <li><a href="global_community.html">Global Community</a></li>
               </li>-->
+                
+              <li><a href="./index.html#faqlist">FAQ's</a></li>
+              <li><a href="./LifeForce.html">LifeForce</a></li>
+              <!-- <li><a href="#contact">Contact Us</a></li> -->
+              <li><a href="./privacyPolicy/PrivacyPolicy.html">Privacy policy</a></li>
+            </ul>
 
-                            <li><a href="./index.html#faqlist">FAQ's</a></li>
-                            <li><a href="./index.html#contact">Contact Us</a></li>
-                        </ul>
 
                     </div>
                 </div>
@@ -692,11 +688,11 @@
                     <h4>Contact Us</h4>
 
                     <p>
-                        A108 Adam Street <br>
-                        New York, NY 535022<br>
-                        United States <br><br>
+                        Belipola Arboretum <br>
+                        Mirahawatte<br>
+                        Sri Lanka <br><br>
                         <strong>Phone:</strong> <span>+94 76 719 1428</span><br>
-                        <strong>Email:</strong><a href="mailto:contact@example.com">
+                        <strong>Email:</strong><a href="mailto:erestoration.pvt.ltd@gmail.com">
                             erestoration.pvt.ltd@gmail.com</a><br>
                     </p>
                 </div>
