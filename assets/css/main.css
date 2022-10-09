@@ -634,6 +634,22 @@ section {
     background-attachment: fixed;
   }
 }
+/*banner video*/
+.hero .video{
+  margin-top: -50px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
+}
+.hero .video img{
+  height: 350px;
+  width: 350px;
+  border-radius: 50%;
+  border: 10px solid #fff;
+}
 
 .hero h2 {
   font-size: 48px;
