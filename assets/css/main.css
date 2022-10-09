@@ -644,7 +644,7 @@ section {
   align-items: center;
   background-color: var(--color-primary);
 }
-.hero .video video{
+.hero .video img{
   height: 350px;
   width: 350px;
   border-radius: 50%;
