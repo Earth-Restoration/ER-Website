@@ -85,18 +85,16 @@
 /* Map CSS */
 .Lf-map{
   background-color: #000;
-  margin-left: 30px;
-  /* margin-right: 25px; */
   min-height: 70vh;
   position: relative;
-  width: 95%;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .Lf-map #map{
-  background-color: #000;
+background-color: #000;
 position: absolute;
 width: 100%;
 height: 100vh;
