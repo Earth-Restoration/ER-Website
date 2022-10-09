@@ -230,9 +230,7 @@ forstryH2{
 }
 
 .bannerD {
-  width: 100%;
-  height: 725px;
-  padding: 10px 0;
+  height: 550px;
 }
 
 .jumbotron1.jumbotron-main1 {
@@ -264,6 +262,37 @@ forstryH2{
   background-position: 50% 50%;
   background-image: url('../assets/img/community/blog/background6.webp');
 }
+
+.jumbotron3.jumbotron-main3 {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url('../assets/img/community/blog/backgroundblog_2.jpg');
+}
+
+.jumbotron4.jumbotron-main4 {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-image: url('../assets/img/community/blog/new blogs/backgroundblog_3.jpg');
+}
+
 .jumbotron.jumbotron-main {
   height: 100%;
   width: 100%;
@@ -280,6 +309,59 @@ forstryH2{
   background-image: url('../assets/img/community/blog/backgroundblog2.jpg');
 
 }
+
+.jumbotron5.jumbotron-main5 {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  background-image: url('../assets/img/community/blog/new blogs/backgroundblog_6.jpg');
+
+}
+
+.jumbotron6.jumbotron-main6 {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  background-image: url('../assets/img/community/blog/new blogs/backgroundblog_8.jpg');
+
+}
+
+.jumbotron7.jumbotron-main7 {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  position: relative;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  background-image: url('../assets/img/community/blog/new blogs/backgroundblog_12.jpg');
+
+}
+
+
 
 .Hboi {
   font-size: 40px;
@@ -360,4 +442,13 @@ color: rgba(255, 255, 255, 0.60);
 	font-size: 4rem;
 	float: left;
 	line-height: 1;
+}
+
+@media (max-width: 488px) {
+
+  .presentation-title {
+    font-size: 4em;
+  }
+
+ 
 }

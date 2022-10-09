@@ -1,0 +1,49 @@
+h3 {
+    font-size: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.banner {
+    color: white;
+    background: url('../img/community/card/card8.jpg') top left/cover no-repeat;
+    height: 330px;
+}
+
+#banner2 {
+    display: none;
+}
+
+@media screen and (max-width: 520px) {
+    .banner1 {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 519px) {
+
+    #banner2 {
+        display: block;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .container,
+    .container-sm {
+        max-width: 528px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .container
+     {
+        max-width: 525px;
+    }
+
+   
+}
