@@ -48,6 +48,16 @@
   font-weight: 600;
   transition: 0.5s;
 }
+@media screen and (max-width:500px) {
+  .LF-content h1{
+    font-size: 75px;
+  }
+}
+@media screen and (max-width:300px) {
+  .LF-content h1{
+    font-size: 65px;
+  }
+}
 .LF-content h1:hover{
   -webkit-text-stroke: 2px #fff;
   color: transparent; 
@@ -115,18 +125,11 @@ bottom: 0;
 .about-area{
   padding-top: 5%;
 }
-.about-img-LF{
-  position: relative;
-}
-.about-img-LF:before{
-  position: absolute;
-  content: '';
-  right: -5px;
-  left: 10px;
+.about-img-LF img{
   border: 5px solid rgba(0,0,0,0.3);
-  width: 350px;
-  height: 360px;
-  top: -25px;
+  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media screen and (max-width: 480px) {
@@ -181,6 +184,16 @@ bottom: 0;
   font-family: lobster;
   font-size: 50px;
   padding-left: 30px;
+}
+@media screen and (max-width:500px) {
+  .about-text-LF h2{
+    font-size: 50px;
+  }
+}
+@media screen and (max-width:300px) {
+  .about-text-LF h2{
+    font-size: 40px;
+  }
 }
 .about-text-LF p{
   font-size: 16px;
