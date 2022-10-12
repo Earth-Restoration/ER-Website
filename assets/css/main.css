@@ -800,12 +800,16 @@ section {
   padding: 10px 10px;
   position: relative;
   overflow: hidden;
-  background: white;
+  background-image: url("../img/who_we_are/nature-background.webp");
+  /* background: var(--color-primary); */
   transition: all 0.3s ease-in-out;
   z-index: 1;
+  background-repeat: no-repeat;
+  background-size: 604px 350px;
   height: 100%;
   width: 100%;
   text-align: center;
+  border-radius: 15px;
 }
 
 
@@ -926,10 +930,19 @@ section {
   text-align: justify;
 }
 
+.about #pp1{
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 500;
+  text-align: justify;
+  padding: 10px 80px 20px;
+  color: #6f6f6f;
+}
+
 .about #p2{
   
   color: #6f6f6f;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 500;
   text-align: center;
   margin-top: 10px;
@@ -944,6 +957,17 @@ section {
   padding-bottom: 20px;
   position: relative;
   text-align: center;
+}
+
+#dd4{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  padding-bottom: 20px;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 #im1{
@@ -1063,7 +1087,6 @@ section {
 
 .features img{
   border-radius: 40px;
-  margin-top: 40px;
 }
 
 .features .button {
