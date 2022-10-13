@@ -25,7 +25,7 @@
   margin-right: 100px;
 }
 
-forstryH2{
+.forstryH2{
   padding-top: 50px;
 }
 
@@ -48,8 +48,9 @@ forstryH2{
   background-color: #B2AFAB;
   background-position: center center;
   background-size: cover;
-  min-height: 90vh;
-  max-height: 720px;
+  height: 560px;
+  /* min-height: 600px; */
+  /* max-height: 560px; */
   overflow: hidden;
   position: relative;
   width: 100%;
@@ -230,11 +231,11 @@ forstryH2{
 }
 
 .bannerD {
-  height: 550px;
+  height: 560px;
+  width: 100%;
 }
 
 .jumbotron1.jumbotron-main1 {
-  height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   color: #fff;
@@ -249,7 +250,6 @@ forstryH2{
 }
 
 .jumbotron2.jumbotron-main2 {
-  height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   color: #fff;
@@ -264,7 +264,6 @@ forstryH2{
 }
 
 .jumbotron3.jumbotron-main3 {
-  height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   color: #fff;
@@ -279,7 +278,6 @@ forstryH2{
 }
 
 .jumbotron4.jumbotron-main4 {
-  height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   color: #fff;
@@ -294,7 +292,6 @@ forstryH2{
 }
 
 .jumbotron.jumbotron-main {
-  height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   color: #fff;
@@ -311,7 +308,6 @@ forstryH2{
 }
 
 .jumbotron5.jumbotron-main5 {
-  height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   color: #fff;
@@ -328,7 +324,6 @@ forstryH2{
 }
 
 .jumbotron6.jumbotron-main6 {
-  height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   color: #fff;
@@ -345,7 +340,6 @@ forstryH2{
 }
 
 .jumbotron7.jumbotron-main7 {
-  height: 100%;
   width: 100%;
   font-family: 'Roboto', sans-serif;
   color: #fff;
