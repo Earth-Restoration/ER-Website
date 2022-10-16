@@ -810,6 +810,8 @@ section {
   width: 100%;
   text-align: center;
   border-radius: 15px;
+
+  
 }
 
 
@@ -936,7 +938,16 @@ section {
   font-weight: 500;
   text-align: justify;
   padding: 10px 80px 20px;
-  color: #6f6f6f;
+  color: 	#282828;
+  margin-right: 30px;
+
+}
+
+.about .dpp1{
+  background-color: #ffffff;
+  margin: 30px;
+  opacity: 0.6;
+  border-radius: 5px;
 }
 
 .about #p2{
