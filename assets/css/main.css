@@ -800,23 +800,28 @@ section {
   padding: 10px 10px;
   position: relative;
   overflow: hidden;
-  background-image: url("../img/who_we_are/nature-background.webp");
+  /* background-image: url("../img/who_we_are/nature-background.webp"); */
   /* background: var(--color-primary); */
   transition: all 0.3s ease-in-out;
   z-index: 1;
   background-repeat: no-repeat;
-  background-size: 604px 350px;
+  /* background-size: 604px 350px; */
   height: 100%;
-  width: 100%;
+  max-width: 100%;
   text-align: center;
   border-radius: 15px;
 
   
 }
+.about .container .icon-box .text-box{
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-25%, -25%);
+}
 
 
-
-.about .icon-box .title {
+.about .text-box .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 20px;
@@ -824,28 +829,31 @@ section {
 
 }
 
-.about .icon-box .title a {
+.about .text-box .title a {
   color: white;
   transition: 0.3s;
 }
 
 
-.about .icon-box .icon {
+.about .text-box .icon {
   margin-bottom: 20px;
   padding-top: 10px;
   display: inline-block;
   transition: all 0.3s ease-in-out;
   font-size: 48px;
   line-height: 1;
+  align-items: center;
   color: black;
 }
-
-.about .icon-box:hover {
+.about .container-box:hover{
+  transform: scale(1.1)
+}
+.about .text-box:hover {
   transform: scale(1.1)
 }
 
 
-.about .icon-box p{
+.about .text-box p{
   font-size: normal;
   color:black;
   font-size: normal;
@@ -931,23 +939,61 @@ section {
   font-weight: 500;
   text-align: justify;
 }
+.about .container .container-box{
+  position: relative;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.about .container .container-box img {
+  vertical-align: middle;
+  max-height: 360px;
+  border-radius: 10px;
 
-.about #pp1{
+}
+.about .container .container-box .text-box{
+  position: absolute;
+  top: 40px;
+  bottom: 30px;
+  right: 45px;
+  left: 40px;
+  padding: 5px;
+  /* background-color: #ffffff;
+  opacity: 0.6; */
+  border-radius: 5px;
+  align-content: center;
+}
+.about .container .container-box .text-box #pp1{
   margin-bottom: 0;
   font-size: 16px;
   font-weight: 500;
   text-align: justify;
-  padding: 10px 80px 20px;
-  color: 	#282828;
-  margin-right: 30px;
-
+  padding: 10px 50px 10px;
+  color: 	#6f6f6f;
+  width: 100%;
 }
 
-.about .dpp1{
+.about .text-box .dpp1{
+  position: absolute;
   background-color: #ffffff;
-  margin: 30px;
   opacity: 0.6;
   border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px){
+  .about .container .container-box .text-box #pp1{
+    font-size: 12px;
+    padding: 5px 10px 20px;
+  }
+  .about .container .container-box .text-box #d4{
+    font-size: 16px;
+    padding-bottom: 5px;
+  }
+  .about .container .container-box .text-box{
+    position: absolute;
+    max-width: 100%;
+    margin: 5px;
+  }
+
 }
 
 .about #p2{
@@ -970,16 +1016,6 @@ section {
   text-align: center;
 }
 
-#dd4{
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 10px;
-  margin-top: 0px;
-  padding-bottom: 20px;
-  position: relative;
-  text-align: center;
-  color: white;
-}
 
 #im1{
   height: 200px; 
