@@ -813,12 +813,12 @@ section {
 
   
 }
-.about .container .icon-box .text-box{
+/* .about .container .icon-box .text-box{
   position: absolute;
   top: 25%;
   left: 25%;
   transform: translate(-25%, -25%);
-}
+} */
 
 
 .about .text-box .title {
@@ -835,14 +835,14 @@ section {
 }
 
 
-.about .text-box .icon {
-  margin-bottom: 20px;
-  padding-top: 10px;
+.about .container .container-box .text-box .icon {
+  align-items: center;
+  margin-bottom: 10px;
+  /* padding-top: 5px; */
   display: inline-block;
   transition: all 0.3s ease-in-out;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1;
-  align-items: center;
   color: black;
 }
 .about .container-box:hover{
@@ -956,11 +956,12 @@ section {
   bottom: 30px;
   right: 45px;
   left: 40px;
-  padding: 5px;
+  padding: 4px;
   /* background-color: #ffffff;
   opacity: 0.6; */
   border-radius: 5px;
   align-content: center;
+  text-align: center;
 }
 .about .container .container-box .text-box #pp1{
   margin-bottom: 0;
@@ -986,14 +987,19 @@ section {
   }
   .about .container .container-box .text-box #d4{
     font-size: 16px;
-    padding-bottom: 5px;
+    padding-bottom: 1px;
   }
   .about .container .container-box .text-box{
     position: absolute;
     max-width: 100%;
-    margin: 5px;
+    margin: 1px;
+    top: 2px;
+    right: 5px;
+    left: 5px;
   }
-
+  .about .container .container-box .text-box .icon{
+    margin-bottom: 1px;
+  }
 }
 
 .about #p2{
