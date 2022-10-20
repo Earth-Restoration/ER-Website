@@ -416,6 +416,7 @@ bottom: 0;
   min-height: 100vh;
   font-family: 'Open Sans',sans-serif;
   display: flex;
+  background-position: cover;
 }
 .blog-slider {
   width: 98%;
@@ -596,7 +597,7 @@ bottom: 0;
 .blog-slider__button {
   display: inline-flex;
   /* background-image: linear-gradient(147deg, #eedecf 0%, #1b8b00 74%); */
-  border: 2px solid #1b8b00;
+  border: 2px solid #507c60;
   padding: 15px 35px;
   border-radius: 50px;
   color: #fff;
@@ -662,7 +663,7 @@ bottom: 0;
 }
 .blog-slider__pagination .swiper-pagination-bullet-active {
   opacity: 1;
-  background: #1b8b00;
+  background: #507c60;
   height: 30px;
 }
 @media screen and (max-width: 768px) {
