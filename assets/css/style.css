@@ -9,7 +9,7 @@
 
 .caurosel {
     margin: 0px;
-    padding: 10px 0;
+    padding: 0;
     height: 100%;
 }
 
@@ -188,11 +188,24 @@
         border-radius: 25px
     }
 
-    /* .centered1 {
-        display: none;
-    } */
+    .centered1 {
+        /* display: none; */
+        top: 20%;
+    }
 }
 
+@media screen and (max-width: 300px) {
+    .centered1{
+     top: 30%;
+     font-size: 3px;
+  } 
+} 
+
+@media screen and (max-width: 920px) {
+     .centered1{
+      top: 30%;
+   } 
+} 
 
 .forstryH2 {
     font-weight: bold;
