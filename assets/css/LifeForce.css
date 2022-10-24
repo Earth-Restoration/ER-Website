@@ -672,3 +672,50 @@ bottom: 0;
     width: 30px;
   }
 }
+
+/*Pop message*/
+
+#modelBox{
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  display: none;
+}
+#modelBox.anyname{
+  visibility: visible;
+}
+/* #modelBox .popImg{
+  width: 100%;
+  height: 15%;
+} */
+.pop-details{
+  padding: 20px 40px 40px 40px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.pop-details h2{
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.pop-details small{
+  display: inline-block;
+  color: #ff2b4e;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.close-icon{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
