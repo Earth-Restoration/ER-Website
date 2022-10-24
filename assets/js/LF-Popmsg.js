@@ -6,7 +6,7 @@
             function open(event){
             document.querySelector("#modelBox").style.display = "block";
             },
-            1000
+            5000
         )
     });
     //   document.onmouseleave = function(){
