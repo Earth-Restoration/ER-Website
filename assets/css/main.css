@@ -11,11 +11,15 @@
 --------------------------------------------------------------*/
 /* Fonts */
 :root {
-  --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
+  /* --font-default: "Open Sans", system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --font-primary: "Montserrat", sans-serif;
+  --font-primary: "Montserrat", sans-serif; */
+  --font-default: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+  --font-primary: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
   --font-secondary: "Poppins", sans-serif;
+
+  
 }
 
 /* Colors */
@@ -595,7 +599,7 @@ section {
   }
 
   .mobile-nav-show {
-    color: rgb(1, 93, 0);
+    color: rgb(80,124,96);
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
@@ -605,7 +609,7 @@ section {
   }
 
   .mobile-nav-hide {
-    color: rgb(1, 93, 0);
+    color: rgb(80,124,96);
     font-size: 32px;
     cursor: pointer;
     line-height: 0;
@@ -1205,30 +1209,35 @@ section {
 }
 
 .features .button {
-  background-color: transparent;
-  border: 2px solid #1b8b00;
   
+  /* border: 2px linear-gradient(to right, darkblue, darkorchid); */
+  
+  background: linear-gradient(#fff, #fff) padding-box,
+              linear-gradient(to right, #507c60, #7ac4ec) border-box;
+  border: 5px solid transparent;
+  border-radius: 15px;
   padding: 15px 32px;
+ 
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  border-radius: 30px;
+  
 }
 
 .features .button a{
-  color: #1b8b00;
-  font-weight: 500;
+  color: #507c60;
+  font-weight: 700;
 }
 
 .features .button:hover{
-  background-color: #1b8b00;
+  background: linear-gradient(to right, #507c60, #7ac4ec) padding-box;
 }
 .features .button:hover a{
   color: #fdfeff;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 
