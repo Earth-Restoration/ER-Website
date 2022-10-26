@@ -326,7 +326,7 @@ section {
   z-index: 997;
   height: 70px;
   /* background-color: #c6c6c6; */
-  background-color: rgba(198,198,198,0.4);
+  background-color: rgba(253,254,255,1);
   position: relative;
   box-shadow: 0 1px rgba(0, 0, 0, 0.1);
 }
@@ -337,7 +337,7 @@ section {
   right: 0;
   left: 0;
   height: 70px;
-  background-color: #c6c6c6;
+  background-color: #fdfeff;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -445,7 +445,7 @@ section {
     z-index: 99;
     opacity: 0;
     visibility: hidden;
-    background-color: rgba(198,198,198,0.9);
+    background-color: rgba(253,254,255,0.9);
     box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
     transition: 0.3s;
     border-radius: 4px;
@@ -1041,7 +1041,7 @@ section {
 
 .about .text-box .dpp1{
   position: absolute;
-  background-color: #fdfefffd#fdfeff;
+  background-color: #fdfeff;
   opacity: 0.6;
   border-radius: 5px;
 }
