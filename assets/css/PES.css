@@ -11,10 +11,18 @@
 
 #hero:before {
   content: "";
-  background:  var(--color-primary);
+  background: hsla(199, 83%, 67%, 1);
+
+background: linear-gradient(45deg, hsla(199, 83%, 67%, 1) 0%, hsla(152, 33%, 42%, 1) 64%, hsla(147, 33%, 41%, 1) 73%, hsla(147, 34%, 37%, 1) 100%);
+
+background: -moz-linear-gradient(45deg, hsla(199, 83%, 67%, 1) 0%, hsla(152, 33%, 42%, 1) 64%, hsla(147, 33%, 41%, 1) 73%, hsla(147, 34%, 37%, 1) 100%);
+
+background: -webkit-linear-gradient(45deg, hsla(199, 83%, 67%, 1) 0%, hsla(152, 33%, 42%, 1) 64%, hsla(147, 33%, 41%, 1) 73%, hsla(147, 34%, 37%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#66C4F1", endColorstr="#478D6C", GradientType=1 );
   position: absolute;
   bottom: 0;
-  top: 10px;
+  top: 0;
   left: 0;
   right: 0;
   
@@ -229,3 +237,4 @@
     text-align: justify;
   }
   
+ 
