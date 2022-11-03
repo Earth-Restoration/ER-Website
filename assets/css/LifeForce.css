@@ -144,6 +144,7 @@ bottom: 0;
   }
   .about-text-LF p{
     padding-bottom: 25px;
+    text-align: justify;
   }
 }
 @media screen and (min-width: 750px) and (max-width: 992px) {
@@ -204,7 +205,9 @@ bottom: 0;
 .about-text1-LF p{
   font-size: 16px;
   padding-top: 60px;
-  text-align: left;
+  padding-left: 30px;
+  text-align: justify;
+  
 }
 
  /*--------------------------------------------------------------
