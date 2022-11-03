@@ -412,18 +412,19 @@ bottom: 0;
 /* Carbon Footprint */
 .Lf-CF{
   /* background-color: #ffe53b; */
-  background-image: url(../img/LifeForce/LF-CF.png);
+  background-image: url(../img/LifeForce/bg.jpg);
   min-height: 100vh;
   font-family: 'Open Sans',sans-serif;
   display: flex;
   background-position: cover;
+  margin-bottom: 60px;
 }
 .blog-slider {
   width: 98%;
   position: relative;
   max-width: 800px;
   margin: auto;
-  background: rgba(255,255,255,0.3);
+  background: rgba(80,124,96,0.5);
   box-shadow: 0px 14px 80px rgba(0,0,0, 0.2);
   padding: 25px;
   border-radius: 25px;
@@ -595,22 +596,22 @@ bottom: 0;
   /* text-align: justify; */
 }
 .blog-slider__button {
-  display: inline-flex;
-  /* background-image: linear-gradient(147deg, #eedecf 0%, #1b8b00 74%); */
-  border: 2px solid #507c60;
-  padding: 15px 35px;
-  border-radius: 50px;
-  color: #fff;
-  box-shadow: 0px 14px 80px rgba(0,0,0, 0.4);
-  text-decoration: none;
+  font-family: var(--font-primary);
   font-weight: 500;
-  justify-content: center;
-  text-align: center;
+  font-size: 15px;
   letter-spacing: 1px;
+  display: inline-block;
+  padding: 14px 40px;
+  border-radius: 25px;
+  transition: 0.3s;
+  color: #fdfeff;
+  background-image: linear-gradient(to right, #507c60, #7ac4ec);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+  border: 0;
 }
 .blog-slider__button:hover{
-  background-color: rgba(27,139,0,0.5);
-  color: #fff;
+  background-color: #000;
+  /* background-image: linear-gradient(to left, #507c60, #7ac4ec); */
 }
 @media screen and (max-width: 576px) {
   .blog-slider__button {
@@ -662,7 +663,7 @@ bottom: 0;
   transition: all 0.3s;
 }
 .blog-slider__pagination .swiper-pagination-bullet-active {
-  opacity: 1;
+  opacity: 3;
   background: #507c60;
   height: 30px;
 }
