@@ -912,10 +912,10 @@ section {
   color: black;
 }
 .about .container-box:hover{
-  transform: scale(1.1)
+  transform: scale(1.05)
 }
 .about .text-box:hover {
-  transform: scale(1.1)
+  transform: scale(1)
 }
 
 
@@ -1030,17 +1030,18 @@ section {
 .about .container .container-box .text-box #pp1{
   margin-bottom: 0;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 700;
   text-align: justify;
-  padding: 10px 50px 10px;
-  color: 	#6f6f6f;
+  padding: 10px 25px 10px;
+  letter-spacing: 0.5px;
+  color: 	#222;
   width: 100%;
 }
 
 .about .text-box .dpp1{
   position: absolute;
   background-color: #fdfeff;
-  opacity: 0.6;
+  opacity: 0.7;
   border-radius: 5px;
 }
 
