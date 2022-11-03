@@ -1415,7 +1415,7 @@ padding: 3px;
   margin: 0 2px;
 }
 
-@media screen and (max-height: 1150px) and (min-width: 1280px) {
+@media screen and (max-height: 1150px) and (min-width: 1820px) {
   .hero .icon-boxes:before {
     content: "";
     position: absolute;
@@ -1426,6 +1426,8 @@ padding: 3px;
     background-color: #fdfeff;
   }
 }
+
+
 
 /*--------------------------------------------------------------
 # Frequently Asked Questions Section
