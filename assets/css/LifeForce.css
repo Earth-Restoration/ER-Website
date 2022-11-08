@@ -616,6 +616,7 @@ bottom: 0;
   background-color: #000;
   /* background-image: linear-gradient(to left, #507c60, #7ac4ec); */
 }
+
 @media screen and (max-width: 576px) {
   .blog-slider__button {
     width: 100%;

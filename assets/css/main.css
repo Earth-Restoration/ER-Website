@@ -204,8 +204,14 @@ section {
   inset: 0;
   z-index: 999999;
   overflow: hidden;
-  background: rgb(1, 93, 0);
+  background: #fff;
   transition: all 0.6s ease-out;
+}
+
+#preloader img{
+  height : 120px;
+  width : 120px;
+  /* animation: spinlogo 2s linear infinite; */
 }
 
 #preloader:before {
@@ -214,8 +220,7 @@ section {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #fdfeff;
-  border-color: var(--color-primary) transparent var(--color-primary)
-    transparent;
+  border-color: var(--color-primary) transparent var(--color-primary) transparent;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -1607,7 +1612,7 @@ padding: 3px;
 .contact .php-email-form .error-message {
   display: none;
   color: #fdfeff;
-  background: rgba(27, 139, 0, 0.6);
+  background: rgba(80,124,96, 0.6);
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -1620,7 +1625,7 @@ padding: 3px;
 .contact .php-email-form .sent-message {
   display: none;
   color: #fdfeff;
-  background: rgba(27, 139, 0, 0.8);
+  background: rgba(80,124,96, 0.8);
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1640,7 +1645,7 @@ padding: 3px;
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #1b8b00;
+  border: 3px solid #507c60;
   border-top-color: #fdfeff;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
