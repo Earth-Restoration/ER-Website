@@ -3,6 +3,20 @@
 	width: 530px;
     align-items: center;
 }
+@media(max-width: 1280px){
+	#blog06img-01 {
+		width: 480px;
+		height: 550px;
+        
+	}
+}
+@media(max-width: 1024px){
+	#blog06img-01 {
+		width: 430px;
+		height: 450px;
+        
+	}
+}
 @media(max-width: 540px){
 	#blog06img-01 {
 		width: 450px;
@@ -30,6 +44,20 @@
 	width: 530px;
     align-items: center;
 }
+@media(max-width: 1280px){
+	#blog06img-02 {
+		width: 470px;
+		height: 350px;
+        
+	}
+}
+@media(max-width: 1024px){
+	#blog06img-02 {
+		width: 400px;
+		height: 320px;
+        
+	}
+}
 @media(max-width: 540px){
 	#blog06img-02 {
 		width: 450px;
@@ -56,6 +84,20 @@
 	height: 400px; 
 	width: 530px;
     align-items: center;
+}
+@media(max-width: 1280px){
+	#blog06img-03 {
+		width: 480px;
+		height: 350px;
+        
+	}
+}
+@media(max-width: 1024px){
+	#blog06img-03 {
+		width: 420px;
+		height: 330px;
+        
+	}
 }
 @media(max-width: 540px){
 	#blog06img-03 {
