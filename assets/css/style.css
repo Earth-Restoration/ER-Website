@@ -1,8 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+/* @import url('https://fonts.googleapis.com/css?family=Roboto:300');
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 
-.titleFond {
+.main-banner{
+    position: relative;
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main .mask{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    user-select: none;
+    mix-blend-mode: screen;
+}
+.main .banner-heading{
+    position: relative;
+    z-index: 3;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 0 20px 30px rbga(0,0,0,0.2);
+}
+
+/* .titleFond {
     font-size: 33px;
 }
 
@@ -26,7 +61,6 @@
 @media screen and (max-width: 414px) {
     .carousel-item {
         height: 800px;
-        /* min-height: 350px; */
         background: no-repeat center center scroll;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -38,7 +72,6 @@
 @media screen and (max-width: 393px) {
     .carousel-item {
         height: 810px;
-        /* min-height: 350px; */
         background: no-repeat center center scroll;
         -webkit-background-size: cover;
         -moz-background-size: cover;
@@ -171,7 +204,7 @@
 
 .slideimage:nth-of-type(4) {
     background-image: url('../img/community/card/Viewofhortonplains2.JPG')
-}
+} */
 
 /* .slide:nth-of-type(5){
     background-image: url('https://mcdn.wallpapersafari.com/medium/7/54/v7t0ST.jpg')
@@ -180,7 +213,7 @@
     background-image: url('https://mcdn.wallpapersafari.com/medium/16/66/Iv6KfC.jpg')
 } */
 
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 700px) {
     .slideimage {
         width: 20px;
     }
@@ -190,7 +223,6 @@
     }
 
     .centered1 {
-        /* display: none; */
         top: 20%;
     }
 }
@@ -206,7 +238,7 @@
      .centered1{
       top: 30%;
    } 
-} 
+}  */
 
 .forstryH2 {
     font-weight: bold;
