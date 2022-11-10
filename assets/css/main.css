@@ -405,7 +405,7 @@ section {
     transition: 0.3s;
     position: relative;
   }
-
+  
   .navbar a i,
   .navbar a:focus i {
     font-size: 12px;
@@ -692,13 +692,8 @@ section {
   line-height: 1.2em;   
   color: #031321!important;
   text-align: justify;
-
-    /* font-weight: 700;
-    font-size: 46px;
-    color: #323258!important;
-    line-height: 1.2em;
-    text-align: left; */
 }
+
 /*banner video*/
 .hero .video{
   margin-top: -100px;

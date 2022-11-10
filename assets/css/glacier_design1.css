@@ -120,32 +120,24 @@
   .container-02 .glassmorphic-card1 .contentBox a {
     position: relative;
     display: inline-block;
-    padding: 8px 20px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background: #fff;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    color: #000;
-    border-radius: 20px;
-    text-decoration: none;
+    font-family: var(--font-primary);
     font-weight: 500;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 40px;
+    border-radius: 25px;
+    transition: 0.3s;
+    color: #fdfeff;
+    background-color: rgba(80,124,96,0.6);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    border: none;
   }
   
   .container-02 .glassmorphic-card1 .contentBox a:hover {
     position: relative;
     display: inline-block;
-    padding: 8px 20px;
-    margin-top: 15px;
-    background: #1b8b00;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    color: #fff;
-    border-radius: 20px;
-    text-decoration: none;
-    font-weight: 500;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: rgba(80,124,96,1);
   }
 
   .cardDetails {
