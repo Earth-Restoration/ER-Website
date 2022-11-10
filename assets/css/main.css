@@ -1437,6 +1437,7 @@ padding: 3px;
 #faq{
   background-image: url(../img/bg_faq.jpg);
   width: 100%;
+  background-size: cover
 }
 
 .faq .content h3 {
@@ -1762,7 +1763,7 @@ padding: 3px;
 
 .footer .social-links a:hover {
   color: #fdfeff;
-  border-color: #1b8b00;
+  border-color: #507c60;
 }
 
 .footer h4 {
@@ -1872,7 +1873,7 @@ padding: 3px;
 }
 
 .footer .footer-links p a:hover{
-  color: #1b8b00;
+  color: #507c60;
 }
 
 .footer .footer-contact p {
@@ -1933,6 +1934,7 @@ hr.new4 {
 }
 .sdg {
   background-image: url(../img/bg_SDG.jpeg);
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
