@@ -295,7 +295,20 @@ padding-top: 20PX;
 	width: 500px;
   }
   
- 
+  @media(max-width: 1024px){
+	#img-01 {
+		width: 320px;
+		height: 350px;
+        
+	}
+}
+@media(max-width: 820px){
+	#img-01 {
+		width: 450px;
+		height: 450px;
+        
+	}
+}
   @media(max-width: 540px){
 	#img-01 {
 		width: 500px;
@@ -321,6 +334,18 @@ padding-top: 20PX;
 	height: 450px; 
 	width: 500px;
   }
+  @media(max-width: 1024px){
+	#img-02 {
+		width: 300px;
+		height: 320px;
+	}
+}
+@media(max-width: 820px){
+	#img-02 {
+		width: 450px;
+		height: 450px;
+	}
+}
 @media(max-width: 540px){
 	#img-02 {
 		width: 480px;

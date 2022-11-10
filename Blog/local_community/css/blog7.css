@@ -6,21 +6,21 @@
 @media(max-width: 540px){
 	#blog07img-01 {
 		width: 450px;
-		height: 450px;
+		height: 350px;
         
 	}
 }
 @media(max-width: 414px){
 	#blog07img-01 {
 		width: 350px;
-		height: 350px;
+		height: 250px;
        
 	}
 }
 @media(max-width: 375px){
 	#blog07img-01 {
 		width: 330px;
-		height: 330px;
+		height: 230px;
         
 	}
 }
@@ -33,21 +33,21 @@
 @media(max-width: 540px){
 	#blog07img-02 {
 		width: 450px;
-		height: 450px;
+		height: 330px;
         
 	}
 }
 @media(max-width: 414px){
 	#blog07img-02 {
 		width: 350px;
-		height: 350px;
+		height: 230px;
        
 	}
 }
 @media(max-width: 375px){
 	#blog07img-02 {
 		width: 330px;
-		height: 330px;
+		height: 230px;
         
 	}
 }
@@ -56,6 +56,13 @@
 	height: 250px; 
 	width: 300px;
     align-items: center;
+}
+@media(max-width: 1280px){
+	#blog07img-03 {
+		width: 380px;
+		height: 350px;
+        
+	}
 }
 @media(max-width: 540px){
 	#blog07img-03 {
@@ -87,21 +94,21 @@
 @media(max-width: 540px){
 	#blog07img-04 {
 		width: 450px;
-		height: 450px;
+		height: 300px;
         
 	}
 }
 @media(max-width: 414px){
 	#blog07img-04 {
 		width: 350px;
-		height: 350px;
+		height: 230px;
        
 	}
 }
 @media(max-width: 375px){
 	#blog07img-04 {
 		width: 330px;
-		height: 330px;
+		height: 230px;
         
 	}
 }
