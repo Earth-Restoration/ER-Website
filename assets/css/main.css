@@ -553,7 +553,7 @@ section {
     font-family: var(--font-primary);
     font-size: 15px;
     font-weight: 600;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 1);
     white-space: nowrap;
     transition: 0.3s;
   }
@@ -563,6 +563,7 @@ section {
     font-size: 12px;
     line-height: 0;
     margin-left: 5px;
+    color: #fff;
   }
 
   .navbar a:hover,
