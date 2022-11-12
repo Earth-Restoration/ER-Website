@@ -21,7 +21,8 @@ var LeafletIcon = L.Icon.extend({
 
 const TreeTypeEnum = {
   INVEST: "INVEST",
-  ALREADY_INVEST: "ALREADY_INVEST"
+  ALREADY_INVEST: "ALREADY_INVEST",
+  ALREADY_COMPLETED: "ALREADY_COMPLETED"
 };
 
 const greenIcon = new LeafletIcon({iconUrl:"assets/img/Map-lifeforce/Green-Tree.png"});
@@ -36,12 +37,20 @@ mapTrees.countries.forEach(country => {
 
         if (tree.type === TreeTypeEnum.ALREADY_INVEST) {
           markerIcon = silverIcon;
-        } else if (tree.type === TreeTypeEnum.ALREADY_INVEST) {
+        } else if (tree.type === TreeTypeEnum.ALREADY_COMPLETED) {
           markerIcon = goldIcon;
         }
         
         let marker = L.marker([tree.latitude, tree.longitude], {icon: markerIcon}).addTo(map);
-        marker.bindPopup("For more details please login <br>to the LifeForce application<br><br><button>SignIn</button> <button>SignUp</button> <button>Cancle</button>");
+
+        if (markerIcon === greenIcon) {
+          marker.bindPopup("<h6>To be Invest</h6>");
+        } else if (markerIcon === silverIcon) {
+          marker.bindPopup("<h6>Already Invested</h6>");
+        } else if (markerIcon === goldIcon) {
+          marker.bindPopup("<h6>Already Complete 4 years</h6>");
+        }
+        
       });
     });
   });

@@ -17,15 +17,16 @@
   cursor: pointer;
   margin-right: 20px;
   margin-left: 20px;
-
   background-color: white;
-  color: black;
-  border: 2px solid #228c22;
+  color: #fdfeff;
+  border: 2px solid #507c60;
 }
 .btn_lf:hover{
-  background: rgba(34, 140, 34, 1);
+  background: linear-gradient(to right, #507c60, #7ac4ec);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
+  border: none;
+  color: #fdfeff;
 }
 
 /* Banner CSS */
@@ -245,7 +246,7 @@ bottom: 0;
   text-align: justify;
   /* align-items: center;
   justify-content: center; */
-  padding-top: 100px;
+  padding-top: 50px;
 }
 @media (max-width: 768px) {
   .lifeforce .LF-para2 {
@@ -256,32 +257,6 @@ bottom: 0;
   .lifeforce .LF-para2 {
     padding: 0;
   }
-}
-.lifeforce .button {
-  background-color: transparent;
-  border: 2px solid #1b8b00;
-  
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 30px;
-}
-
-.lifeforce .button a{
-  color: #1b8b00;
-  font-weight: 500;
-}
-
-.lifeforce .button:hover{
-  background-color: #1b8b00;
-}
-.lifeforce .button:hover a{
-  color: #fff;
-  font-weight: 500;
 }
 
 .play-btn {

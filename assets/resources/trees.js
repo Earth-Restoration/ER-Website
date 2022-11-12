@@ -21,6 +21,26 @@ const mapTrees = {
                   latitude: "6.8222",
                   longitude: "81.0133",
                 },
+                {
+                  type: "ALREADY_INVEST",
+                  latitude: "6.8250",
+                  longitude: "81.0180",
+                },
+                {
+                  type: "ALREADY_COMPLETED",
+                  latitude: "6.8248", 
+                  longitude: "81.0220",
+                },
+                {
+                  type: "INVEST",
+                  latitude: "6.8255",
+                  longitude: "81.0224",
+                },
+                {
+                  type: "INVEST",
+                  latitude: "6.8257",
+                  longitude: "81.0228",
+                },
               ],
             },
           ],
