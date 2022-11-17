@@ -729,30 +729,107 @@
 
             <!--<form class="php-email-form"  id="content_contact">-->
               <div class="row">
+
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="fromName" placeholder="Your Name" required>
                   
+                  
+                  <fieldset>
+                    <input type="text" name="name" class="name form-control" id="fromName" placeholder="Your Name" required>
+                  </fieldset>
                 </div>
+
                 <div class="col-md-6 form-group mt-3 mt-md-0" >
-                  <input type="email" class="form-control" name="email" id="Email" placeholder="Your Email" required>
                   
+                  
+                    <fieldset>
+                      <input type="email" class="email form-control" name="email" id="Email" placeholder="Your Email" required>
+                    </fieldset>
                 </div>
+
               </div>
+
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="Subject" placeholder="Subject" required>
                 
+                
+                <fieldset>
+                  <input type="text" class="subject form-control" name="subject" id="Subject" placeholder="Subject" required>
+                </fieldset>
               </div>
+
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="7" id="Message" placeholder="Message" required></textarea>
+                
+                <fieldset>
+                  <textarea class="message form-control" name="message" rows="7" id="Message" placeholder="Message" required></textarea>
+                </fieldset>
               </div>
+
               <div class="my-3">
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">Your message has been sent. Thank you!</div>
+                <fieldset>
+                  
+                  <button  name="submit" type="submit" id="contact-submit" data-submit="...Sending" class="submit">Send Message</button>
+                </fieldset>
               </div>
-              <div class="text-center"><button  type="submit" onclick='sendMail()'>Send Message</button></div>
+              
             <!--</form>-->
           </div>
+            
+           
+
+          </div>
+
+          <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+          <script>
+
+            function validate(){
+              let name = document.querySelector(".name")
+              let email = document.querySelector(".email")
+              let subject = document.querySelector(".subject")
+              let message = document.querySelector(".message")
+              let submit = document.querySelector(".submit")
+
+              submit.addEventListener("click", (e)=>{
+                e.preventDefault()
+
+                if(name.value =="" || email.value == "" || subject.value == "" || message.value== ""){
+                  inputempty();
+                }
+                else{
+                  sendmail(name.value, email.value, subject.value, message.value)
+                  success();
+                  console.log("email sent")
+                }
+              }) 
+            }
+            validate()
+
+            function sendmail(name, email, subject, message){
+              emailjs.send("gmail","template_z5t1bvb",{
+                from_name: name,
+                email: email,
+                subject: subject,
+                message: message,
+                });
+            }
+
+            function success(){
+              swal({
+                text: "Successfully sent message!",
+                icon: "success",
+              });
+            }
+            
+
+            function inputempty(){
+              swal({
+                text: "Inputs fields are required!",
+                icon: "warning",
+              });
+            }
+          </script>
           <!-- End Contact Form  -->
 
         </div>
