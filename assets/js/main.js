@@ -327,25 +327,6 @@ readmorebtn.addEventListener("click", () => {
   }
 });
 
-//email.js
-function sendMail(params) {
-  var tempParams = {
-    from_name: document.getElementById("fromName").value,
-    email: document.getElementById("Email").value,
-    subject: document.getElementById("Subject").value,
-    message: document.getElementById("Message").value,
-  };
-
-  emailjs
-    .send(
-      /*services name*/ "gmail",
-      /*Email Template name*/ "template_z5t1bvb",
-      tempParams
-    )
-    .then(function (res) {
-      console.log("Success", res.status);
-    });
-}
 
 //right to life blog js
 
