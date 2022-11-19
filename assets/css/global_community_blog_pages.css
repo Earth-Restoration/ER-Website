@@ -1,0 +1,39 @@
+#imgb1_1{
+	height: 550px; 
+	width: 500px;
+  }
+  
+  @media(max-width: 1024px){
+	#imgb1_1 {
+		width: 320px;
+		height: 350px;
+        
+	}
+}
+@media(max-width: 820px){
+	#imgb1_1 {
+		width: 450px;
+		height: 450px;
+        
+	}
+}
+  @media(max-width: 540px){
+	#imgb1_1 {
+		width: 500px;
+		height: 500px;
+		
+	}
+}
+@media(max-width: 414px){
+	#imgb1_1 {
+		width: 370px;
+		height: 350px;
+        
+	}
+}
+@media(max-width: 375px){
+	#imgb1_1 {
+		width: 310px;
+		height: 250px;
+    }
+}
