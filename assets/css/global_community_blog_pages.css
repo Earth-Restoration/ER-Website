@@ -1,39 +1,294 @@
-#imgb1_1{
-	height: 550px; 
-	width: 500px;
-  }
+
+.description-container img{
+	max-width:400px;
+	border-radius: 20px;
+} 
+
+.description-container .floating-image.right{
+	float: right;
+	margin-left: 40px;
+	margin-bottom: 10px;
+}
+
+.description-container .floating-image.left{
+	float: left;
+	margin-right: 40px;
+	margin-bottom: 10px;
+}
+
+.first-letter {
+	color: #32CD32;
+	padding: 0 .3rem;
+	margin: 0 .3rem 0 0;
+	border: 2px solid;
+	border-radius: 8px;
+	font-family: "IBM Plex Mono", monospace;
   
-  @media(max-width: 1024px){
-	#imgb1_1 {
-		width: 320px;
-		height: 350px;
-        
-	}
-}
-@media(max-width: 820px){
-	#imgb1_1 {
-		width: 450px;
-		height: 450px;
-        
-	}
-}
-  @media(max-width: 540px){
-	#imgb1_1 {
-		width: 500px;
-		height: 500px;
-		
-	}
-}
-@media(max-width: 414px){
-	#imgb1_1 {
+	font-size: 4rem;
+	float: left;
+	line-height: 1;
+  }
+
+
+
+/* img-01 */
+  @media(max-width: 414px){
+	#img-01 {
 		width: 370px;
-		height: 350px;
-        
+	}
+}
+@media(max-width: 393px){
+	#img-01 {
+		width: 350px;
+	}
+}
+  @media(max-width: 375px){
+	#img-01 {
+		width: 330px;
+	}
+}
+@media(max-width: 360px){
+	#img-01 {
+		width: 315px;
+	}
+}
+@media(max-width: 280px){
+	#img-01 {
+		width: 235px;
+	}
+}
+
+/* img-02 */
+
+@media(max-width: 414px){
+	#img-02 {
+		width: 365px;
+	}
+}
+@media(max-width: 393px){
+	#img-02 {
+		width: 345px;
 	}
 }
 @media(max-width: 375px){
-	#imgb1_1 {
+	#img-02 {
+		width: 325px;
+	}
+}
+@media(max-width: 360px){
+	#img-02 {
 		width: 310px;
-		height: 250px;
-    }
+	}
+}
+@media(max-width: 280px){
+	#img-02 {
+		width: 230px;
+	}
+}
+
+
+/* img-03 */
+
+@media(max-width: 540px){
+	#img-03 {
+		width: 300px;
+	}
+}
+@media(max-width: 414px){
+	#img-03 {
+		width: 390px;
+	}
+}
+@media(max-width: 393px){
+	#img-03 {
+		width: 365px;
+	}
+}
+@media(max-width: 375px){
+	#img-03 {
+		width: 350px;
+	}
+}
+@media(max-width: 360px){
+	#img-03 {
+		width: 335px;
+	}
+}
+@media(max-width: 280px){
+	#img-03 {
+		width: 255px;
+	}
+}
+
+
+/* img-04 */
+
+@media(max-width: 540px){
+	#img-04 {
+		width: 300px;
+	}
+}
+@media(max-width: 414px){
+	#img-04 {
+		width: 390px;
+	}
+}
+@media(max-width: 393px){
+	#img-04 {
+		width: 370px;
+	}
+}
+@media(max-width: 375px){
+	#img-04 {
+		width: 350px;
+	}
+}
+@media(max-width: 360px){
+	#img-04 {
+		width: 335px;
+	}
+}
+@media(max-width: 280px){
+	#img-04 {
+		width: 255px;
+	}
+}
+
+/* img-05 */
+
+@media(max-width: 540px){
+	#img-05 {
+		width: 300px;
+	}
+}
+@media(max-width: 414px){
+	#img-05 {
+		width: 390px;
+	}
+}
+@media(max-width: 393px){
+	#img-05 {
+		width: 370px;
+	}
+}
+@media(max-width: 375px){
+	#img-05 {
+		width: 350px;
+	}
+}
+@media(max-width: 360px){
+	#img-05 {
+		width: 335px;
+	}
+}
+@media(max-width: 280px){
+	#img-05 {
+		width: 255px;
+	}
+}
+
+/* img-06 */
+#img-06{
+	height: 400px;
+}
+@media(max-width: 540px){
+	#img-06 {
+		width: 250px;
+		height: 350px;
+	}
+}
+@media(max-width: 414px){
+	#img-06 {
+		width: 365px;
+	}
+}
+@media(max-width: 393px){
+	#img-06 {
+		width: 345px;
+	}
+}
+@media(max-width: 375px){
+	#img-06 {
+		width: 330px;
+	}
+}
+@media(max-width: 360px){
+	#img-06 {
+		width: 310px;
+	}
+}
+@media(max-width: 280px){
+	#img-06 {
+		width: 230px;
+		height: 350px;
+	}
+}
+
+/* img-07 */
+#img-07{
+	height: 380px;
+}
+@media(max-width: 540px){
+	#img-07 {
+		width: 250px;
+		height: 350px;
+	}
+}
+@media(max-width: 414px){
+	#img-07 {
+		width: 365px;
+	}
+}
+@media(max-width: 393px){
+	#img-07 {
+		width: 340px;
+	}
+}
+@media(max-width: 375px){
+	#img-07 {
+		width: 325px;
+	}
+}
+@media(max-width: 360px){
+	#img-07 {
+		width: 310px;
+	}
+}
+@media(max-width: 280px){
+	#img-07 {
+		width: 235px;
+		height: 300px;
+	}
+}
+
+/* img-08 */
+@media(max-width: 540px){
+	#img-08 {
+		width: 300px;
+	}
+}
+@media(max-width: 414px){
+	#img-08 {
+		width: 365px;
+	}
+}
+@media(max-width: 393px){
+	#img-08 {
+		width: 345px;
+	}
+}
+@media(max-width: 375px){
+	#img-08 {
+		width: 325px;
+	}
+}
+@media(max-width: 360px){
+	#img-08 {
+		width: 315px;
+	}
+}
+@media(max-width: 280px){
+	#img-08 {
+		width: 235px;
+	}
 }
