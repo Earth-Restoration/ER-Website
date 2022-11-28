@@ -1,6 +1,6 @@
 
 .description-container img{
-	max-width:400px;
+	max-width:500px;
 	border-radius: 20px;
 } 
 
@@ -32,6 +32,10 @@
 
 
 /* img-01 */
+#img-01{
+	height: 300px;
+	width: 500px;
+}
   @media(max-width: 414px){
 	#img-01 {
 		width: 370px;
@@ -59,6 +63,10 @@
 }
 
 /* img-02 */
+#img-02{
+	height: 500px;
+	width: 350px;
+}
 
 @media(max-width: 414px){
 	#img-02 {
@@ -89,6 +97,10 @@
 
 /* img-03 */
 
+#img-03{
+	height: 330px;
+	width: 500px;
+}
 @media(max-width: 540px){
 	#img-03 {
 		width: 300px;
@@ -122,7 +134,10 @@
 
 
 /* img-04 */
-
+#img-04{
+	height: 600px;
+	width: 400px;
+}
 @media(max-width: 540px){
 	#img-04 {
 		width: 300px;
@@ -189,7 +204,8 @@
 
 /* img-06 */
 #img-06{
-	height: 400px;
+	height: 560px;
+	width: 360px;
 }
 @media(max-width: 540px){
 	#img-06 {
@@ -200,6 +216,7 @@
 @media(max-width: 414px){
 	#img-06 {
 		width: 365px;
+		height: 500px;
 	}
 }
 @media(max-width: 393px){
@@ -210,6 +227,7 @@
 @media(max-width: 375px){
 	#img-06 {
 		width: 330px;
+		height: 400px;
 	}
 }
 @media(max-width: 360px){
@@ -226,7 +244,8 @@
 
 /* img-07 */
 #img-07{
-	height: 380px;
+	height: 560px;
+	width: 360px;
 }
 @media(max-width: 540px){
 	#img-07 {
@@ -237,6 +256,7 @@
 @media(max-width: 414px){
 	#img-07 {
 		width: 365px;
+		height: 450px;
 	}
 }
 @media(max-width: 393px){
@@ -247,6 +267,7 @@
 @media(max-width: 375px){
 	#img-07 {
 		width: 325px;
+		height: 400px;
 	}
 }
 @media(max-width: 360px){
@@ -262,6 +283,10 @@
 }
 
 /* img-08 */
+#img-08{
+	height: 360px;
+	width: 500px;
+}
 @media(max-width: 540px){
 	#img-08 {
 		width: 300px;
@@ -291,4 +316,130 @@
 	#img-08 {
 		width: 235px;
 	}
+}
+
+/* img-09 */
+#img-09{
+	height: 500px;
+	width: 350px;
+}
+/* img-10 */
+#img-10{
+	height: 450px;
+}
+
+/* img-11 */
+#img-11{
+	height: 360px;
+	width: 500px;
+	
+}
+/* img-12 */
+#img-12{
+	height: 360px;
+	width: 500px;
+}
+/* img-13 */
+#img-13{
+	height: 360px;
+	width: 500px;
+}
+
+/* img-14 */
+#img-14{
+	height: 330px;
+	width: 500px;
+}
+/* img-15 */
+#img-15{
+	height: 350px;
+	width: 500px;
+}
+
+/* img-16 */
+#img-16{
+	height: 360px;
+	width: 500px;
+}
+/* img-17 */
+#img-17{
+	height: 600px;
+	width: 400px;
+}
+
+/* img-18 */
+#img-18{
+	height: 360px;
+	width: 500px;
+}
+/* img-19 */
+#img-19{
+	height: 600px;
+	width: 400px;
+}
+
+/* img-20 */
+#img-20{
+	height: 330px;
+	width: 500px;
+}
+
+/* img-21 */
+
+/* img-22 */
+#img-22{
+	height: 300px;
+	width: 500px;
+}
+
+/* img-23 */
+#img-23{
+	height: 500px;
+	width: 350px;
+}
+/* img-24 */
+#img-24{
+	height: 500px;
+	width: 330px;
+}
+
+/* img-25 */
+#img-25{
+	height: 300px;
+	width: 500px;
+}
+/* img-26 */
+/* img-27 */
+
+/* img-28 */
+#img-28{
+	height: 300px;
+	width: 500px;
+}
+/* img-29 */
+#img-29{
+	height: 300px;
+	width: 500px;
+}
+
+/* img-30 */
+#img-30{
+	height: 500px;
+	width: 350px;
+}
+/* img-31 */
+#img-31{
+	height: 300px;
+	width: 500px;
+}
+
+/* img-32 */
+#img-32{
+	height: 300px;
+	width: 500px;
+}
+/* img-33 */
+#img-33{
+	height: 350px;
+	width: 500px;
 }
