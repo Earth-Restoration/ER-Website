@@ -44,9 +44,9 @@ mapTrees.countries.forEach(country => {
         let marker = L.marker([tree.latitude, tree.longitude], {icon: markerIcon}).addTo(map);
 
         if (markerIcon === greenIcon) {
-          marker.bindPopup("<h6>To be Invest</h6>");
-        } else if (markerIcon === silverIcon) {
           marker.bindPopup("<h6>Already Invested</h6>");
+        } else if (markerIcon === silverIcon) {
+          marker.bindPopup("<h6>To be Invest</h6>");
         } else if (markerIcon === goldIcon) {
           marker.bindPopup("<h6>Already Complete 4 years</h6>");
         }
