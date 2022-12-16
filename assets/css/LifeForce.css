@@ -1,4 +1,4 @@
-*{
+*,::after,::before{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -30,7 +30,207 @@
 }
 
 /* Banner CSS */
-.LF-banner{
+.banner-container{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* background-color: #fff; */
+  background-image: url(../img/LifeForce/bg1.jpg);
+  padding: 90px 0 0;
+  background-size: cover;
+}
+.LF-slider-body{
+  position: relative;
+}
+.LF-slider-img-body{
+  height: 250px;
+}
+.LF-slider-item{
+  color: #507c60;
+  opacity: 0.5;
+  transform: scale(0.9);
+  transition: opacity 0.4s, transform 0.4s;
+}
+.LF-slider-img{
+  width: 100%;
+  height: 100%;
+  display: block;
+  border: 5px solid rgba(80,124,96,0.5);
+}
+.LF-slider-info{
+  padding: 10px 0;
+  background-color: rgba(80,124,96,0.5);
+  text-align: center;
+}
+.owl-item.active.center .LF-slider-item{
+  opacity: 1;
+  transform: scale(1);
+}
+.LF-slider-title{
+  padding-top: 0;
+  color: #031321;
+}
+.LF-slider-subtitle{
+  padding: -5px 0 15px;
+  font-size: 16px;
+}
+.LF-slider-description{
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+.LF-slider-link-body{
+  padding: 20px 0 30px; 
+}
+.LF-slider-link{
+  position: relative;
+  text-decoration: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #031321;
+  letter-spacing: 2px;
+  background-color: transparent;
+  transition: background-color 0.4s;
+  transition-delay: 0.5s;
+}
+.LF-slider-link::before{
+  top: 0;
+  content: "";
+  position: absolute;
+  left: 0;
+  border: 2px solid #507c60;
+  border-right: none;
+  height: 100%;
+}
+.LF-slider-link::after{
+  top: 0;
+  content: "";
+  position: absolute;
+  right: 0;
+  border: 2px solid #507c60;
+  border-left: none;
+  height: 100%;
+}
+.LF-slider-link::before,
+.LF-slider-link::after{
+  width: 10%;
+  transition: 0.4s;
+}
+.LF-slider-link:hover{
+  background-color: #fff;
+}
+.LF-slider-link:hover::before,
+.LF-slider-link:hover::after{
+  width: 51%;
+}
+.LF-slider-arrows{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.arrow{
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: #507c60;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.4s;
+}
+.arrow-left{
+  left: 40px;
+}
+.arrow-right{
+  right: 40px;
+}
+/* arrow-left */
+.arrow-left::before{
+  content: "";
+  position: absolute;
+  transform: translate(0px, -1.5px) rotateZ(40deg);
+  transform-origin: left;
+  width: 50%;
+  height: 5px;
+  display: block;
+  border-radius: 10px;
+  background-color: #fdfeff;
+  transition: background-color 0.4s;
+}
+.arrow-left::after{
+  content: "";
+  position: absolute;
+  transform: translate(0px, 1.5px) rotateZ(320deg);
+  transform-origin: left;
+  width: 50%;
+  height: 5px;
+  display: block;
+  border-radius: 10px;
+  background-color: #fdfeff;
+  transition: background-color 0.4s;
+}
+
+/* arrow-right */
+.arrow-right::before{
+  content: "";
+  position: absolute;
+  transform: translate(0px, 1.5px) rotateZ(40deg);
+  transform-origin: right;
+  width: 50%;
+  height: 5px;
+  display: block;
+  border-radius: 10px;
+  background-color: #fdfeff;
+  transition: background-color 0.4s;
+}
+.arrow-right::after{
+  content: "";
+  position: absolute;
+  transform: translate(0px, -1.5px) rotateZ(320deg);
+  transform-origin: right;
+  width: 50%;
+  height: 5px;
+  display: block;
+  border-radius: 10px;
+  background-color: #fdfeff;
+  transition: background-color 0.4s;
+}
+.arrow:hover{
+  background-color: rgba(80,124,96,0.8);
+}
+.arrow:hover::before{
+  background-color: #fdfeff;
+}
+.arrow:hover::after{
+  background-color: #fdfeff;
+}
+
+@media (min-width: 1650px){
+  .LF-slider-img-body{
+      height: auto;
+  }
+}
+@media (max-width: 750px){
+  .banner-container{
+      padding: 40px 20px;
+  }
+  .LF-slider-img-body{
+      height: auto;
+  }
+  .arrow-right{
+      right: -10px;
+  }
+  .arrow-left{
+      left: -10px;
+  }
+}
+
+/* /* .LF-banner{
   width: 100%;
   min-height: 100vh;
   position: relative;
@@ -38,14 +238,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
+} */
 .LF-content{
+  margin-top: -100px;
   text-align: center;
 }
 .LF-content h1{
-  font-size: 120px;
+  font-size: 50px;
   font-family: 'Futara';
-  color: #fff;
+  color: #507c60;
   font-weight: 600;
   transition: 0.5s;
 }
@@ -60,20 +261,21 @@
   }
 }
 .LF-content h1:hover{
-  -webkit-text-stroke: 2px #fff;
+  -webkit-text-stroke: 2px #507c60;
   color: transparent; 
 }
 
 .LF-content p{
-  font-size: 25px;
+  font-size: 18px;
   font-family: 'Calisto MT';
-  color: #fff;
+  font-weight: 600;
+  color: #30503c;
   margin-top: -30px;
   justify-content: center;
   margin-left: 100px;
   margin-right: 100px;
 }
-.video-LFbanner{
+/* .video-LFbanner{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -91,7 +293,7 @@
       width: auto;
       height: 100%;
   }
-}
+} */ 
 
 /* Map CSS */
 .Lf-map{
