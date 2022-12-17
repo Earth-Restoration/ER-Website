@@ -106,6 +106,7 @@ particlesJS("particles-js", {
 				"particles_nb": 2
 			}
 		}
+		
 	},
 	"retina_detect": true
 });
