@@ -11,3 +11,35 @@ var swiper = new Swiper('.blog-slider', {
         clickable: true,
     }
 });
+
+$(document).ready(function()
+    {
+        $('#LF-slider').owlCarousel(
+            {
+                loop:true,
+                dots:false,
+                center:true,
+                responsive:
+                {
+                    0:{
+                        item:1
+                    },
+                    750:{
+                        item:2
+                    },
+                    1170:{
+                        item:3
+                    },
+                }
+            }
+        );
+
+        $('#arrow-l').click(function()
+        {
+            $('#LF-slider').trigger('prev.owl.carousel');
+        });
+        $('#arrow-r').click(function()
+        {
+            $('#LF-slider').trigger('next.owl.carousel');
+        });
+    })
