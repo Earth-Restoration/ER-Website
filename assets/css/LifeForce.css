@@ -251,7 +251,7 @@
 }
 .LF-content h1{
   font-size: 50px;
-  font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
   color: #031321;
   font-weight: 600;
   transition: 0.5s;
@@ -391,7 +391,8 @@ bottom: 0;
   /* margin-left: 40px; */
 }
 .about-text-LF h2{
-  font-family: lobster;
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 600;
   font-size: 50px;
   padding-left: 30px;
 }
@@ -403,6 +404,8 @@ bottom: 0;
 @media screen and (max-width:300px) {
   .about-text-LF h2{
     font-size: 40px;
+    font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 600;
   }
 }
 .about-text-LF p{
@@ -592,6 +595,100 @@ bottom: 0;
   left: calc(43% - 35px);
   top: calc(45% - 35px);
   
+}
+
+
+/*--------------------------------------------------------------
+# About section-3
+--------------------------------------------------------------*/
+.LF-section{
+  position: relative;
+  margin-top: -50px;  
+}
+.LF-section .Lf-slider-container .slider{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 20px 9%;
+  padding-bottom: 70px;
+} 
+.LF-section .Lf-slider-container .slider .section-content{
+  flex: 1 1 350px;
+}
+.LF-section .Lf-slider-container .slider .slider-img{
+  flex: 1 1 500px;
+}
+.LF-section .Lf-slider-container .slider .slider-img img{
+  width: 80%;
+  display: block;
+  margin-left: 60px;
+  margin-top: 15%;
+  align-items: center;
+  justify-content: center;
+  /* border: 10px solid rgba(126,130,134,0.4); */
+  border-radius: 20px;
+  box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.2), 0 7px 21px 0 rgba(0, 0, 0, 0.19);
+}
+.LF-section .Lf-slider-container .slider .section-content h3{
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  color: #031321;
+  padding: 50px 0 10px;
+}
+.LF-section .Lf-slider-container .slider .section-content p{
+  font-size: 16px;
+  font-weight: 400;
+  color: #031321;
+  padding: 15px 0;
+  text-align: justify;
+  line-height: 20px;
+}
+.LF-section .Lf-slider-container .slider .section-content p span{
+  color: #031321;
+  font-weight: 600;
+}
+.LF-section .Lf-slider-container{
+  display: none;
+}
+.LF-section .Lf-slider-container.active{
+  display: block;
+}
+.LF-section .Lf-slider-container:nth-child(1) .slider{
+  background-image: url(../img/LifeForce/bg4.PNG);
+  background-size: cover;
+  /* background: linear-gradient(90deg, rgba(122,196,236,0.2) 50%, rgba(80,124,96,1)); */
+}
+.LF-section .Lf-slider-container:nth-child(2) .slider{
+  background-image: url(../img/LifeForce/bg4.PNG);
+  background-size: cover;
+}
+.LF-section #prev,
+.LF-section #next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fdfeff;
+  background-color: rgba(80,124,96,0.6);
+  height: 50px;
+  width: 40px;
+  line-height: 50px;
+  font-size: 25px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bolder;
+}
+.LF-section #prev:hover,
+.LF-section #next:hover{
+  background-color: rgba(80,124,96,0.9);
+}
+.LF-section #prev{
+  left: 20px;
+}
+.LF-section #next{
+  right: 20px;
 }
   
 /*--------------------------------------------------------------
