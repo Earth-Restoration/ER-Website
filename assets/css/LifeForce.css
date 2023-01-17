@@ -1225,3 +1225,23 @@ bottom: 0;
       margin: 0 0 30px;
   }
 }
+
+
+/*CREATING MARKET VALUE FOR LIFEFORCE */
+.bodynew{
+  background-image:url(../img/Leaf-texture1.jpg);
+}
+.container h3{
+  font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 600;
+  font-size: 38px;
+  color: #222222;
+  padding: 10px 0 10px;
+  align-items: center;
+  text-align: center;
+}
+
+.container p{
+  align-items:center ;
+  text-align: center;
+}
