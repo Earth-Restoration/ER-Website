@@ -612,7 +612,7 @@ bottom: 0;
   margin: 0 auto;
   padding: 0 20px;
 }
-.Lf-Ecosystem-container h3{
+.Lf-Ecosystem-container h3, .PES-contract h3{
   font-size: 38px;
   line-height: 46px;
   text-align: center;
@@ -667,7 +667,7 @@ bottom: 0;
       grid-template-columns: 1fr;
       margin-bottom: 60px;
   }
-  .Lf-Ecosystem h3{
+  .Lf-Ecosystem h3, .PES-contract h3{
       font-size: 34px;
       margin-bottom: 5px;
   }
@@ -683,7 +683,7 @@ bottom: 0;
 --------------------------------------------------------------*/
 .LF-section{
   position: relative;
-  margin-top: -50px;  
+  margin-top: -60px;  
 }
 .LF-section .Lf-slider-container .slider{
   min-height: 100vh;
@@ -1147,4 +1147,81 @@ bottom: 0;
   align-items: center;
   font-size: 2em;
   color: var(--clr);
+}
+
+/*--------------------------------------------------------------
+# What happen through the C-PES contract term
+--------------------------------------------------------------*/
+.PES-contract{
+  background-color: rgba(126,130,134,0.07);
+}
+.PES-contract .PES-contract-container{
+  margin: 50px 50px 0 50px;
+}
+.PES-contract-service-box{
+  color: #fff;
+  text-align: center;
+  padding: 25px 5px 30px 0;
+  box-shadow: 15px 0 15px -15px rgba(0,0,0,0.5) inset;
+  position: relative;
+}
+.PES-contract-service-box:after{
+  content: '';
+  background: #507c60;
+  opacity: 0.9;
+  width: 20px;
+  height: 20px;
+  box-shadow: 20px 0 20px -20px rgba(0,0,0,0.5) inset;
+  position: absolute;
+  bottom: 11px;
+  left: 0;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+.PES-contract-service-box .PES-contract-service-content{
+  padding: 15px;
+  background: linear-gradient(to left bottom, #7ac4ec, #507c60);
+  opacity: 0.9;
+  border-radius: 0 30px 30px 0;
+  box-shadow: 20px 0 20px -20px rgba(0,0,0,0.5) inset;
+}
+.PES-contract-service-box .PES-contract-title{
+  color: #507c60;
+  background: rgba(255,255,255,0.5);
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 10px;
+  margin: 0 -20px 20px -15px;
+  border-radius: 0 30px 30px 0;
+  box-shadow: 10px 0 10px -10px rgba(0,0,0,0.5) inset,
+  5px 0 5px rgba(0,0,0,0.2);
+}
+.PES-contract-service-box .PES-contract-description{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 20px;
+}
+.PES-contract-service-box .PES-contract-description-year1{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0 0 10px;
+}
+.PES-contract-service-box .PES-contract-service-icon img{
+  width: 50%;
+  margin: -20px 0 -10px;
+}
+.PES-contract-service-box .PES-contract-service-icon-year1 img{
+  width: 50%;
+  margin: -40px 0 -30px;
+}
+.PES-contract-service-box:hover .PES-contract-service-icon img, .PES-contract-service-box:hover .PES-contract-service-icon-year1 img{
+  transform: rotate(360deg);
+  transition: all 0.5s;
+}
+
+@media only screen and (max-width: 990px){
+  .PES-contract-service-box{
+      margin: 0 0 30px;
+  }
 }
