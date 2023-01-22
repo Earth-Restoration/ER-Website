@@ -683,7 +683,7 @@ bottom: 0;
 --------------------------------------------------------------*/
 .LF-section{
   position: relative;
-  margin-top: -60px;  
+  margin-top: -120px;  
 }
 .LF-section .Lf-slider-container .slider{
   min-height: 100vh;
@@ -1226,9 +1226,45 @@ bottom: 0;
   }
 }
 
+/*--------------------------------------------------------------
+# The Lifeforce Ecosystem
+--------------------------------------------------------------*/
+.Lf-market-value{
+  color: #222222;
+  background-color: #fdfeff;
+  font-weight: 400;
+  padding: 60px 0;
+}
+.Lf-market-value-container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  border-radius: 20px;
+  background-color: rgba(126,130,134,0.07);
+}
+.Lf-market-value-container h3{
+  font-size: 34px;
+  line-height: 46px;
+  text-align: center;
+  font-weight: 600;
+  color: #222222;
+  margin-bottom: 10px;
+  padding-top: 30px;
+}
+.Lf-market-value .text-Lf-Ecosystem{
+  text-align: center;
+  max-width: 1150px;
+  margin: -0px auto;
+  display: block;
+  margin-bottom: 60px;
+  font-size: 16px;
+  font-weight: 400;
+  padding-bottom: 30px;
+}
 
 /*CREATING MARKET VALUE FOR LIFEFORCE */
-.bodynew{
+/* .bodynew{
   background-image:url(../img/Leaf-texture1.jpg);
 }
 .container h3{
@@ -1244,4 +1280,4 @@ bottom: 0;
 .container p{
   align-items:center ;
   text-align: center;
-}
+} */
