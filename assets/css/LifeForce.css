@@ -1446,4 +1446,44 @@ h3{
       --num-cols: 2;
       --row-height: 200px;
   }
+  .image-grid > img{
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 950px) and (max-width: 1024px){
+  .image-grid {
+      --num-cols: 2;
+      --row-height: 200px;
+  }
+  .image-grid > img{
+    margin-top: 80px;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 950px){
+  .image-grid {
+      --num-cols: 2;
+      --row-height: 200px;
+  }
+  .image-grid > img{
+    margin-top: 150px;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 650px){
+  .image-grid {
+      --num-cols: 2;
+      --row-height: 200px;
+  }
+  .image-grid > img{
+    margin-top: 400px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 500px){
+  .image-grid {
+      --num-cols: 1;
+      --row-height: 200px;
+  }
+  .image-grid > img{
+    margin-top: 400px;
+  }
 }
