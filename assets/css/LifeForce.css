@@ -1520,3 +1520,11 @@ h3{
     box-shadow: none;
   }
 }
+@media screen and (min-width: 250px) and (max-width: 900px){
+  .LF-slider-body{
+    display: none;
+  }
+  .banner-container{
+    height: 40vh;
+  }
+}
