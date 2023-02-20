@@ -1528,3 +1528,9 @@ h3{
     height: 40vh;
   }
 }
+
+@media screen and (min-width: 420px) {
+    .banner-text {
+      font-size: 28px;
+    }
+}
