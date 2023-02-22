@@ -1520,17 +1520,46 @@ h3{
     box-shadow: none;
   }
 }
-@media screen and (min-width: 250px) and (max-width: 900px){
+.background_banner {
+  display: none;
+}
+
+/* @media screen and (min-width: 900px)  {
+  .background_banner {
+    display: none;
+  }
+} */
+
+@media screen and (min-width: 230px) and (max-width: 900px){
   .LF-slider-body{
     display: none;
   }
   .banner-container{
-    height: 40vh;
+    height: 65vh;
+  }
+  .background_banner{
+    display: block;
+  }
+  .LF-content{
+    display: none;
   }
 }
 
-@media screen and (min-width: 420px) {
-    .banner-text {
-      font-size: 28px;
-    }
+
+.background_banner {
+  text-align: center;
+}
+.banner-H {
+  font-size: 50px;
+  font-weight: bold;
+}
+.banner-t{
+  font-size: 18px;
+  font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+  font-weight: bold;
+  color: #30503c;
+  margin-top: -30px;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
 }
