@@ -1295,7 +1295,6 @@ bottom: 0;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  /* padding: 40px; */
 }
 
 .bodyse .containernew .card{
@@ -1312,8 +1311,6 @@ bottom: 0;
   overflow: hidden;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-  /* align-items: flex-start;  */
   border-color: #fff;
 }
 
@@ -1520,11 +1517,101 @@ h3{
     box-shadow: none;
   }
 }
-@media screen and (min-width: 250px) and (max-width: 900px){
+.background_banner {
+  display: none;
+}
+
+/* @media screen and (min-width: 900px)  {
+  .background_banner {
+    display: none;
+  }
+} */
+
+@media screen and (min-width: 230px) and (max-width: 900px){
   .LF-slider-body{
     display: none;
   }
   .banner-container{
-    height: 40vh;
+    height: 65vh;
+  }
+  .background_banner{
+    display: block;
+  }
+  .LF-content{
+    display: none;
+  }
+}
+
+
+.background_banner {
+  text-align: center;
+}
+.banner-H {
+  font-size: 50px;
+  font-weight: bold;
+}
+.banner-t{
+  font-size: 18px;
+  font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
+  font-weight: bold;
+  color: #30503c;
+  margin-top: -30px;
+  justify-content: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+/* HOW TO INTERACT WITH LIFEFORCE */
+.LF-Interact{
+  margin-top: -100px;
+  margin-bottom: 50px;
+}
+.Interact-container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1140px;
+}
+.Interact-box{
+  background-color: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.05), 0 6px 6px rgba(0,0,0,0.1);
+  border-radius: 15px;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  margin: 15px;
+  width: 350px;
+}
+.Interact-box::after{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  width: 100%;
+}
+.box-cyan::after{
+  background-color: rgb(80,124,69);
+}
+.box-push{
+  transform: translateY(50%);
+}
+.Interact-box p{
+  font-size: 16px;
+  margin: 15px 0 10px;
+  font-weight: 400;
+  color: #222;
+}
+.Interact-box img{
+  display: block;
+  margin-left: auto;
+}
+.Interact-box:hover img{
+  transform: scale(1.1);
+}
+@media (max-width: 775px){
+  .box-push{
+    transform: translateY(0);
   }
 }
