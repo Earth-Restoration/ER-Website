@@ -30,276 +30,52 @@
 }
 
 /* Banner CSS */
-.banner-container{
-  width: 100%;
-  height: 100vh;
+.LF-banner{
   position: relative;
-  /* background-color: #fff; */
-  background-image: url(../img/LifeForce/bg1.jpg);
-  padding: 90px 0 0;
+  height: 50vh;
+  width: 100%;
+  overflow: hidden;
+  background: url(../img/LifeForce/bg1.jpg) no-repeat center;
   background-size: cover;
 }
-.LF-slider-body{
-  position: relative;
-}
-.LF-slider-img-body{
-  height: 250px;
-}
-.LF-slider-item{
-  color: #507c60;
-  opacity: 0.5;
-  transform: scale(0.9);
-  transition: opacity 0.4s, transform 0.4s;
-}
-.LF-slider-img{
-  width: 100%;
-  height: 100%;
-  display: block;
-  border: 5px solid rgba(80,124,96,0.5);
-}
-.LF-slider-info{
-  padding: 10px 0;
-  background-color: rgba(80,124,96,0.5);
-  text-align: center;
-}
-.owl-item.active.center .LF-slider-item{
-  opacity: 1;
-  transform: scale(1);
-}
-.LF-slider-title{
-  margin-top: -2px;
-  padding-top: 0;
-  color: #7f8286;
-  font-weight: 900;
-}
-.LF-slider-subtitle{
-  margin-top: -5px;
-  padding: -5px 0 15px;
-  font-weight: 700;
-  color: #507c60;
-  font-size: 16px;
-}
-.LF-slider-description{
-  font-size: 14px;
-  padding-bottom: 20px;
-}
-.LF-slider-link-body{
-  padding: 20px 0 30px; 
-}
-.LF-slider-link{
-  position: relative;
-  text-decoration: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  font-weight: bold;
-  color: #031321;
-  letter-spacing: 2px;
-  background-color: transparent;
-  transition: background-color 0.4s;
-  transition-delay: 0.5s;
-}
-.LF-slider-link::before{
-  top: 0;
-  content: "";
-  position: absolute;
-  left: 0;
-  border: 2px solid #507c60;
-  border-right: none;
-  height: 100%;
-}
-.LF-slider-link::after{
-  top: 0;
-  content: "";
-  position: absolute;
-  right: 0;
-  border: 2px solid #507c60;
-  border-left: none;
-  height: 100%;
-}
-.LF-slider-link::before,
-.LF-slider-link::after{
-  width: 10%;
-  transition: 0.4s;
-}
-.LF-slider-link:hover{
-  background-color: rgba(80,124,96,0.8);
-  color: #031321;
-}
-.LF-slider-link:hover::before,
-.LF-slider-link:hover::after{
-  width: 51%;
-}
-.LF-slider-arrows{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-}
-.arrow{
+.banner-container{
   position: absolute;
   top: 50%;
-  cursor: pointer;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  border-radius: 10px;
-  background-color: #507c60;
-  z-index: 3;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.4s;
-}
-.arrow-left{
-  left: 40px;
-}
-.arrow-right{
-  right: 40px;
-}
-/* arrow-left */
-.arrow-left::before{
-  content: "";
-  position: absolute;
-  transform: translate(0px, -1.5px) rotateZ(40deg);
-  transform-origin: left;
-  width: 50%;
-  height: 5px;
-  display: block;
-  border-radius: 10px;
-  background-color: #fdfeff;
-  transition: background-color 0.4s;
-}
-.arrow-left::after{
-  content: "";
-  position: absolute;
-  transform: translate(0px, 1.5px) rotateZ(320deg);
-  transform-origin: left;
-  width: 50%;
-  height: 5px;
-  display: block;
-  border-radius: 10px;
-  background-color: #fdfeff;
-  transition: background-color 0.4s;
-}
-
-/* arrow-right */
-.arrow-right::before{
-  content: "";
-  position: absolute;
-  transform: translate(0px, 1.5px) rotateZ(40deg);
-  transform-origin: right;
-  width: 50%;
-  height: 5px;
-  display: block;
-  border-radius: 10px;
-  background-color: #fdfeff;
-  transition: background-color 0.4s;
-}
-.arrow-right::after{
-  content: "";
-  position: absolute;
-  transform: translate(0px, -1.5px) rotateZ(320deg);
-  transform-origin: right;
-  width: 50%;
-  height: 5px;
-  display: block;
-  border-radius: 10px;
-  background-color: #fdfeff;
-  transition: background-color 0.4s;
-}
-.arrow:hover{
-  background-color: rgba(80,124,96,0.8);
-}
-.arrow:hover::before{
-  background-color: #fdfeff;
-}
-.arrow:hover::after{
-  background-color: #fdfeff;
-}
-
-@media (min-width: 1650px){
-  .LF-slider-img-body{
-      height: auto;
-  }
-}
-@media (max-width: 750px){
-  .banner-container{
-      padding: 40px 20px;
-  }
-  .LF-slider-img-body{
-      height: auto;
-  }
-  .arrow-right{
-      right: -10px;
-  }
-  .arrow-left{
-      left: -10px;
-  }
-}
-
-/* /* .LF-banner{
-  width: 100%;
-  min-height: 100vh;
-  position: relative;
-  padding: 0 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-.LF-content{
-  margin-top: -100px;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  overflow: hidden;
   text-align: center;
 }
-.LF-content h1{
-  font-size: 50px;
+.banner-container h1{
+  color: #507c60;
   font-family: 'Poppins', Helvetica, Arial, Lucida, sans-serif;
-  color: #031321;
+  font-weight: 700;
+  font-size: 72px;
+  letter-spacing: 0.2rem;
+  margin: 0;
+}
+.LF-des{
+  margin: 20px;
+  display: block;
+  font-size: 20px;
   font-weight: 600;
-  transition: 0.5s;
 }
-@media screen and (max-width:500px) {
-  .LF-content h1{
-    font-size: 75px;
-  }
-}
-@media screen and (max-width:300px) {
-  .LF-content h1{
-    font-size: 65px;
-  }
-}
-/* .LF-content h1:hover{
-  -webkit-text-stroke: 2px #507c60;
-  color: rgba(80,124,96,0.8); 
+/* .banner-container .icon-button:hover{
+  box-shadow: 5px 5px 15px 10px #888888;
 } */
 
-.LF-content p{
-  font-size: 18px;
-  font-family: Poppins, Helvetica, Arial, Lucida, sans-serif;
-  font-weight: 600;
-  color: #30503c;
-  margin-top: -30px;
-  justify-content: center;
-  margin-left: 100px;
-  margin-right: 100px;
+/* Treespecies */
+/* .swiper-container{
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
-/* .video-LFbanner{
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  z-index: -1;
-}
-
-@media (min-aspect-ratio: 16/9){
-  .video-LFbanner{
-      width: 100%;
-      height: auto;
-  }
-}
-@media (max-aspect-ratio: 16/9){
-  .video-LFbanner{
-      width: auto;
-      height: 100%;
-  }
-} */ 
+.swiper-slide{
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+} */
 
 /* Map CSS */
 .Lf-map{
@@ -641,7 +417,7 @@ bottom: 0;
 .Lf-Ecosystem-card img{
   width: 25%;
 }
-.Lf-Ecosystem-card .icon-button{
+.Lf-Ecosystem-card .icon-button, .banner-container .icon-button{
   background-color: rgba(80,124,96,0.8);
   border: none;
   color: #fdfeff;
