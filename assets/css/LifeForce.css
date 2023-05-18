@@ -961,6 +961,109 @@ body .container .card .box .content a:hover {
 
 /*Card end*/
 
+/* popup box start */
+
+
+
+.wrapper{
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 70%;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
+  transition: all 0.6s;
+  overflow: scroll;
+}
+
+.active.wrapper{
+  opacity: 1;
+  visibility: visible;
+}
+
+.close-btn{
+  position: absolute;
+ top: 20px;
+ right: 20px;
+ height: 35px;
+ width: 35px;
+ background-color: #000;
+ color: #fff;
+ font-size: 24px;
+ font-weight: 600;
+ border-radius: 5px;
+}
+
+.wrapper .popup-sec-1{
+  margin: 40px 0;
+}
+.wrapper .popup-sec-1 h1{
+  font-weight: 600;
+  font-size: 24px;
+  color: #507c60;
+  text-align: center;
+}
+
+.wrapper .popup-sec-1 h2{
+  font-weight: 600;
+  font-size: 20px;
+  color: #507c60;
+}
+.wrapper h2{
+  font-weight: 600;
+  font-size: 20px;
+  padding: 40px 0;
+  /* text-align: center; */
+  
+}
+
+.wrapper .bottum-div p {
+  font-size: 14px;
+  text-align: center;
+  padding: 50px 0;
+  text-align: justify;
+  
+}
+.wrapper .popup-sec-1 p {
+  font-size: 14px;
+  text-align: justify;
+}
+
+.wrapper .popup-sec-1 iframe{
+  /* align-items: center; */
+  text-align: center;
+  margin-top: 50px;
+}
+
+.wrapper .yt-video{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper .pictures{
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.wrapper .pictures img{
+  width: 400px;
+}
+/* poup box end */
+
+
+
+
 .body2{
   display: flex;
   

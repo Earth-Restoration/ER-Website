@@ -379,6 +379,55 @@
       <section class="body2">
 
         <div class="container">
+                      <!-- popup box start  -->
+                      <div class="wrapper">
+              
+                        <button class="close-btn">X</button>
+                        <div class="popup-content" >
+                          <div class="popup-sec-1">
+                            <h1>LifeForce ™ @ Belipola Arboretum, the World's First Analog Forest </h1>
+                            <h2>Project Description </h2>
+                            <p>To support day to day activities at the world's first Analog Forest we encourage you to purchase LifeForce. LifeForce does not merely pay for planting a tree, instead we pay the arboretum for the Photosynthetic Biomass that each tree-UNIT has been monitored, recorded and validated (MRV’d) to have produced over four years. This contractual approach supports the arboretum for four years  (usually the most valueless initial growth period of a tree)  by validating the externalities produced by each tree-UNIT while bridging the highest value for tree farming in the world.
+                              Analog forestry (AF)  is a system of silviculture that seeks to establish a tree-dominated ecosystem that is analogous in architectural structure and ecological function to the original climax or sub-climax vegetation community. These quasi-natural forests are designed to mimic the structural and functional aspects of indigenous forests and are referred to as Analog Forests. Analog Forestry also draws on designs and input from traditional models of forest management as well as from the natural forests which are studied by AF practitioners in various different bioregions across the globe. [ www.analogforestry.org ] 
+                              To be analogous to the indigenous climax state, the AF is designed to mimic the efficiency and dynamics of natural processes, which can then be replicated in a studied manner. In addition to their ecological characteristics, analog forests are designed to provide long term economic benefits. Therefore, an analogue forest may be composed of natural and exotic species in any proportion, with the contribution to structure (biomass) and function (ecological action) being the overriding factor that determines its use .
+                              What’s special about LifeForce ™ at Belipola Arboretum ? The PES value of each tree supports 50 hrs of applied AF training to one agriculture undergraduate student registered with the national university system. That means over the next 4 years 100 undergraduate students in the agriculture sciences will receive up-to-date information and strategies for natural farming as well as mitigating the negative effects of climate change.
+                              </p>
+                              <p>Scale of restoration : 100 tree UNITS on 6 acres of land</p>
+                              <p>Smart - Contract Period : 4 years </p>
+                              <p>NFT’s available = 100</p>
+                              <p>Payments for Photosynthetic Biomass : $104,000</p>
+                              <p>Primary Ecosystem Services Output  Verified by ER app : Photosynthetic Biomass / Oxygen / Clean Water </p>
+                              <h2>Beneficiary(s)  : </h2>
+                              <p>1. Belipola Arboretum Management, EarthRestoration PL </p>
+                              <p>2. 100 agriculture students ( 25 per year for 4 years ) to be experienced in 50 hrs accredited learning related to AF —- > </p>
+                              <p>3.LifeForce customers can follow the progress of this project and redeem their NFT’s through their personal LifeForce ledger </p>
+                              
+                            </div>
+                            <div class="yt-video">
+                              <iframe width="100%" height="500px"
+                              src="https://www.youtube.com/embed/E1NJ7B2fbpQ ">
+                              </iframe>
+                            </div>
+                            <h2>Pictures</h2>
+                            <div class="pictures">
+                              
+                              <div>
+                                <img src="./assets/img/LifeForce/Belipola_1.PNG" alt="">
+                              </div>
+                             
+          
+                              
+                            </div>
+                            <div class="bottum-div">
+                              <p>Purchase LifeForce from the map below and begin let's begin our mission of EarthReastoration LifeForce block Map </p>
+                            </div>
+                            
+                        </div>
+                      </div>
+
+                      <!-- popup box end-->
+
+
           <div class="card">
             <div class="box">
               <div class="content">
@@ -396,7 +445,7 @@
 
                 </p>
 
-                <a href="#">Read More</a>
+                <a class="show-modal">Read More</a>
               </div>
             </div>
           </div>
@@ -417,7 +466,7 @@
                   Primary Ecosystem Services Output Verified by ER app : Photosynthetic Biomass / Oxygen / Clean Water
 
                 </p>
-                <a href="#">Read More</a>
+                <a class="show-modal">Read More</a>
               </div>
             </div>
           </div>
@@ -438,7 +487,7 @@
                   Primary Ecosystem Services Output Verified by ER app : Photosynthetic Biomass / Oxygen / Clean Water
 
                 </p>
-                <a href="#">Read More</a>
+                <a class="show-modal">Read More</a>
               </div>
             </div>
           </div>
@@ -958,6 +1007,23 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    
+    showBtn = document.querySelector(".show-modal");
+    closeBtn = document.querySelector(".close-btn");
+    Wrapper = document.querySelector(".wrapper");
+   
+
+  showBtn.addEventListener("click", () => Wrapper.classList.add("active"));
+ 
+
+  closeBtn.addEventListener("click", () =>
+    Wrapper.classList.remove("active")
+  );
+
+
+</script>
 
 </body>
 
