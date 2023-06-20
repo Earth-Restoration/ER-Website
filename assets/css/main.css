@@ -1934,7 +1934,6 @@ padding: 3px;
 .footer .credits {
   padding-top: 4px;
   text-align: center;
-  font-size: 13px;
 }
 .footer .credits:hover {
   transform: scale(1.1);
@@ -1942,6 +1941,8 @@ padding: 3px;
 }
 .footer .credits a {
   color: #fdfeff;
+  font-size: 16px;
+  font-weight: bold;
 }
 
 .footer .credits a:hover {
