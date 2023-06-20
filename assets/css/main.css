@@ -694,6 +694,40 @@ section {
   text-align: justify;
 }
 
+.hero .hero-para #tooltip {
+  position: relative;
+  cursor: pointer;
+  padding: 7px;
+}
+.hero .hero-para #tooltipText {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  white-space: nowrap;
+  padding: 10px 15px;
+  border-radius: 7px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+.hero .hero-para #tooltipText::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translateX(-50%);
+  border: 15px solid;
+  border-color: #000 #0000 #0000 #0000;
+}
+#tooltip:hover #tooltipText {
+  top: -130%;
+  visibility: visible;
+  opacity: 1;
+}
+
 /*banner video*/
 .hero .video{
   margin-top: -100px;
