@@ -38,8 +38,6 @@
     flex-direction: row;
     height: 100%;
     width: 100%;
-    background-image: url(../img/community/card/card_background.jpg);
-    background-size: cover;
   }
   
     @keyframes borderHighlight {
