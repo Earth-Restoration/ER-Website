@@ -336,7 +336,7 @@
 
       <div class="row">
         <!-- Plant Display Section -->
-        <div ng-repeat="plant in filteredPlants" class="col-md-4 mb-4">
+        <div ng-repeat="plant in getCurrentPagePlants()" class="col-md-4 mb-4">
           <div class="card ag-courses_item">
             <div class="slider">
               <div class="slide">
@@ -412,19 +412,15 @@
                   <div class="container">
                     <div class="row">
                       <div class="col-sm">
-                        <div
-                          class="chart-container"
-                        >
+                        <div class="chart-container">
                           <span class="chart-title"
                             >Photosynthetic Biomass Chart</span
-                          ><br/>
+                          ><br />
                           <canvas id="photosyntheticBiomassChart"></canvas>
                         </div>
                       </div>
                       <div class="col-sm">
-                        <div
-                          class="chart-container"
-                        >
+                        <div class="chart-container">
                           <span class="chart-title"
                             >Average O2 and H2O Production</span
                           >
@@ -578,6 +574,38 @@
           </div>
         </div>
       </div>
+      <!-- Pagination Section -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item" ng-class="{ 'disabled': currentPage === 1 }">
+            <a
+              class="page-link"
+              href="#"
+              tabindex="-1"
+              ng-click="goToPage(currentPage - 1)"
+            >
+              Previous
+            </a>
+          </li>
+          <li
+            class="page-item"
+            ng-repeat="page in getPaginationArray()"
+            ng-class="{ 'active': currentPage === page }"
+          >
+            <a class="page-link" href="#" ng-click="goToPage(page)"
+              >{{ page }}</a
+            >
+          </li>
+          <li
+            class="page-item"
+            ng-class="{ 'disabled': currentPage === getTotalPages() }"
+          >
+            <a class="page-link" href="#" ng-click="goToPage(currentPage + 1)"
+              >Next</a
+            >
+          </li>
+        </ul>
+      </nav>
     </div>
     <!--Tree Scpecies-->
 
@@ -767,6 +795,51 @@
             dehiscent: false,
             translucent: false,
           };
+
+          // Add the following code inside the "plantController" definition
+          $scope.filteredPlants = []; // Initialize filtered plants
+          $scope.pageSize = 9; // Number of items to display per page
+          $scope.currentPage = 1; // Current page number
+
+          // Function to calculate the total number of pages based on the filtered plant count and page size
+          $scope.getTotalPages = function () {
+            return Math.ceil($scope.filteredPlants.length / $scope.pageSize);
+          };
+
+          // Function to create an array of page numbers for pagination
+          $scope.getPaginationArray = function () {
+            const totalPages = $scope.getTotalPages();
+            const paginationArray = [];
+            for (let i = 1; i <= totalPages; i++) {
+              paginationArray.push(i);
+            }
+            return paginationArray;
+          };
+
+          // Function to go to a specific page
+          $scope.goToPage = function (page) {
+            if (page >= 1 && page <= $scope.getTotalPages()) {
+              $scope.currentPage = page;
+            }
+          };
+
+          // Function to get the currently visible plants for the current page
+          $scope.getCurrentPagePlants = function () {
+            const startIndex = ($scope.currentPage - 1) * $scope.pageSize;
+            const endIndex = startIndex + $scope.pageSize;
+            return $scope.filteredPlants.slice(startIndex, endIndex);
+          };
+
+          // Function to filter the plants whenever there is a change in the search, filter, or checkbox options
+          $scope.filter = function () {
+            $scope.getFilteredPlants();
+            $scope.currentPage = 1; // Reset to the first page when filtering is applied
+          };
+
+          // Update the pagination whenever the filtered plants change
+          $scope.$watch("filteredPlants", function () {
+            $scope.currentPage = 1; // Reset to the first page when the filtered plants change
+          });
 
           // Function to open the plant modal and generate the unique chart
           $scope.openPlantModal = function (plantTitle) {
