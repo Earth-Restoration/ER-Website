@@ -430,7 +430,7 @@ section {
   .navbar li:hover > a:before,
   .navbar .active:before {
     visibility: visible;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .navbar a:hover,
