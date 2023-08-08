@@ -164,11 +164,26 @@ img {
   color: #fff;
   background-color: rgb(59, 177, 177);
 }
+@media (max-width: 576px) {
+  .button-padding{
+    padding-top: 5px;
+  }
+  .input-group{
+    width: 100%;
+  }
+  .button-29{
+    width: 100%;
+  }
+}
 /*search*/
 
 /*Filter*/
 .popover {
   background-color: rgb(255, 255, 255);
+  position: absolute;
+  z-index: 1000;
+  margin-left: 168vh;
+  margin-top: 23vh;
   height: 330px;
   width: 250px;
   border-radius: 10px;
@@ -177,6 +192,7 @@ img {
 
 .fa-filter {
   color: rgb(2, 48, 32);
+  margin-left: 100px;
 }
 
 .fa-filter:hover {
@@ -189,6 +205,16 @@ img {
 .form-check-label,
 .form-check-input {
   cursor: pointer;
+}
+@media (max-width: 576px) {
+  .fa-filter {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+  .popover{
+    margin-left: 90px;
+    margin-top: 200px;
+  }
 }
 /*Filter*/
 
@@ -239,6 +265,33 @@ img {
 .model-heading {
   font-size: 16px;
   font-weight: bold;
+}
+/* Media query for smaller screens (mobile devices) */
+@media (max-width: 576px) {
+  .model-details {
+    width: 100%; 
+    height: auto;
+    margin-top: 20px; 
+  }
+  .modal{
+    width: 370px;
+  }
+  .modal-body .row {
+    flex-direction: column; 
+  }
+
+  .modal-body .col-sm-12 {
+    width: 100%; 
+  }
+  .chart-container {
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .chart-title {
+    text-align: left;
+    font-weight: bold;
+  }
 }
 /*Model*/
 
