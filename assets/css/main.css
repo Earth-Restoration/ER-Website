@@ -791,6 +791,7 @@ section {
   color: #031321;
   font-weight: 600;
   padding-bottom: 0px;
+  line-height: normal;
 }
 
 .hero .btn-watch-video i {
