@@ -1154,18 +1154,22 @@ body .container .card .box .content a:hover {
   background-color: red;
 }
 
-.wrapper .popup-sec-1 {
+.modal .popUp{
+  padding: 20px;
+}
+
+.popup-sec-1 {
   margin: 40px 0;
 }
 
-.wrapper .popup-sec-1 h1 {
+.popup-sec-1 h1 {
   font-weight: 600;
   font-size: 24px;
   color: #507c60;
   text-align: center;
 }
 
-.wrapper .popup-sec-1 h2 {
+.popup-sec-1 h2 {
   font-weight: 600;
   font-size: 20px;
   color: #507c60;
@@ -1176,6 +1180,8 @@ body .container .card .box .content a:hover {
   font-size: 20px;
   color: #507c60;
   text-align: center;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .wrapper h2 {
@@ -1209,10 +1215,11 @@ body .container .card .box .content a:hover {
   margin-top: 50px;
 }
 
-.wrapper .yt-video {
+.yt-video {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 60px;
 }
 
 .wrapper .pictures {
@@ -1234,10 +1241,12 @@ body .container .card .box .content a:hover {
   color: white;
   font-weight: 700;
   letter-spacing: 1px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .btn-buy-plant {
-  width: 100%;
+  width: 50%;
   padding: 10px 100px;
   background: #507c60;
   color: white;
